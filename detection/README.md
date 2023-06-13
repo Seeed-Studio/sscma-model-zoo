@@ -26,8 +26,8 @@ The section summarizes the performance of different models trained from differen
 | Model Name | Backend | Datasets | Input Size | Precision | mAP* | FLOPs (M) | Parameters (M) | Invoking RAM (KiB) | Invoking Time* (ms) | Link |
 |--|--|--|--|--|--|--|--|--|--|--|
 | yolov5_tiny_1xb16_300e_coco | PyTorch | COCO(Person) | 192x192x3 | float32 | 45.8% | 90.56 | 0.67 | - | - | [Download(Seeed)]() |
-| yolov5_tiny_1xb16_300e_coco | ONNX | COCO(Person) | 192x192x3 | float32 | 45.8% | - | 0.66 | - | - | [Download(GitHub)]() |
-| yolov5_tiny_1xb16_300e_coco | TFLite | COCO(Person) | 192x192x3 | int8 | 25.4% | - | - | 352.48 | 893.62 | [Download(GitHub)]() |
+| yolov5_tiny_1xb16_300e_coco | ONNX | COCO(Person) | 192x192x3 | float32 | 45.8% | - | 0.66 | - | - | [Download(GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO(Person)/yolov5_tiny_1xb16_300e_coco_sha1_cdb8b099a610d01b6e54715a76ef9757a2f86ffb.onnx) |
+| yolov5_tiny_1xb16_300e_coco | TFLite | COCO(Person) | 192x192x3 | int8 | 25.4% | - | - | 352.48 | 893.62 | [Download(GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO(Person)/yolov5_tiny_1xb16_300e_coco_int8_sha1_470cfb358b30c5aa97def1a5fdf178312f0d07c9.tflite) |
 
 
 
