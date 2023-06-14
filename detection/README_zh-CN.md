@@ -7,7 +7,7 @@
 ```txt
 detection
 ├── configs
-|   └── ...
+│   └── ...
 ├── models
 │   ├── <network name>
 │   │   ├── <datasets name>
