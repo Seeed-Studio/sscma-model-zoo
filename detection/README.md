@@ -7,7 +7,7 @@ The hierarchy of detection directory is as follows:
 ```txt
 detection
 ├── configs
-|   └── ...
+│   └── ...
 ├── models
 │   ├── <network name>
 │   │   ├── <datasets name>
