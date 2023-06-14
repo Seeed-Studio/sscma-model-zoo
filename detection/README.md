@@ -6,8 +6,6 @@ The hierarchy of detection directory is as follows:
 
 ```txt
 detection
-├── configs
-│   └── ...
 ├── models
 │   ├── <network name>
 │   │   ├── <datasets name>
@@ -19,8 +17,6 @@ detection
 ```
 
 The `models` folder includes different neural networks, each neural network is denoted as its name, located on `<network name>` folder. Inside the neural network folder, the model may trained on different datasets, so we use the `<datasets name>` to to partition these pre-trained models into different folders.
-
-Additionally, the `configs` folder stores the train configs, its directory hierarchy is as same as models.
 
 
 ## Performance of Models
