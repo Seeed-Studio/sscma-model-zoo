@@ -22,8 +22,7 @@ Currently, EdgeLab Model Zoo provides pre-trained models for the following appli
 - [Detection](detection/README.md)
 - [Pose](pose/README.md)
 
-
-
+If you need any pre-trained model for a specific dataset in a specific scenario, feel free to submit a feature request to [Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose).
 
 ## Quickly Start
 
@@ -41,7 +40,7 @@ If you encounter any problem with pre-trained models in EdgeLab Model Zoo, we re
 1. Check the correctness of the downloaded model. The end of the pre-trained model file name contains the SHA-1 hash of the model. You can calculate the SHA-1 of the downloaded model and compare it with the one in the model file name by yourself (e.g. using the `sha1sum` command under Linux) to check the model consistency.
 2. Search [EdgeLab Model Zoo - Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues) and [EdgeLab - Issues](https://github.com/Seeed-Studio/EdgeLab/issues) to see if there are other people who have the similar problem.
 
-If none of the above methods help, or if you have other questions about EdgeLab Model Zoo, please [Submit Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new) to us.
+If none of the above methods help, or if you have other questions about EdgeLab Model Zoo, please [Submit Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose) to us.
 
 
 ## License

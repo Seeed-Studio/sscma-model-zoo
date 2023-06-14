@@ -22,7 +22,7 @@ EdgeLab Model Zoo 专注于提供在 EdgeLab 优化的神经网络上训练得�
 - [检测](detection/README_zh-CN.md)
 - [姿态](pose/README_zh-CN.md)
 
-如果您需要特定场景下特定数据集的预训练模型，欢迎向我们[提交 Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new)。
+如果您需要特定场景下特定数据集的预训练模型，欢迎向我们[提交 Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose)。
 
 
 ## 快速上手
@@ -41,7 +41,7 @@ EdgeLab Model Zoo 专注于提供在 EdgeLab 优化的神经网络上训练得�
 1. 检查下载模型的正确性。预训练模型文件名的末尾包含该模型的 SHA-1 哈希值，您可以自行计算下载模型的 SHA-1 并与模型文件名中的进行比对 (如使用 Linux 下的 `sha1sum` 命令)，校验模型一致性。
 2. 搜索 [EdgeLab Model Zoo - Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues) 和 [EdgeLab - Issues](https://github.com/Seeed-Studio/EdgeLab/issues)，浏览是否有其他人反馈类似的问题。
 
-如果以上方法都不能起到帮助，或者有其他关于 EdgeLab Model Zoo 的问题，请向我们[提交 Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new)。
+如果以上方法都不能起到帮助，或者有其他关于 EdgeLab Model Zoo 的问题，请向我们[提交 Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose)。
 
 
 ## 开源许可证
