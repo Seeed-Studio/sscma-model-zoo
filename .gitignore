@@ -1,1 +1,8 @@
+# VS Code
+.vscode
+
+# macOS
 .DS_Store
+
+# PyTorch model (currently we host the PyTorch models on our server instead of GitHub)
+*.pth
