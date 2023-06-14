@@ -1,0 +1,37 @@
+name: "\U0001F680 Feqture request"
+description: Suggest an idea for this project.
+labels: ['enhancement: pending triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this form to help us improve. Please read the following before you start filling out the form.
+        EdgeLab Model Zoo welcome request on the following scenarios:
+        - Add more pre-trained models for our currently implemented neural networks
+        - Update pre-trained models on latest datasets, etc.
+        
+  - type: textarea
+    id: request-description
+    attributes:
+      label: Describe the request
+      description: A clear and concise description of what you're requiring for.
+      placeholder: Request description
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context here which help us better understand your requirement (e.g. implementation details, code examples or screenshots).
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Read EdgeLab Model Zoo and EdgeLab docs.
+          required: true
+        - label: There has no simliar issue or pull request.
+          required: true
