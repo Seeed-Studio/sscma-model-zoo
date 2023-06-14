@@ -43,7 +43,6 @@ detection
 | YOLOv5 Tiny | PyTorch | COCO_Person | 192x192x3 | float32 | 45.8% | 90.56 | 0.67 | - | - | [Download (Seeed Studio)](https://files.seeedstudio.com/edgelab/model_zoo/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_sha1_8efbba3dacd06a3ac5636fbed215358a501ed1b1.pth) |
 | YOLOv5 Tiny | ONNX | COCO_Person | 192x192x3 | float32 | 45.8% | - | 0.67 | - | - | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_sha1_cdb8b099a610d01b6e54715a76ef9757a2f86ffb.onnx) |
 | YOLOv5 Tiny | TFLite | COCO_Person | 192x192x3 | float32 | 45.8% | - | - | - | - | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_float32_sha1_4ca1ba6b7c881cc8d4589462b22ee1fa5365d8f7.tflite) |
-| YOLOv5 Tiny | TFLite | COCO_Person | 192x192x3 | int8 | 25.4% | - | - | 352.48 | 893.62 | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_int8_sha1_470cfb358b30c5aa97def1a5fdf178312f0d07c9.tflite) |
+| YOLOv5 Tiny | TFLite | COCO_Person | 192x192x3 | int8 | 35.0% | - | - | 352.48 | 893.62 | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_int8_sha1_a39e1664b3cefcc31c9267e78594c7ee0cbacc64.tflite) |
 
 \**Confidence Threshold: `0.001`, IoU Threshold: `0.55`, mAP Eval IoU: `0.50`, Invoke Time Measured on [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).*
-
