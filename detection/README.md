@@ -31,7 +31,7 @@ The section summarizes the performance of different models trained from differen
 | FOMO MobileNetv2 | PyTorch | COCO_Person | 96x96x3 | Float32 | 69.0% | 7.00 | 0.40 | - | - | [Download (Seeed Studio)](https://files.seeedstudio.com/edgelab/model_zoo/detection/models/yolov5/COCO_Person/yolov5_tiny_1xb16_300e_coco_sha1_8efbba3dacd06a3ac5636fbed215358a501ed1b1.pth) |
 | FOMO MobileNetv2 | ONNX | COCO_Person | 96x96x3 | Float32 | - | - | - | - | - | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_sha1_ae595ad0271e084dbd8b584ad7f71b1646d13d36.onnx) |
 | FOMO MobileNetv2 | TFLite | COCO_Person | 96x96x3 | Float32 | - | - | - | - | - | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_float32_sha1_fef54aa3d4b38b09cc38d01f9d14022cc178d5de.tflite) |
-| FOMO MobileNetv2 | TFLite | COCO_Person | 96x96x3 | Int8 (PTQ) | - | - | - | - | - | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_int8_sha1_b6f29c7486ed3d9cf6d64a5eb19ca3bd7328f25e.tflite) |
+| FOMO MobileNetv2 | TFLite | COCO_Person | 96x96x3 | Int8 (PTQ) | - | - | - | 241.26 | 98.28<sup>(2)</sup> | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_int8_sha1_b6f29c7486ed3d9cf6d64a5eb19ca3bd7328f25e.tflite) |
 
 <sup>1</sup>*Invoke Time Measured on [ESP32-S3 (XIAO)](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/).* <sup>2</sup>*Invoke Time Measured on [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).*
 
