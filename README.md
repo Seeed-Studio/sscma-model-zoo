@@ -1,4 +1,4 @@
-# Seed Studio EdgeLab Model Zoo
+# Seeed Studio EdgeLab Model Zoo
 
 <div align="center">
   <img width="100%" src="https://cdn.jsdelivr.net/gh/Seeed-Studio/EdgeLab@main/docs/public/images/EdgeLab-Logo.png">
@@ -9,7 +9,7 @@ English | [简体中文](README_zh-CN.md)
 
 ## Introduction
 
-Welcome to Seed Studio EdgeLab Model Zoo. We provide a series of pre-trained models for different application scenarios for you to use, with [Seed Studio EdgeLab](https://github.com/Seeed-Studio/EdgeLab), you can test or inference on these models and easily deploy them to edge computing devices.
+Welcome to Seeed Studio EdgeLab Model Zoo. We provide a series of pre-trained models for different application scenarios for you to use, with [Seeed Studio EdgeLab](https://github.com/Seeed-Studio/EdgeLab), you can test or inference on these models and easily deploy them to edge computing devices.
 
 EdgeLab Model Zoo focuses on providing models trained on EdgeLab optimized neural networks, which are tailored to real-world application scenarios and enable faster and more accurate inference on embedded devices.
 
