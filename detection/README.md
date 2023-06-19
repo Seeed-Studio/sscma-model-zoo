@@ -46,8 +46,6 @@ The section summarizes the performance of different models trained from differen
 | YOLOv5 Tiny | PyTorch | Face (Custom) | 192x192x3 | Float32 | 92% | 90.56 | 0.67 | - | - | Comming Soon |
 | YOLOv5 Tiny | TFLite | Face (Custom) | 192x192x3 | Int8 (PTQ) | 90% | 89.00 | - | 0.35| 893.62 | Comming Soon |
 
-<br><br/>
-
 <sup>*</sup> *Confidence Threshold: `0.001`, IoU Threshold: `0.55`, mAP Eval IoU: `0.50`.* 
 
 <sup>1</sup> *[ESP32-S3 (XIAO)](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)* 
