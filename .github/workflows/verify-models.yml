@@ -1,0 +1,35 @@
+name: verify-models
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - '.github/workflows/**'
+      - 'requirements.txt'
+      - 'scripts/**'
+      - 'classification/models/**'
+      - 'detection/models/**'
+      - 'pose/models/**'
+      
+permissions:
+  contents: read
+  pages: read
+  id-token: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+          ref: 'dev' # should be 'main' later
+
+      - name: install dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: verify all model files (except '.pth')
+        run: python3 scripts/verify_models.py
