@@ -17,17 +17,17 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  checkout-and-verify:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v2
         with:
           lfs: true
           ref: 'dev' # should be 'main' later
 
-      - name: install dependencies
+      - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
 
-      - name: verify all model files (except '.pth')
+      - name: Verify all model files (except '.pth')
         run: python3 scripts/verify_models.py
