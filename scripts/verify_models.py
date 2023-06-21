@@ -21,7 +21,6 @@ def get_model_paths(paths: list, ignore_hidden=True):
     return models + get_model_paths(dirs) if len(dirs) != 0 else models
 
 
-@logger.catch
 def verify_models(root: os.path):
     cwd = os.getcwd()
     models = get_model_paths([os.path.join(cwd, root)])
