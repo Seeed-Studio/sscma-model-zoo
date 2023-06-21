@@ -1,6 +1,7 @@
 import argparse
 import hashlib
 import os
+import sys
 
 from loguru import logger
 from termcolor import colored
@@ -39,16 +40,16 @@ def verify_models(root: os.path):
             print(name, ':', sep='')
             print('\tStatus:', colored('Error', 'red'))
             print('\tModel SHA1:', colored(f'{file_sha1}', 'red'))
-            print('\tModel path:', os.path.dirname(model))
+            print('\tModel dir:', os.path.dirname(model))
         print(name, ':', sep='')
         print('\tStatus:', colored('Passed', 'green'))
         print('\tModel SHA1:', colored(f'{file_sha1}', 'green'))
-        print('\tModel path:', os.path.dirname(model))
+        print('\tModel dir:', os.path.dirname(model))
     print('Verify results:')
     print(f'\tModels count: {len(models)}')
     print(f'\tBad Models count: {len(bad_models)}')
-    if len(bad_models) != 0:
-        raise ValueError(f'{len(bad_models)} model(s) not passed the SHA1 verify')
+
+    return 1 if len(bad_models) != 0 else 0
 
 
 @logger.catch
@@ -57,8 +58,8 @@ def main():
     parser.add_argument('--root', default='', help='root of edgelab-model-zoo repository')
     args = parser.parse_args()
 
-    verify_models(args.root)
-
+    ret = verify_models(args.root)
+    sys.exit(ret)
 
 if __name__ == '__main__':
     main()
