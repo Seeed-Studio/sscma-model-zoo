@@ -26,6 +26,9 @@ detection
 
 ### 行人检测
 
+![Person Detection](./assets/images/person_detection.png)
+
+
 #### FOMO
 
 | Model Name       | Backend | Datasets                                | Input Size | Precision  | F1    | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)    | Link                                                                                                                                                                                                         |
@@ -47,6 +50,9 @@ detection
 
 ### 表计数字检测
 
+![Digital Meter Number Detection](./assets/images/digital_meter_number_detection.png)
+
+
 #### YOLOv5
 
 | Model Name  | Backend | Datasets                                                                                  | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                               |
@@ -59,6 +65,9 @@ detection
 
 ### 水表数字检测
 
+![Water Meter Number Detection](./assets/images/water_meter_number_detection.png)
+
+
 #### YOLOv5
 
 | Model Name  | Backend | Datasets                                                                                    | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                                |
@@ -70,6 +79,9 @@ detection
 
 
 ### 人脸检测
+
+![Face Detection](./assets/images/face_detection.png)
+
 
 #### YOLOv5
 
