@@ -26,6 +26,9 @@ The section summarizes the performance of various models trained from different 
 
 ### Person Detection
 
+![Person Detection](./assets/images/person_detection.png)
+
+
 #### FOMO
 
 | Model Name       | Backend | Datasets                                | Input Size | Precision  | F1    | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)    | Link                                                                                                                                                                                                         |
@@ -47,6 +50,9 @@ The section summarizes the performance of various models trained from different 
 
 ### Digital Meter Number Detection
 
+![Digital Meter Number Detection](./assets/images/digital_meter_number_detection.png)
+
+
 #### YOLOv5
 
 | Model Name  | Backend | Datasets                                                                                  | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                               |
@@ -59,6 +65,9 @@ The section summarizes the performance of various models trained from different 
 
 ### Water Meter Number Detection
 
+![Water Meter Number Detection](./assets/images/water_meter_number_detection.png)
+
+
 #### YOLOv5
 
 | Model Name  | Backend | Datasets                                                                                    | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                                |
@@ -70,6 +79,9 @@ The section summarizes the performance of various models trained from different 
 
 
 ### Face Detection
+
+![Face Detection](./assets/images/face_detection.png)
+
 
 #### YOLOv5
 
