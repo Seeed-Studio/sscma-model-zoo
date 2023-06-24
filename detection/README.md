@@ -26,7 +26,7 @@ The section summarizes the performance of various models trained from different 
 
 ### Person Detection
 
-![Person Detection](./assets/images/person_detection.png)
+![Person Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/person_detection.png)
 
 
 #### FOMO
@@ -50,7 +50,7 @@ The section summarizes the performance of various models trained from different 
 
 ### Digital Meter Number Detection
 
-![Digital Meter Number Detection](./assets/images/digital_meter_number_detection.png)
+![Digital Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/digital_meter_number_detection.png)
 
 
 #### YOLOv5
@@ -65,7 +65,7 @@ The section summarizes the performance of various models trained from different 
 
 ### Water Meter Number Detection
 
-![Water Meter Number Detection](./assets/images/water_meter_number_detection.png)
+![Water Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/water_meter_number_detection.png)
 
 
 #### YOLOv5
@@ -80,7 +80,7 @@ The section summarizes the performance of various models trained from different 
 
 ### Face Detection
 
-![Face Detection](./assets/images/face_detection.png)
+![Face Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/face_detection.png)
 
 
 #### YOLOv5
@@ -96,7 +96,7 @@ The section summarizes the performance of various models trained from different 
 
 *Note:*
 
-<sup>1</sup> Confidence Threshold: `0.001`, IoU Threshold: `0.55`, mAP Eval IoU: `0.50`. 
+<sup>1</sup> Confidence Threshold: `0.001`, IoU Threshold: `0.55`, mAP Eval IoU: `0.50`.
 
 <sup>2</sup> Measured on [ESP32-S3 (XIAO)](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/).
 
