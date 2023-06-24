@@ -18,9 +18,9 @@ EdgeLab Model Zoo 专注于提供在 EdgeLab 优化的神经网络上训练得�
 
 目前，EdgeLab Model Zoo 提供如下应用场景的预训练模型:
 
-- [分类](classification/README_zh-CN.md)
-- [检测](detection/README_zh-CN.md)
-- [姿态](pose/README_zh-CN.md)
+- [**分类**](classification/README_zh-CN.md)
+- [**检测**](detection/README_zh-CN.md)
+- [**姿态**](pose/README_zh-CN.md)
 
 如果您需要特定场景下特定数据集的预训练模型，欢迎向我们[提交 Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose)。
 

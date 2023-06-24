@@ -14,13 +14,13 @@ Welcome to Seeed Studio EdgeLab Model Zoo. We provide a series of pre-trained mo
 EdgeLab Model Zoo focuses on providing models trained on EdgeLab optimized neural networks, which are tailored to real-world application scenarios and enable faster and more accurate inference on embedded devices.
 
 
-## Application Scenario
+## Application Scenarios
 
 Currently, EdgeLab Model Zoo provides pre-trained models for the following application scenarios:
 
-- [Classification](classification/README.md)
-- [Detection](detection/README.md)
-- [Pose](pose/README.md)
+- [**Classification**](classification/README.md)
+- [**Detection**](detection/README.md)
+- [**Pose**](pose/README.md)
 
 If you need any pre-trained model for a specific dataset in a specific scenario, feel free to submit a feature request to [Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues/new/choose).
 
