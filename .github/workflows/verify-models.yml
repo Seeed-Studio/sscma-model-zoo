@@ -3,7 +3,6 @@ name: verify-models
 on:
   push:
     branches:
-      - main
       - dev
     paths:
       - '.github/workflows/**'
@@ -12,7 +11,7 @@ on:
       - 'classification/models/**'
       - 'detection/models/**'
       - 'pose/models/**'
-      
+
 permissions:
   contents: read
 
@@ -24,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           lfs: true
-          ref: 'dev' # should be 'main' later
+          ref: 'dev'
 
       - name: Install dependencies
         run: python3 -m pip install -r requirements.txt
