@@ -29,7 +29,7 @@ The section summarizes the performance of various models trained from different 
 ![Person Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/person_detection.png)
 
 
-#### FOMO
+- **FOMO**
 
 | Model Name       | Backend | Datasets                                | Input Size | Precision  | F1    | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)    | Link                                                                                                                                                                                                         |
 |------------------|---------|-----------------------------------------|------------|------------|-------|----------|----------------|--------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ The section summarizes the performance of various models trained from different 
 | FOMO MobileNetv2 | TFLite  | [COCO_Person](https://cocodataset.org/) | 96x96x3    | Float32    | -     | 6.20     | -              | 0.93               | -                   | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_float32_sha1_fef54aa3d4b38b09cc38d01f9d14022cc178d5de.tflite) |
 | FOMO MobileNetv2 | TFLite  | [COCO_Person](https://cocodataset.org/) | 96x96x3    | Int8 (PTQ) | -     | 6.20     | -              | 0.24               | 98.28<sup>(3)</sup> | [Download (GitHub)](https://github.com/Seeed-Studio/edgelab-model-zoo/raw/dev/detection/models/fomo/COCO_Person/fomo_mobnetv2_0.35_x8_abl_coco_int8_sha1_b6f29c7486ed3d9cf6d64a5eb19ca3bd7328f25e.tflite)    |
 
-#### YOLOv5
+- **YOLOv5**
 
 | Model Name  | Backend | Datasets                                | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                        |
 |-------------|---------|-----------------------------------------|------------|------------|-----------------|----------|----------------|--------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ The section summarizes the performance of various models trained from different 
 ![Digital Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/digital_meter_number_detection.png)
 
 
-#### YOLOv5
+- **YOLOv5**
 
 | Model Name  | Backend | Datasets                                                                                  | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                               |
 |-------------|---------|-------------------------------------------------------------------------------------------|------------|------------|-----------------|----------|----------------|--------------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ The section summarizes the performance of various models trained from different 
 ![Water Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/water_meter_number_detection.png)
 
 
-#### YOLOv5
+- **YOLOv5**
 
 | Model Name  | Backend | Datasets                                                                                    | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                                |
 |-------------|---------|---------------------------------------------------------------------------------------------|------------|------------|-----------------|----------|----------------|--------------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ The section summarizes the performance of various models trained from different 
 ![Face Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/face_detection.png)
 
 
-#### YOLOv5
+- **YOLOv5**
 
 | Model Name  | Backend | Datasets                                                                   | Input Size | Precision  | mAP<sup>1</sup> | MACs (M) | Parameters (M) | Invoking RAM (MiB) | Invoke Time (ms)     | Link                                                                                                                                                                                                 |
 |-------------|---------|----------------------------------------------------------------------------|------------|------------|-----------------|----------|----------------|--------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
