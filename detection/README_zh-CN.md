@@ -26,7 +26,7 @@ detection
 
 ### 行人检测
 
-![Person Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/person_detection.png)
+![Person Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@main/detection/assets/images/person_detection.png)
 
 
 - **FOMO**
@@ -50,7 +50,7 @@ detection
 
 ### 表计数字检测
 
-![Digital Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/digital_meter_number_detection.png)
+![Digital Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@main/detection/assets/images/digital_meter_number_detection.png)
 
 
 - **YOLOv5**
@@ -65,7 +65,7 @@ detection
 
 ### 水表数字检测
 
-![Water Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/water_meter_number_detection.png)
+![Water Meter Number Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@main/detection/assets/images/water_meter_number_detection.png)
 
 
 - **YOLOv5**
@@ -80,7 +80,7 @@ detection
 
 ### 人脸检测
 
-![Face Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@dev/detection/assets/images/face_detection.png)
+![Face Detection](https://cdn.jsdelivr.net/gh/Seeed-Studio/edgelab-model-zoo@main/detection/assets/images/face_detection.png)
 
 
 - **YOLOv5**
