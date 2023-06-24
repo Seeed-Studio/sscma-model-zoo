@@ -1,8 +1,8 @@
-# Detection 概述
+# 目标检测概述
 
 目标检测 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [EdgeLab](https://github.com/Seeed-Studio/EdgeLab) 优化的神经网络上训练的。
 
-检测目录的层次结构如下：
+目标检测模型目录的层次结构如下：
 
 ```txt
 detection
