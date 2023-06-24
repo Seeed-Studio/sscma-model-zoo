@@ -6,3 +6,23 @@
 
 # PyTorch model (currently we host the PyTorch models on our server instead of GitHub)
 *.pth
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Dump files
+dump
