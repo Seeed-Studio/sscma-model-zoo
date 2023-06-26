@@ -19,7 +19,7 @@ def get_model_paths(paths: list, ignore_hidden=True):
                 dirs.append(item_path)
             elif os.path.splitext(item)[1] in [".pth", ".onnx", ".tflite"]:
                 models.append(item_path)
-    return models + get_model_paths(dirs) if len(dirs) != 0 else models
+    return models + get_model_paths(dirs, ignore_hidden) if len(dirs) != 0 else models
 
 
 def verify_models(root: os.path):
