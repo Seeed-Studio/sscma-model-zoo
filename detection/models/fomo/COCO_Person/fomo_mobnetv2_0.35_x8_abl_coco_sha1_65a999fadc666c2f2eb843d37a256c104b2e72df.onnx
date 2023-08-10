@@ -1,1157 +1,0 @@
-pytorch2.0.0:¸‹
-è
-input
-onnx::Conv_323
-onnx::Conv_324"/backbone/conv1/conv/Conv_output_0/backbone/conv1/conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2¬/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(93): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¸
-"/backbone/conv1/conv/Conv_output_0
-%/backbone/conv1/act/Constant_output_0
-'/backbone/conv1/act/Constant_1_output_0!/backbone/conv1/act/Clip_output_0/backbone/conv1/act/Clip"Clip2¬/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1508): hardtanh
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(235): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(93): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-ò
-!/backbone/conv1/act/Clip_output_0
-#backbone.layer1.0.fused_conv.weight
-!backbone.layer1.0.fused_conv.bias2/backbone/layer1/layer1.0/fused_conv/Conv_output_0)/backbone/layer1/layer1.0/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer1/layer1.0/fused_conv/Conv_output_0+/backbone/layer1/layer1.0/act/Relu_output_0"/backbone/layer1/layer1.0/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-—
-+/backbone/layer1/layer1.0/act/Relu_output_0
-onnx::Conv_326
-onnx::Conv_3276/backbone/layer1/layer1.0/last_conv/conv/Conv_output_0-/backbone/layer1/layer1.0/last_conv/conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@ @ @ @ †*
-strides@@†2∂/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(210): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-ÿ
-6/backbone/layer1/layer1.0/last_conv/conv/Conv_output_05/backbone/layer1/layer1.0/last_conv/act/Relu_output_0,/backbone/layer1/layer1.0/last_conv/act/Relu"Relu2≤/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(210): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¨
-5/backbone/layer1/layer1.0/last_conv/act/Relu_output_0
-#backbone.layer2.0.fused_conv.weight
-!backbone.layer2.0.fused_conv.bias2/backbone/layer2/layer2.0/fused_conv/Conv_output_0)/backbone/layer2/layer2.0/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer2/layer2.0/fused_conv/Conv_output_0+/backbone/layer2/layer2.0/act/Relu_output_0"/backbone/layer2/layer2.0/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¢
-+/backbone/layer2/layer2.0/act/Relu_output_0
-#backbone.layer2.1.fused_conv.weight
-!backbone.layer2.1.fused_conv.bias2/backbone/layer2/layer2.1/fused_conv/Conv_output_0)/backbone/layer2/layer2.1/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer2/layer2.1/fused_conv/Conv_output_0+/backbone/layer2/layer2.1/act/Relu_output_0"/backbone/layer2/layer2.1/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¢
-+/backbone/layer2/layer2.1/act/Relu_output_0
-#backbone.layer3.0.fused_conv.weight
-!backbone.layer3.0.fused_conv.bias2/backbone/layer3/layer3.0/fused_conv/Conv_output_0)/backbone/layer3/layer3.0/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer3/layer3.0/fused_conv/Conv_output_0+/backbone/layer3/layer3.0/act/Relu_output_0"/backbone/layer3/layer3.0/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-—
-+/backbone/layer3/layer3.0/act/Relu_output_0
-onnx::Conv_329
-onnx::Conv_3306/backbone/layer3/layer3.0/last_conv/conv/Conv_output_0-/backbone/layer3/layer3.0/last_conv/conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@ @ @ @ †*
-strides@@†2∂/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(210): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-ÿ
-6/backbone/layer3/layer3.0/last_conv/conv/Conv_output_05/backbone/layer3/layer3.0/last_conv/act/Relu_output_0,/backbone/layer3/layer3.0/last_conv/act/Relu"Relu2≤/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(210): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¨
-5/backbone/layer3/layer3.0/last_conv/act/Relu_output_0
-#backbone.layer3.1.fused_conv.weight
-!backbone.layer3.1.fused_conv.bias2/backbone/layer3/layer3.1/fused_conv/Conv_output_0)/backbone/layer3/layer3.1/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer3/layer3.1/fused_conv/Conv_output_0+/backbone/layer3/layer3.1/act/Relu_output_0"/backbone/layer3/layer3.1/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¢
-+/backbone/layer3/layer3.1/act/Relu_output_0
-#backbone.layer3.2.fused_conv.weight
-!backbone.layer3.2.fused_conv.bias2/backbone/layer3/layer3.2/fused_conv/Conv_output_0)/backbone/layer3/layer3.2/fused_conv/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2Á/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(205): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Ò
-2/backbone/layer3/layer3.2/fused_conv/Conv_output_0+/backbone/layer3/layer3.2/act/Relu_output_0"/backbone/layer3/layer3.2/act/Relu"Relu2„/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1457): relu
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(103): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/layers/rep.py(207): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/backbones/MobileNetv2.py(95): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/single_stage.py(146): extract_feat
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(35): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-Î
-+/backbone/layer3/layer3.2/act/Relu_output_0
-onnx::Conv_332
-onnx::Conv_333./convs_bridge.0/convs_bridge.0.0/Conv_output_0%/convs_bridge.0/convs_bridge.0.0/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@@@@†*
-strides@@†2‡/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/heads/fomo_head.py(111): forward
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(36): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-¿
-./convs_bridge.0/convs_bridge.0.0/Conv_output_0
-%/backbone/conv1/act/Constant_output_0
-'/backbone/conv1/act/Constant_1_output_0./convs_bridge.0/convs_bridge.0.2/Clip_output_0%/convs_bridge.0/convs_bridge.0.2/Clip"Clip2‡/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/functional.py(1506): hardtanh
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/activation.py(235): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/container.py(217): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/heads/fomo_head.py(111): forward
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(36): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-ï
-./convs_bridge.0/convs_bridge.0.2/Clip_output_0
-bbox_head.convs_pred.0.weight
-bbox_head.convs_pred.0.bias/convs_pred.0/Conv_output_0/convs_pred.0/Conv"Conv*
-	dilations@@†*
-group†*
-kernel_shape@@†*
-pads@ @ @ @ †*
-strides@@†2ë/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(459): _conv_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/conv.py(463): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/ws/EdgeLab/edgelab/models/heads/fomo_head.py(112): forward
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(36): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-∏
-/convs_pred.0/Conv_output_0/Transpose_output_0
-/Transpose"	Transpose*
-perm@ @@@†2Ÿ/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(38): <listcomp>
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(37): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-§
-/Transpose_output_0/Softmax_output_0/Softmax"Softmax*
-axis†2Ÿ/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(38): <listcomp>
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(37): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-
-£
-/Softmax_output_0output/Transpose_1"	Transpose*
-perm@ @@@†2Ÿ/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(38): <listcomp>
-/home/nullptr/ws/EdgeLab/edgelab/models/detectors/fomo.py(37): _forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/mmdet/models/detectors/base.py(96): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1488): _slow_forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(118): wrapper
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(127): forward
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/nn/modules/module.py(1501): _call_impl
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/jit/_trace.py(1268): _get_trace_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(893): _trace_and_get_graph_from_model
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(989): _create_jit_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1113): _model_to_graph
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(1548): _export
-/home/nullptr/miniconda3/envs/edgelab/lib/python3.8/site-packages/torch/onnx/utils.py(506): export
-tools/export.py(322): export_onnx
-tools/export.py(376): main
-/home/nullptr/.local/lib/python3.8/site-packages/loguru/_logger.py(1251): catch_wrapper
-tools/export.py(380): <module>
-	torch_jit*ÚB#backbone.layer1.0.fused_conv.weightJ¿˙kÙ>≠;>¶—ı=Òî?T˚7¿Tæ+on=‰” æÜ°?Dà‹ø∞*ó?˘Zøƒú?Ö(ä@y™ ø^√	ø:.?ßÊ.ø√»HºOX2ø√Ìœ> ]ìæÓ∆ªø„4+@âü≤æ*ø>L1?„Ωsægﬂøæ5öı=¶CìøÂ\@ê_ëø#oèæta√æÏdöæ&7ì>¬B™>Èø÷c>˙ß†?"é™øÂ«>ãƒÍ>¬°Åø,Ûâøu„„ªaª@ûÙèæÃ,-?‹'¿ïâÖ?U∫ªø˙a<¿µÓæ…ø°?-õG@£`û>!â∏øÙú≥ø	¨?*[¿‚æÙ7>øi)ì?ø◊`øv»‰ø˜≥@ùﬁ≈ø4‘ΩøRy=ØˆÙΩBÚ>óeç=X˛>„Ò∑?ØQ¯ø	@ÔøEÜí>‚ûΩ®m)æï≥ﬁ?(2_ø—Ñ?Œ≈p¿8˙÷=ßCçæ<∂?qÒ>∑‡Y>	î—>å+&æ=ìª•?ßlØ?p	øôq)?∆	÷>X†Œ<—•¡?;ˆ∞øˇJa<Õöë?lßªø%,H=I¨/=ıqã=f ©æ≈H&¿”´æ]Â>†Ú6@7øê%æ7≠æk‡†?‘≠¿>dºW@W§
-@êÓªäØe¿t`¨ø¬Ø0øÌË?ıiÄø∫¨F>⁄>¨◊O>
-æ>Ü¢?Ûó>‘UΩ¿3†Ωª˚©>’=∫Oºæî*áΩÕ¿«=@
-¿tÄ<¶Úsæ˝æ*iB!backbone.layer1.0.fused_conv.biasJ@¢@ã> «ıæ”UãΩ	ô< ín9Wì=>~>®öÓ<kÎæÃøà>â∑Ω4&:ºÃ,√ºê∂<Û¯"<»u=*“B#backbone.layer2.0.fused_conv.weightJ†n=&Ω>C$È=û˘/>≤π“>UéØ>$∆⁄=lç>±ëO>Ä~Ü=oƒ(>ã«≈=@DU>ßñ?:V™>Àñ?>ÖÓ>ÿé>}O>_Üî>ƒV∏=õ¨p>ûgæ>º¥Ñ>JÜ=uÜ>£›z>°¥Ω,hæÑãær`9Ω5ŒΩ·ËùΩ‡fΩdaæ´òΩπ‹æ=r >J≥'>h.,>¥]Å>¨äÑ>æY∆=øÏ
->6aÚ=çÔ?F@=?îYV>¯iZ?¶á{?\?ùtW>∆[L?Ãl@?#këº5≤g=ô∫=!_∏>ù–V?‰!?Fy·>ÁNi?µy˙>Õ(?Ö?Ï[Ú>‘&n?∏Ô∫?£ö&?ø¬>«÷˝>Œf<*IB!backbone.layer2.0.fused_conv.biasJ ‹ÆΩ`Rb;ÄOGª&•Õ>‡«ã;êπÎ:I3æ£0ø*“B#backbone.layer2.1.fused_conv.weightJ†ÜÔ<®˙èΩz2=A®Ü>\≤øÍ¥∂=·⁄3>≈◊aø√∞d=IT8>„≤I>¶˝>úíñæ⁄z^ø»•æ⁄Í=†Ä‡æjñ\=©√Ó>1`‹øµ](øô•æd∞…?ûÈXæt”ø}˝Ã>5íú>éÂ£æx≥hæ«Áæé*l<EÙŒªjBΩ
-ÁJæ÷åOæk-âæŸæ@íΩ ˇ5øËÇ©æ*>õ›-?1VGøgC>åî?âcU?ˆR$æUæhø&>ø‰€@ƒá∂øÌ)qø‡^öøF&Ú?K*Ωàî…Ω›™aΩ‘åΩ}Ëc>Tù¨>ÊÃ¨º”N>$Qz>IØû>ÍﬂΩÑôq>BœºJ…E=¡˚>8Ñ>‹dË<EEÁ>*IB!backbone.layer2.1.fused_conv.biasJ $4ö>∂R©>0;Î<w?3> r#π¨ <,˛;*“B#backbone.layer3.0.fused_conv.weightJ†ZVË=Pfù>#ÂÇ>Ãm0>P¬?k˚>‰B>~∫?¿Ç?9O1ΩiHºΩ62ÿΩ)√‚º“z€æk≠Œæ{)jΩk^íæbèãæ4Tæ∆≈µæ∆≈öæf@‘æ ÖMø,#øÙÂ≠æ[9øﬂ ÌæsCøw´ød‘øxS	ø/‰.ΩBl¨>ƒ*™>ì‰?')ö?.üîøŒÁàøT|ô?œø/èøa^ó?¿ˆøLb5øÂDF?b4=#TÄ>ìÖ>›#9>I	Â>ñ>Á[4>â°ç>é—Ø=˝æ≤€Ω≈ ºπn)<§ç!øks
-º9æ—8∑æΩ+√ΩÊG¢=Ò3>Zk∑=J˛K>4πÛ>›†> [÷=`¶«>sû>*IB!backbone.layer3.0.fused_conv.biasJ Äé∑:?π?xJ>_Æ˜>Ñmµ>@◊Ú;3ïË>N2¢º*ÚB#backbone.layer3.1.fused_conv.weightJ¿5 qøO˜Öø—√&ø≈Ìø>®ïÿ?ù¯›>Ïb§ºba8>FõΩ^>≈ëÆæ|pæÌøyæ¬õø˘°Òº^Ÿ∆º†
-Jæ√‡<Ü~`æ	uµøÈÑ@z‘∞ΩÃ¥ø¶j◊>∫·Ω¢:ÉºœF?W¥q>À	øûÜÔ=¬da?»ûøΩÔ?ƒ?…3?Æ∆v?vÑøÛî =ÇaÃæDÄ=>Õ7c@ïë>è˘øèFy>MÁæ≥¢ºqeú=†™Ω'Ω∆Öúøµ≠ΩgÚΩ®˙>L§Zæà&U>`^5?ç◊¿>–Ch>ÔŸSæ›πÅ>n%â>⁄Û&æóÛé>/ò?@Èë?
-,ó?∫ªŸ=Feæ◊≥˜<|˜é>Ò
-?‹y?ÿHéºùåæ2∆Ãº[—±Ωqp#@‚<Ω&_æïD¿&¢Dæà5?⁄)Å<‡™hæ`F?còÙæ√Û°æº?YØæÔFﬁ∫∫î87Z∏8QË∂xZ}∏Ü±?[ˆ˚8Œ 9∫é¶8'™@∏Ç‡>˜ƒƒ=ﬂ≥1>ﬂÿ'>Ω∫<<9k>Üq<>]Y§>!AW>ñf?Ú6bæ&Õs?_Høw˙ø”7ø!q;?p–˙=µCV?Fî±>æl∏Æ>K»ó>q(ÈΩ^ó<>ê∆>$*Q?¶«>+{ÿæo#æ7®µ>ïîø|+@>`ñ¨>“Üºæ?ØÜ=bsê>Ã≈v>Ü
-?Öîÿ>`¬>ﬁ:<?E†◊>πÜ>Õ‰m>ºçÃ=*iB!backbone.layer3.1.fused_conv.biasJ@†˚“;¶oÇ>PìÁºP√÷;“ohæ‚)>\ÇÑº™˘ºêE4={¸∫=,À>(ã˚ªLG¨=|È»<∆“Ø<¢gâ<*ÚB#backbone.layer3.2.fused_conv.weightJ¿à>ãæ•π>?w‘>"Ÿ=∞ıÙ>YƒU>kê©>søä>»å>ƒe‰>ˇ
-x>ÕÌ•>ﬂﬁ?µxº>Ê==Rƒ§>S@9>Òÿ≈>©—É?¢≈P?R¬M>)3t?ñ`Q?Gl∆Ω(ﬁ≤>c?58_>\„=Â 2=÷”:æg¥>ä˜˝=‹¡8?∫÷ºRì?ÈgÍ=¿jç>VP@>∫±ì>xŸ\?$É>D∫R>˝áµ>≥º >ä˛±Ω‹;,æmêsº,ÜîæPlw¿¬¯ŸΩ”´®ΩT¿[;±XÈ=úºæ¡Dãø8ø¢•¥>JHcø”÷à>kœM?Æt0?V•Z?—Ÿ’?Pd|ø9°Î?2B?69ïæ?@k?;Íñ?–ôø îπ?≤E¨æ˝fóæ3»òæòi∆æÒ øg∑æØRæ˙„ø˚ÎKæ„	ÖæQC8æøæh0æÉÉøÎá!ø[d#æR}xæ˜2øp^∑æMÙ?<;~=YÂSæOö¶@Í∂ßæÖÁæ
-!?∆p^æ◊(ø¶Iø◊jOæÚ&’æ¢Ì∞æyöˇπµ95æ¢ö(ΩØ±ÉæF◊>ÛB2?v ≤>! ?ûFb?∆Ï˚>x≥°>ãŒ?—´>∏Ú√>›Ïò?‰‚>—Å>p°eΩQÂA>…9øúñ–øí®\øG2P?™ÿÆ?°§X?µÇ⁄>v…=eëúæ
-[k?p?3à=≈ÇÑ>Bz"?HÅ√>⁄Ì>>CaøgNœ>ˆø?Ú±ºæuT>*iB!backbone.layer3.2.fused_conv.biasJ@Ä∂;»*¨;=¯§Ωàñ–ªÀÃÅΩZ“?J@?Ωpñªãj>dd?F∑Vøêfˆ>˙%NøL™=⁄+ıºÁE<*¨0Bbbox_head.convs_pred.0.weightJÄDuÄßªDæ¶ä”æv8?;Eö>¨∫>Ô›gæ¬òŸ>k Ä~ Äƒ¿>&’À>ThÄ÷
-ƒ>È.Ù>®" ÄäÆ>’˝—>ÚoÄéuÄÙ ÄÆqÄhnÄÊø>Î˝˚ªVsÄNÈ≈>Ky˙>§nÄ2jÄ8  ÄtÄcEﬁ>z≤æt Ä2jÄÒº† ÄË> 	  3∞F=ç7¬>nrÄ¸•◊ælnÄ_K$>>¢Î>ÃØ?º4 Í⁄?à.?ãíøbI⁄æØ.øû?›πøﬁ Ä; Äáé øWõønL íøø#A≤æ& Äb1øaˇæ⁄6 ¸3 ÷	 Ä|6 V7 ßøúÔ?( ◊nø•%øä> àC t Ä01  _
-ø«â ?û Ä(B în$?‹ Ä{§UΩÃ Äu7Ä:	!Ìæ¶3 ˚˙6?`6 ÂyÈªGø∆pº*+Bbbox_head.convs_pred.0.biasJ™1w?Œ%æ*›Bonnx::Conv_323J¿òàÇ=)èÂ=óÓÔ=Säj=L1>Vœ>˘÷L=∫Ô=SPÒºgæ"9ÑæL>îæÏæmFææ_é≠æ 6JΩﬂcSæÕ:Ω„¨∑=iŸ>œ'+>=+ƒ=Â˘H>Rπh>˘ÀyºÙÂ§=3•=eå=º4>ûöü>≤ÅDæz©ﬂΩ_[¨º?È9æ<!πΩ4ÿ⁄Ω0â:ÎÇπΩp¶≤Ωh5¨=≤n=°s€=03=W»≈=∆•¨=ä&ÒΩXôáΩ˙æUÒ'=≠üß=ÄO=oì¥<ßM◊<Ä	=›¿}æπ“y>e~hªq÷æ™è¥>ÓΩá_æÆ>∫b¯;øô7=‡};æ1G=œgΩÏü¨æƒ/Ô=Ù~IΩ ŒOæëÿ=Úx>·(æmÒΩù& ?&yæ	oºö{“>È™ΩÖbΩ[{|æ;…ª=øñΩTìæíúæy∑≠=G∞>G¡Ω>Ë}eΩ!1>x†∆Ω)—=:‡*?mt√Ω‚æ>(ø<aŸ=„rΩ=–∂t>Bd
->Ã>‡=ŸôºE±˝=p>åbÔæKäæd≈ûΩf‰Nºˇ@TΩIº€=“ŸÖΩ˝ﬂΩ`ˆ±<#Ú(=M?º
-·º>®=EûôΩpføΩTÑ„=≠≤ÈΩìWæÊ„yº`Ÿ`Ωwxæøe¯=¶⁄›='ºΩKÌâ>Ì<í>,[Uæ˚˝[=.‡K>∑Äpæ˝Ì=Xï=Ä_hΩπ)…=£<„V+Ω}Xæ9¸`πˆ¯<ú=è€îº°æCΩ)ﬁ<g–(ΩÈYΩÙ+=mì[Ω¨©ºKæ˚W›ºhËû=YñTæyfU<Tq>ú…(ºÉ◊fºç;~=E˝Y=Mÿ<Za¬;ÌÂ∆ºIÛºVRΩœñ>Ω≥À°ΩÂæxΩÈ$2ºËÿ=)"=†-V∫ßëD=dÅ¨=sÖ∏<‰^≠<±°=µ±=´^ô<JfΩüq=G?Óª≈£ºzV…<TÙ;~"ªàΩ˙>!XΩ“<=c`<?Næ»ë>£2Â>Ï±Éæ=∑êΩŸçNæ_¥Ω∫”$æâY∏æHl2æBlæ;∏xæé!ÉΩq∑ >±x;æ∑W◊=>Ñﬂ=!àæ∞¬ñ>˘‚î<õÅ&æp≥}>˜H=€j`=nfNª√q∑º¯»3ΩÈ±•ΩìpGΩ7ÌΩè‰ æ∑èΩR±ΩüËMΩì^Ω	
-ãΩ#·ΩcR\<¸5Ωã§Ω¶F‹:D◊;=KÉ=ﬂ˛=~ûΩ=ûçˆ=ÑÿÀ<|=1>œÌ≤<<¿º4f=äqV=Í4B>«ô>JÄo=∂J’=“%¡º»¶<Ó¸u=w=:@Ω±ZîΩOvS=≥!Óºˇ¸õΩhÉ=Ò6÷ºB—Ïº»€Ω`"Çºs†æE3<æùJ&Ωˇa	Ωh˘•ºÁ&	<Ÿ»º.«;Ω3]Æº13ΩÑµjΩﬂ	Ω¸ÇÉΩ)ãΩÏóº q;º$rMΩm·˛º(hï<éóHº{”ΩZ˛⁄ªﬁΩÓzZ=®=$ú=ã=|ó=äÎ¡=¿òI=óá=›.£=5√‡ΩËÚ=Ä<.>Zóæ{o=fó>ıh©Ω2‹=É6F>÷.?Ωa_e<˜ïtºÁÚÊΩ†Hoº7 Ωp‹Ω6ÌŸ;'ﬂ†Ωƒ.wªr“]ΩPªúª¶∑<ú?Ù<Ã2K=ªÃEΩ	”ü<'íª$¨.>ÜÒ‚>”ıœ>H}Éæv/˛Ω,∫›=Rxî<¡¡≤æ≈p«æI!QΩŒÛñæ·…læ∂¨=Ó{±ΩY)æ›»”Ωè´«Ωˇ@<0ˇ˛ΩÙ˜.æ)?æ4f>Ò]Ä>|f∫;fÔi==ÈÈ>¬Ë∆>¨z=\ûœ=yc=uµYº5Ö∞;È£4:Ÿ ÜΩñ<æ®πÁΩöøô<“îy9ΩwºQíΩºÈç.Ω)öº¯a=À=ÇV´<yäU<∏π≈<«˛'<†'”<÷d=^uh=›=Óº≤RΩQﬂºáFæÊ>i€©>G8öæÕJQ>4\?çj¢æÒ-ÒΩïÆ:>„>HmNæ8K ø°=«>\ºæÌb§øºF¨>∑›=∂dåæâv;C¶=”z >ÍƒΩ[Ñı=Z≤=≠e‰:Ø3=øÕ˛=:UÛæ∫+Ω é$?‚˝2øÏ˛Wæ<¨?*Nø~¡æâáˇ>üC?ÛƒÇ;≥`ø#ûê?Ÿı>)˜Õøí¯T?õÍ?¬Ü2ø^ïîæ–|=ëùr>)∏‹æ}q=&∫Ñ>feÚº]UæÓH>*VBonnx::Conv_324J@fb⁄=0ñˆ=j¡∆=è©ñ=Bˆœ=˛Z(>ÍõS=`ÿÂ<]>jÇó=vÂº<JC7= Úü=g>—^ûΩ.-π=*ùBonnx::Conv_326JÄ§Áh;‘{§=@2‰Ωæ≠€Ω5Z∑Ω¢¯©;»Ûª3‚´ΩL™°=¢˚ù:‚?aΩøÅ∂Ωï©>°t?˜1Ä<›Ò'æË‘Zæ ‰æ?wÎ>∂±Àæ
-1 ?!›◊=/>ºã>~¢>‹çΩŒøøÜÂ>4ΩΩX6æ´∏æëFÖ>}£Ωız5æïs>ÙÛ#>»7>môπ>4áÕæEÀ≈=[Âd>µÆöΩi\æS¯ªîŸÄ>:X∑=TN=rë√>π>\º˛+2=“◊H;›·
-<QH6Ω}]ΩÜ<S1∞<†i!ΩÃH<F (=_ΩäøÀº»£¬:&sç;—'.Ω◊q[<®Gº(#P<#Ø:FüÑªm±Ä<â<ºô≥:OQßæ⁄EÉæò4ø=÷{¥<ÖÒì<ò«4;¡ç¿ΩÓîX=-véø›{ÇæmNΩÚu›ºã~ù=D'ú;]KJæ¸˝4=◊ë>è}Tø¡{Ãæ*J>æ¬œ=hŒL=4.|øÎª•>ì´~;ì'Øæ1!◊=>Z>0è=qÓŸ<“çÈ=3ÿ¶=èÃ»=ì=m€pæ)‘->n\>C8<¥Nßæ y‚>‚D¬Ω(“ƒΩÍæLE>#í√Ωi˘8> À>®iæ¸√*<HYΩÑq„ºúÚΩˇ|2=öã#Ωp_ﬁº8-+=*6Bonnx::Conv_327J ∫;º=k$<L≥Ï<˛Í >ìä#>ïq
->l€<0>*ùBonnx::Conv_329JÄ∏Ùäæ°ã>Yg$Ωæˇ<∫áº§å>~æjs1æØ€jæ›7ÜΩ¯qõæmøª≤§ÜΩÉ¢?Aå`>ôôS=À˛È=◊∏)æ¯==¯:~Ω9È7ΩdπçΩZ[=Ô ÓΩ§?æ¬y[=iπ<=i”∑=B¶ÃæYQP=ò >'æ‚gxæΩÿΩÿøBΩπ§'ºãr<œ=…Ωåh±Ω'…ØºÚIÖºÏü	ø˚¡=Y€g=≈UΩ&2=∏¬é=e‰`π¨ÎQ>µ%é>)sF=a1yæú(>ô∑=gôÚ=ß∫™<˚~1º œ±< f∫<KÎøøÎº⁄ªæ•ãºÚbıºæf≈º˙Ì>—ß'=±´˛ªt∫qæ¨¿=ŒÃ ø	Z°æËΩˆÜ>Ä„;æ¬Lªº6åΩZ◊∞=*6Æ=®…∑æ*>æ-ÇQ>±n‡ΩÑŒΩRä›<ÁSØº_Ãæ«ΩÄæ∂û>⁄àK>ë;æ„s⁄=vR”>0Ë=P¿√>+ﬁºB∏¯ºﬂ8ºGûΩT7øæ†ô˜=b3€=»¯¥=‰◊ﬁºÈ Ò=…Ò•>Œ°ëΩö®læ⁄‡I>0µ=YâÒ=X§ÕΩv òΩú(q>¥‘Ω[†=ﬂ”’=G*>—‹ÎºßV>∏ÒÿæIH≥>D∞	øÉÒΩr([æh∆√>vc„>@ÖÀæ*VBonnx::Conv_330J@2ø/>hí=–b>9ÍãΩ’≈[>ngÉ=OÀXΩô!=£çç>fˆ<€:>"»ææ¨Ÿ=ÔM´Ω∏ H<ﬂ{úΩ*ûÿ0Bonnx::Conv_332JÄÿ       Ä   Ä       Ä   Ä       Ä       Ä   Ä   Ä           Ä   Ä           Ä   Ä           Ä   Ä   Ä       Ä   Ä   Ä                   Ä           Ä   Ä       Ä   Ä           Ä   Ä   Ä   Ä       Ä   Ä   Ä   Ä       Ä       Ä                       Ä           Ä   Ä   Ä       Ä   Ä   Ä               Ä       Ä   Ä   Ä           Ä   Ä   Ä   Ä   Ä       Ä   Ä       Ä   Ä       Ä   Ä       Ä   Ä           Ä   Ä                       Ä       Ä       Ä   Ä       Ä   Ä   Ä           Ä   Ä   Ä   Ä           Ä       Ä   Ä       Ä   Ä           Ä               Ä   Ä       Ä       Ä’[—>)©æ*Ê>æªr˛æ!Ü…Ωµuó=<¶{æA]A?¨n>ü@]æ)D;øéÖÔæP`æH◊=?T1æﬂÜø’ËS?J„ø«”Gø¯Ìæa€iø%–)?°?⁄9|?¶æhÇ∆æû∆?^˘:?Â*øw5∂?Lø=p–øô)øw˘„>3ÿì>óYkæÇ∂æ†lòæ⁄õbæ<>n?â'>2Nx?b øRg∞æWêòæ¢>#Aã>añÓ>CﬁV?Œ‘¿ê`?1≥√>—´7ø˛ﬁÒΩV€æâz?MË=‹`æ‹`˙= ˙.æ∑‘®>x¯†øtèá>èæ)Ω‚ù =°’>j-¨>1>eN2>SüU?q∞ø¸Ì—æNÜÕΩ†=Íæy8æ´">ŒJ=Çì>Î*rΩ7mö>""ö>¥\ø_ÉºΩ&hòæÁﬁï?54®?ÿ8Ç>37ÿæ#ñ8ø¸>åøw—‚ΩvC•>¡ÎØæk”>øËÊã?9#ø~é7ø˙æ\âæÄê>ù≥aæÂ]É?„ææ¢çø‡¶∆>BaÉ?º∞d?wä5?®çﬁ>.ÇFøTw√>»≠>pø≥È>|]Tæ3(ædıº˜∆‹æJ√Føõ_|æ$6Eø¸ü?ÃKøs8æÖaŒ?'«|Ωº ≥øπ.yΩ^”Wø7X¯?ã7?|†Ó>	\)>ÿ{Yøë{<øò´ÎæZñ>°8`øÇ3
->Ÿ Ñ?Äf˛=˚æIøßÊ◊æ€¶«æ-fµæàB?“√∑ΩıÒÛ?§/≤æQÌ•?æäìæH∏ˇΩb@©πD.;?ó|?ÿí?Ü·Ïøíçø,1¯øl≤ü>ÓVh?N©Ã=+sª>≤	¡æˆYæ>Ωø “øPﬂüød‰9>´3åº∑G“=∑µÀ>$§ôΩÛ1E?˜(#?´öi?f†4Ω6U÷æ≠Î?Ö
-æCiù>µ∂¶>Å6—>†∆ÎΩ-oaøåæ¯îéæ# Ã>¥ÌΩ≈l>Ù˚=Æ]º>"«í?“=¿(+z?áR?…^‚>j™?7&#=P.'æ9ıw>®”Å=“@?´p,>K^§æÛ|}øéùa>dåÓ>=÷>(=4?Ï[ØæOdôΩ£l¯Ω…o*Ω 6Ø>ﬁ2Ωaô>Ãn.Ωî∫>¥
-1øôøò'2ø⁄¥¥æéÀ,=\!∑æ.ôΩS.æµaeø<ô~øF?·)P?¶Ø_æV]æTQ®Ω•Óg>√˚æ70>ÚO∞>2<@√6?‘Sq>¬ÊZø¢÷‘<)-:?Ù‰4æ~Æ=•4¨?πÛÅ?!”ò>>çø-	VæO∞≤>ÌoøHD=ÌVø|≠]Ω!Î="aºßWæí]®æÄ⁄´<MŒñ>ôÙæ„áÏ>Ë∏?7ñ?´t
-?A{àæVÈ:ø‡æß≤c<Jº˚æ—≈¯Ω“LTøœ∏læÓ%1øK<aPΩ~âœ>|nïΩ=ø˚¶g>£ºÅ=º6Tø]DÀΩAQ?[™ôæC]x?õê©æ:µÉæÍaG=Û®æ›ÄV>j0ÕæÓ 6>jõ>VS>r€
-æ©Mﬂ>Î
-æ©7<=Jn>Íû.=d'—ªzÿ=I<f>_´¶ΩØæâfÔæ"6íæ£MçæBZ¢Ωõ%,æ(RÖΩ˜«ΩæË˜øDœø!M	øj˜æÄòæö±tæ¥Äæw¨=3Ê|æà∑\>É<¥ºΩ†>Z))>√¬:DÙm>WE–=π‰væ#Ël> Qíº»B3>†"èΩ≈Kd>")í>#ú>n5ìæïHøL˝æJÃæÉ%Í=kyæ4¿%æÊÖΩ˘ö’ºJm÷Ωü§Ωÿ6ô=x'ûæπB)>«ãí>o$ÅæçÒ>QÏí>¶Î¨Ωåq·>´L5?±&æÍ/Õ;iX]Ωâá=ûá.Ωï?D>C–†=†˙T=œS,>3ò?ë˙%æ0'æ/∆…>e\îæÜ«œæOˆ∂Ω†xòæ∆æZ§æ	…Ø<qÚºΩ»Ræ≠Ó¥æq]=æÎíoæXP->$®ï=Ï›Ωã≤+æŸ£=ûYΩÕÔÃæåôA>ƒa?Á?∫>Ì64?àHæ^©Ê>sÿ%=?éÜæ!ØÁ>µŸ;>DÔDøÙ>≥>çjæ#˝€<‚{‰æY≥xæW&®=fØñæ…\J<èaæ>|[>hÍë>{`…æ”~óæ]bä=ÒæNælÿΩ_Xôæ+È≠æŒ<¬ΩﬁMÌædø4ƒ“=« )ø] ªæi˜õ>ÄT–æºoÌæ_Ó,=#’æyoGø≠πæBæav$øW3§æZΩìæWûÍæ+§?d@Íæ´‘Hæ˛Ú?D õª4Æ">§'ﬁ>ú^øòúòæåb˘>µ8⁄æ‚à;>ÿ™>-Õ>eÚ#æY[ﬁ>æ=Ωü“æy{;?œ≥? ,®æ°ÕΩmø‹gVæìLAæYU^º >«¡ø=f,Öæä>8ùdæí£º=Ú∂ãΩÔîWøi|∑=VzQ?›µ¿æ’õ><4Î=∏)-æÄIöΩ©ùò;l∑ı>Ïï¸=cµæiaxæ/Ä›>H>ı6/Ωb£(ø‡˚i=˘{†>Ê|#æÿr!æ§◊í>äOælG<Ù·Ä;…ò;ô‘Ñ>√˘qΩ(ƒ!æQ2L?Çh∑>yå∞=Ì¸Á>F√z>Ä˛fæ3—¢>€’Ä>i>Ææ<Uï>
-‹?;;ø=Ë’>À øéûà>äÄ>1!#æp.?±3‘>yÏæ≥åG?Z6æwt¿æ
-≠º‘?õ>˛=Û=∆[æ<Èêj>Û∏<¨cΩ‰ˇå?Ù∏?	k+ø[T?°S˘>Zz1ø4–=[æã¨íø˚tøÌùï>fû>ø©Äæ[˘Ÿ>†™˝º7π.øﬁ=ﬁ>æ[>s’8ø}OÀæ„Yó>éòæ'Ú>g¨>Íÿ¨ΩmP>ÌHJ>ãﬁIøÇ•AøΩ	{?ΩÙøÙ˝ø™7(?∆Åø˝«RæÀC?Æ˙5øXöôºø·WæózøàÜ¨>`˝=e¶çæõi?⁄¢æbEñæ|R¡æÄ]≠>1}∫æb›üΩÛæÃ8ã>1>>d
-? M©æUæù£aæÑ;>?çwÏ>c?g
-æ=_HøãóîΩ∆(æﬂJÔΩ⁄"È>µ„'æÿß?>x[;éèø:°ΩÙ∞~ΩÓ"õ=:>Œj∂ºP4âæpä-æ–ùhægÓºqßæ8âæê0ø&ÔRª’_ø™≥¡º∞^Ä?A=$ˇ"ø!ÙïæWö/ø˙¢;>†<?YNÄ=üåÅ=	ˆ≠?òä“=ÎΩîæ2æ≤Òæª‘æ®o©º>°ª¢RæhÊ†æèÔÙΩÃ 
-?±“¬>Ä§,?$uæ±æ8MæU≈˛ºT
-·ΩAtæ´>∫˙?;‹>Q^<=ñLX=¯åæ‘z>x(ÉæZ°ä>§õ> ÿÎΩ›åW>ârf=«Öø¨øT’??¶1Œ>Ω5Ω˜{ìø◊˚⁄æcÙ>Yy…>≈º«>'TO>‹ëºæÚ?fømaø˘¢>Ú|?IÈ>‡˝î>€íÉ>	ÿ>r≥*=∏¬>íñ>ç•ˆ>∫^?ó¶(?;<®æ{∂Ú=‰±ΩzŒ<øˇg‘=Jûø Ë(ø»E?—"æû…W>~qåæÃ`æAmÍªÌ¬Sær¶æ¯©=00Z=Ê¬Ô<Ûè%æT\4øO%øhé°Ωï7ΩV∞∂Ω4Ù]æî+Ω¸ÖæeˆΩ<ù>Ω@} æ∑2ÏΩ‡-a>Ößæ∞Op>ˇiΩﬂû?±11øÙî=!Òæ◊ùÿ=Ì‡æû28æˇΩ2?„Î3Ω˙ék?Oz¶æN£A?'Ä≤æ·VtøG]¬æåD?‰µ¶Ωà§ƒ>çzø?›æyBø™°Ä>È™?Î%⁄=≈õÉ>∫ı¸='ïΩÏ≈≤>AH¢=ÀΩî>Œa_>
-]IΩÍzΩÈﬁÀ>M4Ö?^˘ñ>ßØå>lÿ%æ%úæ>&ºZæñIªølΩ¨æ
-ê.?§(øπRŒ>‹Ë=òS€æ©5aΩˆ?!?l
-ø5s?º¥>¥\âæÚﬂ}>f≥Yæä$?‹∆qæäºM˘ ?]Icæd“¢>Õ˜ƒæIBô>™·æ#‘·=úe«>vøóz7æ}90>°GnΩ|ÍqæZâΩ÷Wº>7é~æÀùæÖæCåL>æ°ëæ ËØæÁ_∞æ‹húø“µ¢æ≥îøaÊ>>»qõ?.∫/?Ûx‡æÆÜRæy*{æÈõ¥æˇkñ?œà∫7\CV>+l¢?M¥>∆çæâãû?äΩå•,?T\à>v•-?R?≤w>ôDÄºe·˘æ}ùµ>,ƒî=?òæ˛aïæ$2,ø	a>üaøîù:æt˘,?ôNæIè=^4?[.æyR¥>_p>?û > ÂÛª§hæ¥Ôü?ò»úæ≠Gnø£W¶=jÄΩ”jc>7`=ù'æíÅÖ> π£Ω…`´>¬P¸Ω°b æm%/æÌY>.›?+πO>~…°æ¬˘ﬁæÑGÊº˝à>EÍ|>…h>=ùÏæ]œ•?ùÖLΩcV?ˇ0Ñ?á<0?àø€Ãı>´úmæ◊√$?ÇÆó>jo˜>>è^?ú7øÉ˘(>F >ˆW>GPΩpŸ>≥ëΩ“è¬=·òc?F>±ææ!1>¯® <\Bø C'æØ>ıÇü>™Â@?/•ú?bGi>û∆‘>…˚¨æ2§c>]tiΩ„ñq?u–%> /?‡@>ú.kΩF⁄ﬂ>àØº«…û>§†æ>∆ó‰>ÔÎ∂>œÌ\>»°>î˚ö>_˚Ñ>úG‚>ñM1>pæ>°tΩ¯·¿Ω®tËΩØ⁄‚=g÷¡Ωà¶â=zﬂZ?ç¥>¸ÿæe“ˆæRsæ ^æçB\æ>†,?∑íèΩΩ—;?ÁΩ@Œ¢=·:ÜæŸK<Éy,?¢<WæHú∆>¢;øã∆ßæ2*æ‡g?]∫ÿ>9~Aø w.ø≥Ì°æá^;æƒ—òΩ(•k?ïËﬂ>¬¿úæ≈)¿ÌÕ“æE)ÀΩo^Ù>`NW>÷u?O(?<ª¬>ìµÀΩ$∆øf^NøåBŸ>µg?û‰">Í¡¿=ºìæÆôøcÓ=£Ê…æxﬁΩÀ>¡äæ»„`º∑	í>®ﬂº>óûö>ì'•>¢NE>Xƒc>∏Áq=ﬂ>¡y,> (?µ >⁄kB?≤tuΩf-ÈΩ$,?bÉåø©Üøñ–Ωï4->iÈ‰æQΩ-?9ŒÚΩ ìïæ#z‘>ŸÖ‹=¶BÔ>µø=>   Ä   Ä               Ä   Ä   Ä   Ä   Ä           Ä               Ä   Ä                       Ä   Ä   Ä   Ä       Ä                   Ä           Ä   Ä   Ä       Ä   Ä   Ä   Ä       Ä   Ä       Ä           Ä   Ä       Ä   Ä           Ä   Ä   Ä   Ä               Ä       Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä       Ä                   Ä   Ä   Ä       Ä           Ä   Ä   Ä                       Ä           Ä   Ä       Ä   Ä                   Ä       Ä   Ä       Ä       Ä   Ä   Ä                       Ä   Ä   Ä       Ä   Ä               Ä           Ä   Ä   Ä   Ä   Ä       Ä       Ä   Ä       Ä       Ä   Ä   Ä           Ä   Ä       Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä               Ä   Ä       Ä   Ä   Ä           Ä               Ä   Ä   Ä               Ä                       Ä           Ä   Ä       Ä   Ä   Ä   Ä       Ä   Ä           Ä               Ä       Ä               Ä           Ä       Ä       Ä               Ä       Ä   Ä   Ä   Ä           Ä       Ä   Ä   Ä   Ä       Ä   Ä   Ä   Ä       Ä   Ä       Ä       Ä               Ä                   Ä   Ä   Ä       Ä           Ä   Ä   Ä       Ä           Ä   Ä   Ä   Ä   Ä   Ä       Ä   Ä7Py> Qæ¶.æπÈ•>ô…?´¥>%zƒΩ◊Rø»≤ÙæùôÑ?≠’?D4=]/øR◊/ø$2°æÒõ?ãÙ¢=˝¨áæ„∆y>;íe=1H°æq/…=º…ø∏˛ë>≠5R?ÅÒHø˚ui>oÿ≠>a®>å_æ#ÌT>.Ä3>a¶∫>‡ÿ.=”æU&‡æi‘˚=°øñΩıï8?0u^ΩsıUæÚ$?êX>=aøπ÷è?0≈ê>*ì>Ã·?°kπ>]≤Î>ß˘?%ç>…À>¯+Ë<∏ì>,v ?›Åÿ>í˝>ä—>ZŸº) ?Â&?ßèÃ=V=√æŒ˚Bæ◊¯Œæ_ÓπúŸÍΩÑw=äµpæ¯¿æûb>·Ñœ>vrNΩ°+-æŒÛÉ8iR’æ¯Ù*æÚ±AΩflïæ7ö=πå-øêNÜøp—bø+ìøœóyæ¡˙ëø˜ô>#‰âΩ±#‚=5·Ωlê$ΩΩq<{˛øí£ø˜Aø¨Ï«æR6ø∏ïænbæØ[Ù>ÌÑ%?ÿ¿æé¡p>]Ú5>–.çæÑÌø•Ïø›Ωæ 5⁄æ—8:>ScÃ>?Væ6HU>Fæ∏>08ΩÜ˙ΩrµÉ>WÔï=1 €>ó∑æ:¨Œæ|yñ>&≈≥æ¬ü>3˙>÷c3ø…˛Ô>)OÌ<˙@ÿ>‹[;?Lë>ªI?™v?Ï∏í>≤DÀ>Ç≤-æ`3>~f´Ω¯ áΩ\°>AŸ>B„xæ˚g˛ΩOÕΩ[ôïæπ#¯Ω3ÄæHÍæRÄ=µ“zΩ_ææ-¶ªæŒ√æ8àïæ3 |æI˘<æÚ1†æ‡µVæîà>£:>=Â∑=çl¨Ωdõ=jXæÿ0ÙΩg’=¥óø=tƒq=9|>#Vÿ>§üΩ≤htæ•Læ£
-ª<„Ràæ£ÍëΩ9ê:æáv…æaæ÷RøR+øR•Wø_¶=Æ¡å<3A6æ6≠æ;˙©æÀñøµ(Uº~ú>¿Ù†ΩoNÇæFˆΩóC¨æRWiº ã=Õ´ÎΩ9Ã£>¸i>Æ'¢>èL]=∂∂vΩ,-‚=â>üµ…>>——>lûÛææDTæˇ¡¬æËÖé=ó°>0_z=Sæ<˚ƒ>Pà>†>z≤Æ>Ø…{>aV¢Ω)∞h=Ã‰Uæ…ßÊΩº‚>ƒy§ΩQ’i>˝û=èÒJ>I^æ∏E(øeÕΩ⁄…¶>mLÒ=√@t>Ì4</ogΩ(∑ö=º,>‡3‘=?x¢>q_Çæ4(øúâæC"¢>‰9Æ>ÂZ¿>-Ω¶å(æ r⁄>¯?£=h}yæ¯Ä>Ÿ ´æ∫ü?≤íøqY’æÓÂ®>óVıæì®ôæËè∆>ß˝^æ"Nê>[%T>=¸≠>˝•åæ∫;æ1xΩCPÉæÔU=EZíæ∆w∞æã¨Ω”QÇæıe4>c$&æ^äæx’7>Â$CΩ-≤«=	Qø.-æ⁄úø/X,øéƒ=∑~íæ»6øØ€æ^ø   Ä   Ä           Ä       Ä   Ä   Ä   Ä           Ä           Ä   Ä   Ä   Ä   Ä   Ä           Ä   Ä   Ä   Ä           Ä   Ä   Ä   Ä                   Ä       Ä   Ä               Ä                   Ä       Ä       Ä       Ä       Ä   Ä   Ä   Ä                       Ä       Ä           Ä               Ä       Ä       Ä   Ä       Ä       Ä           Ä   Ä   Ä   Ä   Ä               Ä               Ä   Ä       Ä   Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä   Ä       Ä       Ä               Ä   Ä       Ä       Ä   Ä   Ä           Ä   Ä                   Ä           Ä       Ä        NNøœæ@‚>iøÄÄø'S!æDÁ+ø¨0öΩ[√%>⁄ˇæöˆ7=5íBø^ø¥=1g/?3i?è;Õæùæ¬=Ò∆à=Ãz+æËHæ–T£>;/öΩ°r>‹=…îºØøex°æ1‚>™›ËæVàøos–>!qÀ<ÓF†Ω¢Ôê?Md"=À;ø°ÈæTH%æ]í@?ˇœ¢=0Uô=ÅnC=3$<4úú>FµU?u≠<ÈoÖæ≤+@æ2÷K<ö°9?©!∆Ω=Ëº>ƒÓ¶=≈ﬂ®>«øöæâ»;¿^>ñY=—ãG>S2¢>d=Q?ËC?ÆF>·◊Ò=ΩàOægp°æçO>πT'Ω@:ãºJ±àΩ|Ï@Ω¢Öh>œØ>û>F*>ı	ΩÊT ?Ë‹™<jZﬂºå_>ˇ{ÊΩ5Gµ=è~ÍæWÂÕ<Iko>Èíê>˚Ó“æ&Ìùæ¢æmœ"æF§àæ\+øhu∏æÚHﬂ<QÙæ_ö[æã˝´ΩØ1;æ/£*æ‘˜¿æ≥Úá>¸ç)>ÁóæCØ?≤«ﬂºº√æí>`™ÿ;˘)ø‚¬UæÍ-?˛íeæ8Æ<l>uÃøôÑã<∂ÈæUpì>ë>◊’ïæø‡?¯‘Ö?q˙z>tìK>I⁄I> ‰∑>!Ô>~-?2±?>˘>nÏ-?-üY><r}>ªs>”o>®åã>—Ø>ıØˇæ‡®ΩEó7>Öléæ
-ŒΩÅmwæcO#æ6˝ ºL÷Î=•æ>∆VâæÚŒÖ>-ë÷ΩÍcÀΩî◊O>√æù=ﬁöÉæ„/?Mí>Ì)øÃ2ûΩÇá≤Ω µ=†4¡>7ëÓ>9å=œbÚ<~ºøA2’æ˜0õæQùèºQ≥=ö’<$J∏>ß‡>!àâ=HΩú<<oX>0∆á=ô´wæÁçGæòHåæÖËøåk¶>söpΩàÛ>:˙>}T%>GR?9íYæÈãøåTàæÇ†>€ˆgΩNøæ
-/ﬁΩÊÛøô¯EæG≥ﬁΩìiÊ=äΩ∏æ¶˛>Å¢î=>á=Q<í=ˆ—K>Í%æ9ﬁÈæ.ÚãΩ*Såøˆ’lø-b,ø6®ÂæVÖΩë«¬>k%∞æH®&>Õè3?ÿlaºŸ}4æ•3ê>%å =≠6âΩÃ‹P>Cö æè¢æÏÙéæò|‚>|oÜ=ë ?ßƒ>™)øE’®æ=îk>ë≠øæ∆Å¢æ6yæùµæ·ÜùæÅºaæ„ÉΩ„}¢Ω xœæÅDææHé¬æ®Œæõ‡ø”$3ø®=º⁄æê·â>®àX=ë^^>ï!ò>◊±Ï>ÚY>%Ïûæ`Î>˜¨›>ïë>°-møD˜™=“¶¡æ*V≥>qêı=“p∆=ÿ¨¥=@q™ºÓ°0æ)˜‚>/∞>äVY>´»©æ]ç>lÅ>î≥ÕΩ»˜≈=ˆt^æ85¥:∑yÁº∫ £æp5¿æ-≤¨>›IøK∞~æ…ÿ>Ê®øZ àæ3≠ñ=bÍæ   Ä                   Ä   Ä           Ä       Ä   Ä       Ä   Ä   Ä   Ä   Ä   Ä       Ä   Ä   Ä           Ä   Ä       Ä           Ä                                   Ä   Ä       Ä   Ä           Ä       Ä   Ä       Ä   Ä           Ä       Ä   Ä   Ä               Ä   Ä       Ä   Ä       Ä               Ä       Ä   Ä       Ä               Ä           Ä   Ä   Ä               Ä       Ä       Ä   Ä       Ä   Ä               Ä           Ä   Ä       Ä   Ä   Ä       Ä       Ä               Ä   Ä           Ä                       Ä   Ä   Ä               Ä   Ä   Ä   Ä       Ä    ∞¶›>\wø64ø¥9π>∫Që>=≥ø#—?ﬂ˚æúø{êÑæ∫0L?eÎN?ˇ∑ßæŸÕä>˜„ù=ïŸﬁæ‰ Ω9W=ËÛ«>KùK>œ¢>!Ë4>F¨æ]‹8æ9ˇô?h<?ƒ£v>>«æØ˙!=<é≈>^A,æÑ—RæÅÎ¡>`/ø∞í´Ωç1±>ˆ*R?bØ=˙ÿgΩ˚“ã>å_ºæ@c˚=¨?-.“æ“ñπ>>_¶>≥?*æÁ¬æç[œ>àe?H≤ >⁄≈í>jÅî<ï!\>PÔ>˙>~ñµΩ˚>ó>M©æpπ>‘¿D?P∞>≥∆Aø¡≈#æ)Û{=»†Ω–k…=o·ì>ÏÍ*>·é÷=…6∫>À◊≠æêÖΩŸ7-?º%ò=dx2æ{î=>µêNΩL-æ˘-Ò;˚\áΩÊÉE?à∆6æEõ˚>áñ?#íëΩb¯>ˆL?U©æ?[2æKI®=Àëf>⁄F˚æØ=ø}{Dæ∏∫/<ƒ}¶æ#≤væ´ñæ˘ˆæœ¸>(P6>≈ïä>ﬁG~?≠¢øÖØçø ªøDìÅ?´ì<Ω‰ùør?”+ìæÀIôΩ‚å˙>π/ø_≈Êæ4ŒO>’É>ˇ¶>à-Ÿ=˘má=…∑Åæ è>7jﬂ=u?æb%æÉ
-ø∞∆=T–^>n±æ-GÿΩ>úÃ>ãœæ:c‚>Éë*<;æW™⁄>é?8>`ÑÅΩ¸,1='c6?ÆJD=«HëΩÀù=Eˇ&øÂ¿¥æ˚gó>∑;™>Z„?f2øôOøﬂ9äø<Ç§<í`ø«/Ü<ï–v= ıdøê1g>•Íb?≤n¶æÿ%N?9æV"æ–NøôCa<˝µ|=&H=òa°=Ø¨¨æwöΩ4ˇ>Ê5”>„˜æÇ∏Ü>;ò™>^a⁄>§%b>o%¯º¢ÿæíùÀæÆSpæ@ {øÑw±=æˆû?»„Ï<^<Ω¸¿ûæ≥ô4æx/>;C?h—ä>∑r¯æ·¯.?Væ∏b®æ c"æ´ÒÄæ⁄!q?Â‰p?∏|¢>	{∑=Ëâ ?Æ>tC>NΩ÷> %ı>Ö0@æﬁ Ωñc=v@;æÊ*¨æ%>=adeø˜∫`ø{ KæÁüΩc˙Jæ“MæŸb£>“>M>pè>OH?Ù∞>"?:hæ`ﬂΩóêæá‚è>ƒ¬?ù»ø º>©ÍÕ>»âÆ=ñ‘ç>ë≠&>÷â>ZiMæv6ßøÀm¸Ω0:æãN,=º°æ™&˚>™ã??b?ï	»æ{+?ó“b>íª§æıÑ#?CÎ?&KªÈ‹›>a†,æ'Wæ√¬˘>íXÂææ$øUƒC?óâ¥æmÏ?{´ßæ6â¡>ÛÓ.?7'ø Ìº> Ü∏=aÌ6æ?5†=º•ﬁ∫áÄΩ¸W∏∏QB;>:≤ìæÒQF=±‚æ`æD(>d.>¸kΩ3zy=ˆïΩº¸€=Cµ1>aø/·=îeõæ   Ä           Ä   Ä   Ä   Ä   Ä   Ä       Ä                           Ä           Ä   Ä           Ä       Ä           Ä       Ä   Ä   Ä               Ä               Ä   Ä   Ä   Ä           Ä           Ä   Ä           Ä       Ä       Ä   Ä   Ä           Ä       Ä   Ä   Ä                   Ä   Ä   Ä   Ä       Ä   Ä           Ä   Ä   Ä                               Ä   Ä   Ä               Ä   Ä           Ä   Ä   Ä   Ä       Ä   Ä       Ä   Ä   Ä       Ä   Ä   Ä   Ä       Ä       Ä           Ä                       Ä   Ä               Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä           Ä   Ä   Ä   Ä       Ä   Ä   Ä           Ä   Ä   Ä   Ä   Ä   Ä           Ä       Ä   Ä                               Ä   Ä           Ä       Ä   Ä   Ä           Ä           Ä               Ä               Ä   Ä   Ä       Ä   Ä       Ä                       Ä               Ä       Ä   Ä       Ä   Ä       Ä               Ä           Ä       Ä           Ä   Ä           Ä           Ä   Ä   Ä       Ä           Ä       Ä   Ä                   Ä   Ä           Ä       Ä               Ä   Ä   Ä       Ä       Ä   Ä                   Ä   Ä   Ä   Ä   Ä       Ä           Ä           Ä   Ä   Ä   Ä                   Ä   Ä   Ä           Ä   Ä       Ä   Ä   Ä   Ä   Ä       Ä           Ä       Ä   Ä       Ä           Ä   Ä   Ä       Ä   Ä           Ä       Ä       Ä       Ä   Ä   Ä   Ä           Ä   Ä   Ä               Ä       Ä       Ä   Ä   Ä   Ä   Ä           Ä   Ä           Ä   Ä       Ä           Ä   Ä   Ä           Ä           Ä   Ä       Ä           Ä   Ä               Ä       Ä   Ä   Ä   Ä   Ä           Ä               Ä   Ä           Ä   Ä   Ä               Ä   Ä           Ä   Ä               Ä       Ä   Ä   Ä   Ä       Ä   Ä           Ä       Ä       Ä   Ä   Ä   Ä           Ä       Ä   Ä   Ä       Ä   Ä           Ä       Ä   Ä       Ä       Ä           Ä               Ä       Ä   Ä   Ä   Ä   Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä   Ä       Ä       Ä       Ä           Ä   Ä           Ä       Ä   Ä   Ä           Ä   Ä   Ä           Ä       Ä   Ä       Ä   Ä       Ä   Ä       Ä           Ä   Ä               Ä           Ä   Ä   Ä           Ä       Ä       Ä           Ä   Ä   Ä   Ä   Ä   Ä           Ä   Ä               Ä       Ä               Ä       Ä   Ä       Ä   Ä       Ä   Ä                   Ä   Ä   Ä   Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä                   Ä       Ä   Ä               Ä       Ä       Ä   Ä   Ä   Ä   Ä           Ä   Ä           Ä       Ä   Ä       Ä   Ä   Ä               Ä       Ä           Ä   Ä   Ä                           Ä   Ä   Ä       Ä                   Ä   Ä           Ä           Ä           Ä   Ä       Ä       Ä       Ä       Ä           Ä   Ä       Ä   Ä                               Ä           Ä       Ä           Ä                       Ä       Ä   Ä       Ä       Ä   Ä       Ä           Ä   Ä           Ä       Ä   Ä       Ä   Ä¸ù=@‡1=ìz,<2.ø•¡øèÈsø2!rΩTfˇ>hò‡>|´æÔ«7∫L≈#ø›∫>w¥F?òÌ€>{B∑æ4ìI>a≤íæÖä?Æ¬!øÎ√Æ=¨¯¿=˝
-ø¸ªb>º]—ª•¿tøœáÅøgIø¶!øûiæ∑øÑﬂ˙æ¬:ºæ∏ΩËüï>ãv>Ÿ¥ø≤ıæ)§¿æäÓæ2[gæZ•æoiâæˆÃ=÷<«≥¬æ'ïÁæÑø'€ó=?◊5?	ˆÑ>/+i>! ø0µ´æß´†æLV@Ω™¿tæ2”7=a£ü=}û∏Ω)cΩ (ßΩö¿Ω(X8æMˆŒ>JMê>ˆ®Ωqﬂ>≤>ÜHÕ>cà_?¡hE?∞¬=ÎÑı>µ>2.iΩ¢`Ó>~Ê>Îp/æÂ~¨>p´a>>ÏéΩ_ﬁ¶æ•õ-ø†Y®>ñ˝ûΩFΩ3 øá’øæG ø˚T øÓîæünÈΩ+ØÓ=nyæqC©=‹Ì•æHáºQÆc>_,R>É>tza?ˆ◊qæ‚Øø2ùä>‘”û>#kèº‹ªè>˙∫GøGº∏>µælgÀæ∞Œ‚=
-¢øJô∞>‹„>]ÑæP.=0≥æ>–ÿΩï[·Ω∆ùç=π`Ω	y>“œC>°ì§>Xä >Ki-æŒDÅ;(kñ>ÜBX>öΩ»æ∂≥:>Å–à>¡ùæœZKøÜ»√æGHøAò±æø¿F=_M™æΩÂHæR¢Ñ<Ën’æ°≥/?ìµ»=Eﬁ≈>oÅøıÙÂæâ§˝æ¯
-IΩT>ΩÂ¨=¶‰˜æîOªø[Í;ø{®ë?G•ì?fÀπ?aÖ€º…F™; Ïæ
-øæù≈ºΩ[ÚÊºûÉ@?U7˛>Á/ƒ>Bñø-™É=/9Ωzûêæ¥ æèetæª>Ñæ˘ìœæ‚ΩÉ>÷=vΩõ=cÚïæ9Ç∆æáJ¬æL™æ∞7ÿªA;∆æ∏¢Ÿ>ì=>rﬂ>Nd>øtÇæ˝Ú¡=Œ⁄∆ægù?„’˘æôÃ⁄æäR¬æÇôøàü'Ω	QÚΩÛè>:.ºΩ¶E¯=‰XÑ=3{±æ)1œ=µ≤UæSl	ø3IOø.Jø†|>üdïæ∫mæ:©>áXñ=9£æÅ¿æ∞i>◊!FæJûñ>ƒ¥+?Úz∏>Î∑l>ú≠Ç> ˘È=R◊æ™aäæ≥≈©Ω?
-Ç>∞»@Ωøxn>bÇfæ·P>x∑?\Öèæ“¿?•¸ æ©Ω1«kø©¸=t5>#Hw?4Fï>$?!H? sI?·«≥æµÀøv]∑æÑœæóJ‚æi©’æ<Hi?R∂]>˛1?¸Á=r‰
-øÌkº2Òs?¿îsΩOA_?ëW˚=F9'>~âQæNw€Ωj/>5ÄΩÑ2J>`à_?[:W>2≠=9˝)>á≥>mE≠>≈Wt>ãb>ßî>Pw5æ\)Èæ	Áï>ﬂÎø3µ>Xr≤>èâ>˙º≈>ÍìXæ,Ü>uΩkæ           Ä               Ä           Ä       Ä       Ä   Ä                           Ä       Ä   Ä   Ä   Ä               Ä       Ä       Ä       Ä   Ä   Ä           Ä   Ä   Ä   Ä               Ä   Ä   Ä   Ä   Ä       Ä               Ä           Ä   Ä   Ä                                   Ä       Ä   Ä           Ä   Ä   Ä               Ä                       Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä                   Ä           Ä   Ä       Ä   Ä       Ä       Ä           Ä   Ä       Ä   Ä   Ä   Ä                       Ä       Ä               Ä   Ä   Ä   Ä       Ä       Ä   ÄS.>h‚„>z4º√•ñΩ–O>?•`o<Ê0>™îßΩÚ§–æPˇØ=÷”™>°p≈>NõÑæaÂævl÷æ’y
-?QL’>bÁ–>Úı•>NV∑æW…=ΩœFΩ<T
-;Ë(ﬁ>Î>ì/¯>ﬂHΩ>r‹æÏ6Bæº&∏=P‡3>b=êf¶=¿|±Ωo•SΩqÍælÊ¿=ó¸ÇΩL‹)Ωz
-cº•9ø(47=Ó¿>{óåæ¬(>¨™ﬂ=µË#=—Ÿr>s∏?§FQ?Qá˚>Ó[≈æ—lΩpÌ>æœm”>mWR?k?0√:+‰k>âY@>Mu>ﬁ√>êÃ>c>Œî…>À≠>øXò>Æ“=ôFΩ÷?`Aáºëí›æ~*æøC∆Ωñ≤èæ›&"ºt=æ	Ÿ¡ΩïÉg>≈Õt=v–=kæ} ´æ0£æT∂*>dˇ4=∏¸æÅ‘“=h¬?û≠?-Ω(Ω∆ª‚àΩˇ3ôæ6ÿÔΩA((æ¨®À<*I´æ°räæà><ﬁıºÓä;æÇ∫-æqê9æ„Ç&æÌ‘ˆΩ¿÷ªaE∏æµ±øé€æ¥¨ëøl3û>°ƒ">A0>ã˜À>Õ¸øa¿É>`Uü>SúæqÙ?Ω˝=hvæÉÎªlMéøõ&àæïoòø¶x æ-8¥æã≤æ	!‘>.@‹=ê6p>˛ãΩ>Ã>ˇBV>Çÿø~›æ{≤Ω`uΩ,X?+?ÍRÁæ]˚â>eøæZˇôæﬂ˚ø/·Ûæ{·Dæä;Ü>∫Tï= ±cæΩ[éªtø—9ΩΩ|t<kheæÊ‰I=hH<	 ‹>∞—à>ªÉ∆æ;–Õ=6’ò>Èƒ>RKæ>Æ)≤Ωê`æ¯1£æ-hS>€(æ§Ä?ºd{="§ΩúÇ6æä	ø†Õ(ø≈©÷æT+Ê>Ë¶à>‘3(?¡¡î>c1ï>õûõ>ß∆æEpd>‡ =¡ıSæ?æU=2.Cæ âòæW=C>/ÿ≥æ+Ωd>÷”d?7-Ñ>∞ÉΩiçÁΩÅÜﬂª“úõæÛOøù*5øX°r=äl)>ÌeE=bX∫>J‰Ú>Ó…,?∫íÒæêoø ıRøm>hÓΩÿgß>Ò~Ñæò{0=Ä{.?È#˚<¿ı•=:„º=ˇd[>]˙?lã>ÏÑæ†öAæèÖæŒr√>àó>ø∑=0©›>]ª>L!1ΩH—–>]n›º∏ÜÛæû»Ωé≤–æz≥Cæ;* æ<ƒæ+ÅøN∞’Ωj ÇΩñ.ÄæƒyQø˛‡!æ:d(ø’w=äË??öéI?AS]æ£∫0>w$®=ky?K•~=˙g&?‹Á<π’f>î¬⁄æÅ1^øªë»>K÷ø∑[>Ñí?c[µ>ö>üÉ'?j˛¢>ƒì?”∏=>Ô*Ç?,‡ö>{mó>≤/ƒ>F˛)æ{
-á=™ó2>tñæiπæB´èæíH>âØ>KôÈ>©d¿æÆN∞æi∂æﬂ6Ω¨Ï…>5w&=           Ä   Ä       Ä   Ä               Ä       Ä   Ä   Ä           Ä   Ä           Ä   Ä                       Ä   Ä   Ä           Ä   Ä   Ä   Ä   Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä                   Ä   Ä   Ä           Ä           Ä   Ä           Ä       Ä   Ä   Ä   Ä   Ä       Ä   Ä   Ä                   Ä   Ä           Ä   Ä   Ä   Ä       Ä   Ä   Ä           Ä   Ä       Ä       Ä           Ä   Ä           Ä   Ä           Ä   Ä       Ä   Ä       Ä           Ä                           Ä   Ä   Ä       Ä   Ä   Ä                   Ä   Ä       Ä   Ä       Ä       Ä           Ä   Ä       Ä       Ä   Ä               Ä   Ä           Ä   Ä       Ä   Ä       Ä               Ä   Ä           Ä   Ä   Ä   Ä           Ä       Ä                       Ä           Ä   Ä           Ä           Ä   Ä       Ä       Ä   Ä                   Ä       Ä                   Ä           Ä       Ä       Ä   Ä           Ä   Ä       Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä       Ä                   Ä       Ä                       Ä   Ä   Ä               Ä   Ä   Ä       Ä                               Ä   Ä   Ä                       Ä   Ä               Ä               Ä               Ä       Ä   Ä                   Ä   Ä   Ä   Ä   Ä               Ä       Ä   Ä       Ä           Ä   Ä       Ä   Ä       Ä           Ä   Ä   Ä   Ä   Ä   Ä           Ä   Ä                           Ä       Ä                   Ä   Ä                   Ä           Ä   Ä   Ä   Ä   Ä       Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä   Ä   Ä           Ä                   Ä   Ä       Ä           Ä               Ä       Ä   Ä   Ä   Ä       Ä   Ä       Ä   Ä               Ä           Ä   Ä       Ä   Ä       Ä   Ä       Ä   Ä   Ä                   Ä   Ä   Ä   Ä       Ä               Ä       Ä                   Ä   Ä   Ä       Ä           Ä   Ä   Ä       Ä       Ä   Ä   Ä           Ä           Ä   Ä   Ä   Ä       Ä       Ä           Ä   Ä   Ä   Ä   Ä       Ä           Ä   Ä           Ä       Ä   Ä   Ä   Ä   Ä       Ä               Ä           Ä       Ä   Ä   Ä           Ä       Ä       Ä           Ä       Ä           Ä   Ä   Ä           Ä   Ä   Ä   Ä               Ä           Ä   Ä       Ä                           Ä                   Ä   Ä                   Ä       Ä       Ä               Ä           Ä                   Ä   Ä       Ä   Ä   Äû÷<ﬂ|`> czæ±µΩÖmÄæÜNHøˇDΩ_…ù>….ætVø…»7æò≤øò[?jæs?ÉS?X.æHˇ>3àª>˚¬>∏m¨>ßà∂>Üø„>2‡Í>Pº≈>g°Ã>_˛ΩæoÁä=À ø(Ñ≈=A‘>jÒùæA‡>^∆g?ÜûZø“{<èz˚>ÔΩ>°ΩD¢∂Ωó^>cŒJ?÷•>•Á>JX?îgQ>oà$=8UÅæ=ﬁ>;,øÍ£>5»ææâQÖ>¥=>}(?>:àØæíSæ¥Ü#æw∆“ΩÁÁÃ>|{Û> ıø5∑‡Ω‹µ®>uÜ¸æ."æÛZ=\í=æSP=uz>±æçÍ"æêı(?hh÷æÃ?”§&Ω‡uæºt?Òææ.tΩÉ&?ìáè>W6p>SOô;ëˇæΩπÏ¢>gí!>d—fæ6J≤æx¿∫Ö¡ùæÁ|GΩ°fIº…F¯æ–>h;ø¿˛æGE¨æÖ%>ßæuü…æ`4?¿™g?;îºΩ3çÎ='4˚=È†>∑^eΩ∂$BøÒ0L?	¨∞>œÅ¿øZË=0<•>—@Ñø&•Ö>∆Ÿ?Ò+øWdÉΩN˘=º;Ù>ÄÅ>`ê=>ˆ~ë>fIç>HA«=ﬂ±™æF√ıæπÓøaÇ>%‚£>sk=‹LÁ;4ø¬ÓäætÌ∫º5Ìóæ™ÍﬁæÚ‡íæ¥B˚Ω¿Ω˝>öÿiæˇLÔæ·.Ç>¯ª$ø·\D?¥Æ¢ø7?µ?(ø?^ÄæpÿLæ§ú]æ~n?∑ÎøXa¶>*Zø3>∑w@=‹j>#¥Ω=]y>=ûc#?Ò®ú=¡lønX?Œ1cøÕòG?≠l>:Õ>≈»Iæ2ÿK>!k\æZ%E>D`?–˝ä>“˝`æ±Iæiæ˜?ﬂ>h8u?,w>séæXƒüø–øyj->Øç(?£5Ç>óíáæ·˝mø–8›æjJ=‘•æŒ’CºUøø8§@?ü‹æLtæY°ø	›ÛΩøÙ5ΩÙI5?µ¡æoÍaæ‡u”æ=‹Øæ˙±∑=$•>ﬁöﬁ=Ã$øfª?_ïM>©h©ªV»Xæ™Dâ>Ê`#?Èäæwø>[µ/ø#¿Óæ»ÈkøMq„>[≥?¡@»>,lóæÒ÷ùΩ(ÕyæÆãøât?ô?ˇ<≈∑ø´îæÏ˚>bç?<¥N>GEMø¸µ>„å?xü@?zôq>çLïø-Èp=¥†¢=3«m?™Å%<ı^4?…Ë1æ=µr?èò˜ΩKh*ø»zæ¶<ßü
-æ9”¿æ|ôΩi‰ΩÓÈ5ø‚Ûæ}~#>£_ø•ø
-D®>“’æ7D„ºì¶„=.)ê<⁄ëkæ$∂5æR≤‹Ω‚Zæi›?$˙∏º‡≥ÒæŸ◊?•* øC‰
->Äú»>Ä\“ºr.I=iR⁄>ŒêÃæ◊~ô>#üK?›¥m=ò‚ø⁄s,?ÃÿïæÂWøGi?~Aˆæ   Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä               Ä           Ä               Ä   Ä   Ä       Ä   Ä   Ä       Ä           Ä       Ä       Ä               Ä       Ä           Ä       Ä           Ä       Ä   Ä   Ä       Ä       Ä   Ä   Ä   Ä               Ä   Ä   Ä   Ä       Ä       Ä   Ä   Ä           Ä   Ä       Ä       Ä   Ä               Ä       Ä       Ä   Ä   Ä   Ä   Ä       Ä               Ä               Ä   Ä   Ä               Ä   Ä           Ä   Ä       Ä   Ä   Ä   Ä   Ä       Ä   Ä   Ä       Ä           Ä   Ä   Ä                       Ä   Ä           Ä           Ä           Ä   Ä           Ä       Ä           Ä       Ä   Ä       Ä   Ä                                   Ä   Ä   Ä       Ä   Ä       Ä   Ä               Ä   Ä       Ä   Ä   Ä   Ä   Ä   Ä   Ä           Ä   Ä   Ä   Ä       Ä   Ä   Ä       Ä       Ä   Ä   Ä   Ä                       Ä   Ä   Ä       Ä   Ä       Ä   Ä   Ä                       Ä   Ä   Ä   Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä               Ä       Ä                                   Ä       Ä       Ä   Ä               Ä   Ä   Ä       Ä   Ä   Ä                       Ä   Ä   Ä       Ä   Ä       Ä   Ä   Ä∏óÍ>€#ΩπÁh=u5ì>√/¶æ¿t?ˇ>|>ä>kì>XÆÕ>÷(>¥—	?_=Rø7ÍüæCâ`øNOøÉ|⁄>òK#ø˙≈0Ωd‡?(NææüŸæÍû∑Ω\3æHJ˝æ"¨ >i≈ÂΩ—∂Ê>{#??Z´Z?øÑ>Ñf>˜7æ=è—‚>. ?o?PówæaEÈΩ#ü∏ΩATLæ∑Ò‚æwWáæÓl!æhıêæWQaæR4‰;¢_Ω˚å5>˘ÎÄæL”àøΩáæ·¥Ÿ=áG◊ºÌM=å„>#¢*>ê >-ƒ	æyâæÒüìæ
-@∏æcCø)È‡æaØÈ>Î1ï?7Øç?vræ¥qcª|∏«>®âæqø$é+æk©©æˇAøˇ“÷æ⁄π:;#Pû>»˛a=É ¢æ”Œº9º™æú1ºùz>9ÀÛæGóGøQcï>!ıÿ>‚|=Ò$>Ì¡∞ΩOÄ≤>0êæ˛ÿY>t†¢>n«?f?cªÑ=§≠ΩÑËŸ<,ü"?$Ó®æ9JB?√ª§>ÃÂø©êæ?}¶=µøøP‹8æ‹vøé“æ‘g0ø+¶æ∂Ã)>∞≠Òæ´¥ÙæXy√æw˛AønÁΩ©Õø≥“Ω™õ‡æu›qøó2ºæ›¸>ﬂæh≈
-?sÓJæ„±¥>»ø!]æJÚ2Ω˘}øå˜ Ωè¬0>¨ª”æ∆=0«æjÊ1>$ô„>∫Ãß>√øı>o;>3øy;Â:">   Ä       Ä   Ä           Ä               Ä   Ä   Ä       Ä               Ä   Ä               Ä   Ä       Ä   Ä   Ä               Ä   Ä       Ä       Ä       Ä   Ä   Ä           Ä   Ä   Ä   Ä                               Ä       Ä   Ä   Ä   Ä   Ä       Ä   Ä       Ä   Ä                   Ä       Ä               Ä           Ä   Ä   Ä   Ä           Ä       Ä   Ä       Ä       Ä           Ä   Ä       Ä           Ä       Ä               Ä   Ä   Ä   Ä       Ä   Ä               Ä           Ä       Ä       Ä           Ä       Ä   Ä   Ä   Ä       Ä   Ä               Ä   Ä   ÄÌ?úΩ.øµºÃ*Ω1”Ω Å<ŸΩΩõiiªµòº∞•¨ªœÛ=∂ x=)y=»úu<çëºhê;hë∫)Ω‹R˚;váX<AnIΩßŒº’Ê`<b-ΩºI—
-ª¡X…<&2–ºI≤vº	d∞º«K⁄ª©°!ΩçâÇºT‘bºN¡∑ºÂ+¬º2Ûﬁº◊Ûµº”å¿<ƒ=Hœ<ós‚<z=eı÷<.==&G=2'=≥Àﬂºí⁄¥º»‰ΩDAãºäÇ\º?ÓWºÕ¶u;:VH<@f<àÁãªSnΩèœÅ9L´ <çµ∏9•±‘<ıì=é‹==≥jÔ<˚ÚhΩYãΩfÿº+èºN˜=T [<¥Â,ª:la=Ù≥=&πÌ<âÁ=˜Dï<K_?∫≠†WºéQdºWûó<Ç∞2<Ùés;ZT=ß“≠<oV;•∫Á;CŒÚºFWCΩ§«©<„Ò=Œ·â<=¥ºk
-ZΩj÷;\Ë	ΩY#æ†¨UΩŸ€€;ú66ΩµëºΩ©ÀLºﬁ9Ω?h2;?·t<3lÑ<ƒÇ-=ª%==Äâ1=1∫Ωå6ñºk	ª“"ò;N∑–<´pA=«[@ºÈ Ô</™ˇ<Y,á=§=kÉ=Hó=·üª+∂<‹ûYΩÖiŸΩ™«}Ω^EÔºã¿º]u¯<7sº†˚ıºˇ$=…l¡º2Qº:rΩ<Â÷ΩÉj†;¢[ÄºÂòãΩx–YΩ∫û.ΩGı_Ω~Ÿ|Ω?Ì º   Ä   Ä   Ä   Ä                   Ä   Ä   Ä       Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä                   Ä                   Ä   Ä   Ä           Ä   Ä   Ä                       Ä   Ä   Ä       Ä           Ä               Ä   Ä       Ä   Ä       Ä   Ä       Ä       Ä   Ä   Ä           Ä           Ä           Ä   Ä       Ä   Ä               Ä   Ä                           Ä   Ä   Ä       Ä       Ä               Ä   Ä           Ä   Ä   Ä           Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä       Ä       Ä       Ä               Ä   Ä   Ä                   Ä   Ä       Ä       Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Ä   Äº7æÛÅMæø˘æˆ<æy‘´;oô >g:2æjùººôßÆ>è˙%=H*@?¬§Ö=≥„9æ^—Ÿ>ôÚN>ı˜l>Cf®>GKÑΩÏAø‹Rø9Wêøÿ
-ŸækÌ>f›•=ı~∞=™3 >kj‚Ωh¬C?€>åô5=óçŸ>Ì⁄Ω[<æ—ı/>.$$øŒÆÑø€ñïæßå¨=5Û	?ã>ÔcÍ>1‹Ò=@æˇﬂ>Íôº‡™û>¯WKæ+N={^=XÖ˝æC.dæÛ óΩPSD>vG∑Ω™Ω¡º6U<Dô)æ≤ik=Éæ∂™Pæ#î˜>ïÜ>÷&¡<u◊$æŒî5æ†ƒ†æ∫ûˆΩ◊Ñ<ΩíAΩQã=Í“´ΩﬂTΩëj}æó'æƒ“”æXàÈ=Q+r>Ia™=p‡ =”¥>AÁ >-˛E>i’õΩ≈=*J‹>û»7>!Tï>´}øD(Á<é® >õ>C>–Á†Ω¡?Å=}{ΩÍÜ~æ9IZæπ.&>ÆÓä=óÒ˙;à•ΩVı>Rø≠<Òj>c3=\ç7ø	æ8ûéæôGø≠}>MΩ˝>Ër±æ÷#g>”?ˆÊ©æ©:>#™>1•°>€>ªª\ÆΩ≠ÁæÖvæK!æE›;æK«=°ZøΩ.óß>Ç•?mﬁ>xı>Ëeq>cY∞ΩãÍ†>g&é>x⁄	?TK,øƒôöæ«'∑øo‚}Ω'^Ô> Á>æ/◊ﬂª-∂⁄=´œ]æ           Ä   Ä       Ä       Ä   Ä       Ä   Ä   Ä           Ä   Ä   Ä       Ä               Ä       Ä   Ä           Ä       Ä   Ä   Ä           Ä       Ä       Ä               Ä               Ä   Ä       Ä       Ä       Ä       Ä       Ä   Ä   Ä       Ä               Ä       Ä                   Ä       Ä                               Ä       Ä               Ä       Ä   Ä       Ä           Ä       Ä       Ä   Ä               Ä       Ä                   Ä           Ä   Ä   Ä   Ä   Ä   Ä           Ä       Ä   Ä           Ä   Ä   Ä           Ä       Ä   Ä   Ä   Ä       ÄÄ’·æìv≈æC´ÈΩD9°æhR>ı†ø€&¬=Eﬁ>⁄˚iæÍˇ=~êø’›#øJ´ ?ı≠'?µz?ê‘æi}1?jxΩF˙=2z´?∏∂_?-Ä8>H#Àø›XøÖß¥>˛~ó>ß…J?ãL¨ΩM√ù>o~´>±∏∆æô Pæ#÷æk£>Ö ΩöÇ”º}iPæ"áø˙ﬂ
-øä|>bWû?≈p?Kå/øDúæ(‹5ø/Cød©º{Ù-øµüÉæiﬁå?ùÚåΩΩ`øπÃΩdmød 2ø–~ºæødÿæÏÑ]ø¶·¶æíï?6v3?§Ìº>Ñv¡>Ãæa˜TøÅXH=¸€ìø±&LøUÕ>&Ì√>8°=ü*µ>‹„>Ü?Âõæ°YÁæMv”æÈÕ?–Ä>’¥>ºeøÇâ8?Òÿû? ˜ñΩ@ÙvøSÁÃæ–√?…›>˙CZΩ¬"L>kpµæêíî>mCæÆ#´æÇ•æŒ¬®:cuëæ`å∂ΩoTäæåj5>ÄêÛæ≥∆„æMfW>
-Ì:øŸ®·;ÈÁ“æU©Ω„*™?f$,?~ié?.o"æFcæMÁfΩQ?#%øï®T?n+©æZ]@?m©Ω⁄p
-ø3èL>	¿ˆæ]´¨ø|B
-øÁ€≥øáπ?y>?<¶ΩOÖäø≠B?øpqc>†)*?r°&?ô?œ8?FjÔ?Ïèª>ÎÉ•øeAhøløƒø]Sø”Fx?›Òø       Ä       Ä                       Ä   Ä   Ä       Ä   Ä   Ä   Ä   Ä       Ä               Ä                   Ä           Ä   Ä       Ä   Ä   Ä               Ä       Ä       Ä   Ä       Ä   Ä   Ä   Ä   Ä   Ä       Ä       Ä   Ä           Ä       Ä       Ä   Ä       Ä   Ä       Ä   Ä   Ä   Ä   Ä           Ä   Ä       Ä   Ä           Ä   Ä       Ä   Ä   Ä               Ä       Ä   Ä           Ä   Ä           Ä       Ä   Ä   Ä       Ä       Ä       Ä       Ä   Ä       Ä   Ä       Ä       Ä           Ä       Ä                       Ä               Ä       Ä   Ä       Ä>Æ™ª0±Lªµ‘Åª Pª◊ñ∫ñ0Ë∫ÎΩ:[@9Ø\:]zô;;5∞;œ@Ç;‚ÄÎ:‚k˚9sí:`68ØÎ∫_¬ô9;˘:ÆB~ª	™Ä∫°;NÌTªÛ“À∫	≈!;aªzƒDªÏ:∫v{∞9@Ω¥∫é?ªLc ªRhJªõTâªÜ)åªååª$éO;
-ã;˚/M;zmN;A¨;µ‚d;Â∫y;ˆ§æ;õ∏Ç;â§	ªÖ-Z∫˘'%ª1.¨∫ 0˙∫ãÊÎ∫$Ñ§µø_:%Ë79Í¸Úπﬂ@kª÷úÖπm1ú:ª”Y∫i$Ó:@¸:Ê:;ry;-JÑªê”nªpΩkªÍ€Ê∫ŸFçπ”‘ä∫ì%∫ƒ-";4<ó:ã≥¨:º
-;ËÖü:g:Œ?⁄π∞+o∫‰Zπ:b”ﬁ:o∆:}H;Ã=q;/Ór;¨én∫+…9OïR:âÁΩπM0Ç;…î;ËFyª9@º]Çªw…òªâ£IºAƒªL4Iª÷º∂¡~ªwö∫pÛ¯∏ô(*ª√Â«:Û„˜:MÍ¿:3Ä;7eä;+Ç;˚xØ∫◊æ∫k0›πGıƒ:0[»:ì¢;Û‘:∞j9;7v2;}≠µ;_“;»y∏;πô¥:V#ìπd:
-:;ºò$Aº…ÖºÀ #ª‘G*ª H;ê∑0ªÿJª∂ÍQ;°nªÀ˚ª]Æ%;Ê≠®ªKçª“óª~º´∞ºM˚˘ªòRº˜#'ºVÎ·ªà'É>ÈòK?¯7¨>¶§Fø‡'øÍÁ“æhømˆÕΩ%+^Ω	vÂΩ≤Ÿ>WFöæñoå=´◊Ï>Ô3Î=!¬Ü>k?Œiæ≠Å…>ÖHæHà+>»ãV=®˘Ÿ>ÆtÔ=ùœæ‚∑ø‡•W=÷óÉ>W*=p	?~ÊÜΩ†Ï®æ≠C>$3ø_e†ø3ËnæRn$ΩíÒ’ΩE6,>˙˘•>©“=Á{?Ô’4æï;ﬂæ*≠õæ& äæ}£Œæèìk=ág;>ç5ææ~;>ÔTú=læ>I©=#ÊøÜ‰ø¿Òåæ™>ÚΩ_ >Ü0:>"IΩJî”º∆.>Ã#Jø Õ¿
-HÌø˝%L?/>ºŸ=‰y?- ?¢
-?∆ÌÍ>>!Ô>ã∂÷>ßX∫=0;=E?>≤,√>-i¨>ã	º>dµ?Æ˚`æÈnf=îÀ?I¿…æà)C==&öΩª•ôæﬂäø≠`¯æ¬
-Íæ8§.øñæ¨˛ú>üΩI®=∆ÑæπZß=4ˆ◊ø -‹Ω•¿ÏøD¬ ?Bzπ?æ8C?Â
-’=Éú?Åÿõæ—jz?˛ˇΩò∏û?i)<*>åäë>≥ÙöøÂõ	ømUˆør<Â>VR>∆l ?.LÈΩSﬂgΩ™ˇ–=mÇB>˘‰O>î¡œ>≤—“>Ó”Í<A~©>b◊>ö® =%ÎΩ™„Pæ∑	ø¯YHæ∏b‡æ/il>Ds√æﬁu¡Ωˇ≤
-?8◊ªæ!±˙æÆ—?]Læ ˆøÌÜU>•˘üæ`kKæ% ù>ÀÄæA.>O%&øß¯sΩ…ÕŸΩwÓ∫>¢¸°ºÈà⁄=CY{ΩG	=•z≤=ö,˙æ'~3>iâ÷>h_pæfè>N…wΩ´b-æ,Î#>Öå•>2	æˆ◊`Ω∂Oæº·¿=µ(ıæã^Ω¶7<>Ô=4ÚæNLŒæ‡(ﬂΩ]Ù¬=ˇ®>∞ë=d÷k<”÷L>lO=˘c†=7G>.ƒÀ=£ñæ»õæ¸Ùèæ°ØõΩˇüŸΩ∑∂3=*<ØΩ∂zH>ŒÀ<ãﬂ›<%ÁZæÉì=3[º=ëEe=ﬁ7Ô=ÕG>É} ?Ÿx><Å<MùæÅèæ⁄-‰=gë˚=U&æì˛m<∏l”>3Ÿ2>xS>—$ø>‚™x>B%LΩ”¢ƒæ®<˜Ω{"æ<¸–Rº™ﬁ˚ªaÌ?÷=´ö>Z≤->Ê—æïº	ø›÷ÿΩˇw>Bpâ>Ú˘iΩ.ˇ=æÁË…Ω¨-BæÏ¶Bø•∂æBwQ>yCæ‰˝=eg˘æ√ª%>HÍøSnæ•¢>hÎg>¢•æ=ÊÄÖ> êg=¯!Ωééˆ;ù^!=Ø\>z‡˝= ™[>pÀ æEﬁO>πàÒΩ:m =\1ø>¢¬%>Z2¬>cß%æÁ…>Ä5;ΩOøä&“º£¸è=ºPæf{∆>%‹™=ºkëæ»Ô´>ZkÿΩÉÉ*<àË†>ËB0æÔ>–‚€Ωììæ ·íævï
-æu5l>Ãàæ∆Ô=*◊0Bonnx::Conv_333J¿T7 Óøøáéøc[π?KŒé>{Ãƒ=·5Öø§Ç¶ø!  ÄÔ Ä
- 7?úD ?∞D  —…;=ö? Ä–Ã`ø≈µ˜æ¸9 †2 Í Äj6 V9 ùÅ≤?J€yæ`' äV˚<Ã"ãΩÆ; ≤B ˙ Än4 `$Ç;€–>æ Ä^E v4?ñ Ä`§˝>Í Ä‡©E=à5≠=Ú1 ⁄]>t: 6‚+>¸◊(?$•«?*/B%/backbone/conv1/act/Constant_output_0J    *1B'/backbone/conv1/act/Constant_1_output_0J  ¿@Z
-input
-
-
-
-`
-`Z=
-#backbone.layer1.0.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer1.0.fused_conv.bias
-
-
-Z=
-#backbone.layer2.0.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer2.0.fused_conv.bias
-
-
-Z=
-#backbone.layer2.1.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer2.1.fused_conv.bias
-
-
-Z=
-#backbone.layer3.0.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer3.0.fused_conv.bias
-
-
-Z=
-#backbone.layer3.1.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer3.1.fused_conv.bias
-
-
-Z=
-#backbone.layer3.2.fused_conv.weight
-
-
-
-
-Z/
-!backbone.layer3.2.fused_conv.bias
-
-
-Z7
-bbox_head.convs_pred.0.weight
-
-
-0
-
-Z)
-bbox_head.convs_pred.0.bias
-
-
-Z(
-onnx::Conv_323
-
-
-
-
-Z
-onnx::Conv_324
-
-
-Z(
-onnx::Conv_326
-
-
-
-
-Z
-onnx::Conv_327
-
-
-Z(
-onnx::Conv_329
-
-
-
-
-Z
-onnx::Conv_330
-
-
-Z(
-onnx::Conv_332
-
-0
-
-
-Z
-onnx::Conv_333
-
-
-0b 
-output
-
-
-
-
-j<
-"/backbone/conv1/conv/Conv_output_0
-
-
-
-0
-0j;
-!/backbone/conv1/act/Clip_output_0
-
-
-
-0
-0jL
-2/backbone/layer1/layer1.0/fused_conv/Conv_output_0
-
-
-
-0
-0jE
-+/backbone/layer1/layer1.0/act/Relu_output_0
-
-
-
-0
-0jP
-6/backbone/layer1/layer1.0/last_conv/conv/Conv_output_0
-
-
-
-0
-0jO
-5/backbone/layer1/layer1.0/last_conv/act/Relu_output_0
-
-
-
-0
-0jL
-2/backbone/layer2/layer2.0/fused_conv/Conv_output_0
-
-
-
-
-jE
-+/backbone/layer2/layer2.0/act/Relu_output_0
-
-
-
-
-jL
-2/backbone/layer2/layer2.1/fused_conv/Conv_output_0
-
-
-
-
-jE
-+/backbone/layer2/layer2.1/act/Relu_output_0
-
-
-
-
-jL
-2/backbone/layer3/layer3.0/fused_conv/Conv_output_0
-
-
-
-
-jE
-+/backbone/layer3/layer3.0/act/Relu_output_0
-
-
-
-
-jP
-6/backbone/layer3/layer3.0/last_conv/conv/Conv_output_0
-
-
-
-
-jO
-5/backbone/layer3/layer3.0/last_conv/act/Relu_output_0
-
-
-
-
-jL
-2/backbone/layer3/layer3.1/fused_conv/Conv_output_0
-
-
-
-
-jE
-+/backbone/layer3/layer3.1/act/Relu_output_0
-
-
-
-
-jL
-2/backbone/layer3/layer3.2/fused_conv/Conv_output_0
-
-
-
-
-jE
-+/backbone/layer3/layer3.2/act/Relu_output_0
-
-
-
-
-jH
-./convs_bridge.0/convs_bridge.0.0/Conv_output_0
-
-
-0
-
-jH
-./convs_bridge.0/convs_bridge.0.2/Clip_output_0
-
-
-0
-
-j5
-/convs_pred.0/Conv_output_0
-
-
-
-
-j-
-/Transpose_output_0
-
-
-
-
-j+
-/Softmax_output_0
-
-
-
-
-B
- 
