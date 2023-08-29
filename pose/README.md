@@ -1,6 +1,6 @@
 # Pose Overview
 
-The pose model zoo includs several pre-trained models from different optimized neural networks which trained using [EdgeLab](https://github.com/Seeed-Studio/EdgeLab).
+The pose model zoo includs several pre-trained models from different optimized neural networks which trained using [SSCMA](https://github.com/Seeed-Studio/SSCMA).
 
 The hierarchy of detection directory is as follows:
 

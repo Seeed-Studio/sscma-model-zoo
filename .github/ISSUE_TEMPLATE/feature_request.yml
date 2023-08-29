@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thank you for taking the time to fill out this form to help us improve. Please read the following before you start filling out the form.
-        EdgeLab Model Zoo welcome request on the following scenarios:
+        SSCMA Model Zoo welcome request on the following scenarios:
         - Add more pre-trained models for our currently implemented neural networks
         - Update pre-trained models on latest datasets, etc.
         
@@ -31,7 +31,7 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Read EdgeLab Model Zoo and EdgeLab docs.
+        - label: Read SSCMA Model Zoo and SSCMA docs.
           required: true
         - label: There has no simliar issue or pull request.
           required: true
