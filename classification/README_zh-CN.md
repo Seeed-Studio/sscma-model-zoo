@@ -1,6 +1,6 @@
 # Classification 概述
 
-图像分类 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [EdgeLab](https://github.com/Seeed-Studio/EdgeLab) 优化的(更轻量化，速度更快)神经网络上训练的。
+图像分类 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [SSCMA](https://github.com/Seeed-Studio/SSCMA) 优化的(更轻量化，速度更快)神经网络上训练的。
 
 分类目录的层次结构如下：
 

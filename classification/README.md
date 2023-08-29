@@ -1,6 +1,6 @@
 # Classification Overview
 
-The classification model zoo includs several pre-trained models from different optimized (Lighter and faster) neural networks which trained using [EdgeLab](https://github.com/Seeed-Studio/EdgeLab).
+The classification model zoo includs several pre-trained models from different optimized (Lighter and faster) neural networks which trained using [SSCMA](https://github.com/Seeed-Studio/SSCMA).
 
 The hierarchy of detection directory is as follows:
 
