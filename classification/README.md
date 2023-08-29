@@ -20,3 +20,4 @@ The models are classified according to the target tasks, which is convenient for
 - [CIFAR](./cifar/README.md)
 - [MNIST](./mnist/README.md)
 - [EMOTION](./emotion/README.md)
+- [PERSON](./person/README.md)
