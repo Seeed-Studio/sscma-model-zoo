@@ -6,11 +6,11 @@ body:
     attributes:
       value: |
         Thank you for taking the time to fill out this form to help us improve. Please read the following before you start filling out the form.
-        EdgeLab Model Zoo accepts feedback on the following issues:
+        SSCMA Model Zoo accepts feedback on the following issues:
         - Model file error, cannot be downloaded
         - Model inference errors, abnormal inference results
         - Wrong test parameters, license issues, etc.
-        For issues such as errors in the runtime code, we recommend that you move to [EdgeLab Issues](https://github.com/Seeed-Studio/edgelab-model-zoo/issues) for faster assistance.
+        For issues such as errors in the runtime code, we recommend that you move to [SSCMA Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues) for faster assistance.
 
   - type: textarea
     id: issue-description
@@ -42,7 +42,7 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Read EdgeLab Model Zoo and EdgeLab docs.
+        - label: Read SSCMA Model Zoo and SSCMA docs.
           required: true
         - label: There has no simliar issue or pull request.
           required: true

@@ -1,22 +1,25 @@
 # Classification Overview
 
-The classification model zoo includs several pre-trained models from different optimized neural networks which trained using [EdgeLab](https://github.com/Seeed-Studio/EdgeLab).
+The classification model zoo includs several pre-trained models from different optimized (Lighter and faster) neural networks which trained using [SSCMA](https://github.com/Seeed-Studio/SSCMA).
 
 The hierarchy of detection directory is as follows:
 
 ```txt
-detection
-├── models
-│   ├── <network name>
-│   │   ├── <datasets name>
-│   │   │   ├── <pre-trained model>
-│   │   │   └── ...
-│   │   └── ...
+classification
+├── <datasets name>
+│   ├── <pre-trained model>
 │   └── ...
 └── ...
 ```
 
-The `models` folder includes different neural networks, each neural network is denoted as its name, located on `<network name>` folder. Inside the neural network folder, the model may trained on different datasets, so we use the `<datasets name>` to to partition these pre-trained models into different folders.
+## Task
+
+The models are classified according to the target tasks, which is convenient for users to find model solutions suitable for their task requirements
+
+- [CIFAR](./cifar/README.md)
+- [MNIST](./mnist/README.md)
+- [EMOTION](./emotion/README.md)
+- [PERSON](./person/README.md)
 
 ## Performance of Models
 
@@ -48,3 +51,4 @@ The section summarizes the performance of different models trained from differen
 <sup>2</sup> Measured on [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).
 
 <sup>3</sup> Measured on [SenseCAP A1101](https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/).
+

@@ -60,7 +60,7 @@ def verify_models(root: os.path):
 def main():
     parser = argparse.ArgumentParser(description="Verify models")
     parser.add_argument(
-        "--root", default="", help="root of edgelab-model-zoo repository"
+        "--root", default="", help="root of sscma-model-zoo repository"
     )
     args = parser.parse_args()
 

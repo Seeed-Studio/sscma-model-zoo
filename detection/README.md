@@ -1,22 +1,24 @@
 # Detection Overview
 
-The object detection model zoo includs several pre-trained models from different optimized neural networks which trained using [EdgeLab](https://github.com/Seeed-Studio/EdgeLab).
+The object detection model zoo includs several pre-trained models from different optimized neural networks which trained using [SSCMA](https://github.com/Seeed-Studio/SSCMA).
 
 The hierarchy of detection directory is as follows:
 
 ```txt
-detection
-├── models
-│   ├── <network name>
-│   │   ├── <datasets name>
-│   │   │   ├── <pre-trained model>
-│   │   │   └── ...
-│   │   └── ...
+type
+├── <datasets name>
+│   ├── <pre-trained model>
 │   └── ...
 └── ...
 ```
 
-The `models` folder includes different neural networks, each neural network is denoted as its name, located on `<network name>` folder. Inside the neural network folder, the model may trained on different datasets, so we use the `<datasets name>` to to partition these pre-trained models into different folders.
+## Task
+
+At present, the following devices have passed the test of the model, and the inference time is based on the actual test results of the corresponding devices (including pre-processing and post-processing)
+
+- [FACE](./face/README.md)
+- [METER](./meter/README.md)
+- [PERSON](./person/README.md)
 
 ## Task Scanarios and Model Performance
 
@@ -101,3 +103,4 @@ The section summarizes the performance of various models trained from different 
 <sup>3</sup> Measured on [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).
 
 <sup>4</sup> Measured on [SenseCAP A1101](https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/).
+

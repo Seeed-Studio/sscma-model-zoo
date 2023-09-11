@@ -1,22 +1,26 @@
 # Classification 概述
 
-图像分类 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [EdgeLab](https://github.com/Seeed-Studio/EdgeLab) 优化的神经网络上训练的。
+图像分类 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [SSCMA](https://github.com/Seeed-Studio/SSCMA) 优化的(更轻量化，速度更快)神经网络上训练的。
 
-检测目录的层次结构如下：
+
+分类目录的层次结构如下：
 
 ```txt
-detection
-├── models
-│   ├── <network name>
-│   │   ├── <datasets name>
-│   │   │   ├── <pre-trained model>
-│   │   │   └── ...
-│   │   └── ...
+classification
+├── <任务>
+│   ├── <模型>
 │   └── ...
 └── ...
 ```
 
-文件夹 `models` 包含不同神经网络的预训练模型，各模型以其神经网络的名称表示，位于 `<network name>` 文件夹内。在对应模型的神经网络文件夹内，模型可能在不同的数据集上进行训练，因此我们使用 `<datasets name>` 来将这些预训练模型以实际训练的数据集划分到不同的文件夹中。
+## 任务场景
+
+模型按照目标任务进行分类，可方便用户寻找适合自己任务需求的模型方案。
+
+- [CIFAR](./cifar/README.md)
+- [MNIST](./mnist/README.md)
+- [EMOTION](./emotion/README.md)
+- [PERSON](./person/README.md)
 
 ## 模型性能
 
@@ -52,3 +56,4 @@ The section summarizes the performance of different models trained from differen
 <sup>2</sup> Measured on [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).
 
 <sup>3</sup> Measured on [SenseCAP A1101](https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/).
+

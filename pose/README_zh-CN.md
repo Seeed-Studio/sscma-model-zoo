@@ -1,6 +1,6 @@
 ## 姿态识别概述
 
-姿态识别 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [EdgeLab](https://github.com/Seeed-Studio/EdgeLab) 优化的神经网络上训练的。
+姿态识别 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [SSCMA](https://github.com/Seeed-Studio/SSCMA) 优化的神经网络上训练的。
 
 姿态识别模型目录的层次结构如下：
 
