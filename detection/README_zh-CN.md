@@ -1,22 +1,24 @@
 # 目标检测概述
 
-目标检测 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [EdgeLab](https://github.com/Seeed-Studio/EdgeLab) 优化的神经网络上训练的。
+目标检测 Model Zoo 包含多个使用不同神经网络的预训练模型，这些模型是在 [SSCMA](https://github.com/Seeed-Studio/SSCMA) 优化的神经网络上训练的。
 
 目标检测模型目录的层次结构如下：
 
 ```txt
-detection
-├── models
-│   ├── <network name>
-│   │   ├── <datasets name>
-│   │   │   ├── <pre-trained model>
-│   │   │   └── ...
-│   │   └── ...
+类型
+├── <任务>
+│   ├── <模型>
 │   └── ...
 └── ...
 ```
 
-文件夹 `models` 包含不同神经网络的预训练模型，各模型以其神经网络的名称表示，位于 `<network name>` 文件夹内。在对应模型的神经网络文件夹内，模型可能在不同的数据集上进行训练，因此我们使用 `<datasets name>` 来将这些预训练模型以实际训练的数据集划分到不同的文件夹中。
+## 任务场景
+
+模型按照目标任务进行分类，可方便用户寻找适合自己任务需求的模型方案。
+
+- [FACE](./face/README.md)
+- [METER](./meter/README.md)
+- [PERSON](./person/README.md)
 
 ## 任务场景与模型性能
 
@@ -101,3 +103,4 @@ detection
 <sup>3</sup> 在 [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/) 测试。
 
 <sup>4</sup> 在 [SenseCAP A1101](https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/) 测试。
+
