@@ -1,14 +1,8 @@
-# Seeed Studio SSCMA Model Zoo
-
-<div align="center">
-  <img width="100%" src="https://cdn.jsdelivr.net/gh/Seeed-Studio/SSCMA@main/docs/public/images/SSCMA-Logo.png">
-</div>
-
-English | [简体中文](README_zh-CN.md)
+# SSCMA Model Zoo
 
 ## Introduction
 
-Welcome to Seeed Studio SSCMA Model Zoo. We provide a series of pre-trained models for different application scenarios for you to use, with [Seeed Studio SSCMA](https://github.com/Seeed-Studio/SSCMA), you can test or inference on these models and easily deploy them to edge computing devices.
+Welcome to SSCMA Model Zoo. We provide a series of pre-trained models for different application scenarios for you to use, with [SSCMA](https://github.com/Seeed-Studio/SSCMA), you can test or inference on these models and easily deploy them to edge computing devices.
 
 SSCMA Model Zoo focuses on providing models trained on SSCMA optimized neural networks, which are tailored to real-world application scenarios and enable faster and more accurate inference on embedded devices.
 
@@ -29,16 +23,6 @@ If you wish to use the model provided by SSCMA Model Zoo, we recommend that you 
 1. Based on actual needs, select corresponding application scenario and choose appropriate neural networks. You can browse the test results that we provide for dicision.
 2. Download the selected pre-trained model. For public pre-trained models, you can directly download them through the model link in the test results table.
 3. Please refer to [SSCMA Documentation - Deployment Example](https://sensecraftma.seeed.cc/SSCMA/examples/examples) to deploy on edge computing devices. You can also use SSCMA to run our models on your computer, reproduce our test results or infer directly.
-
-## Device
-
-At present, the following devices have passed the test of the model, and the inference time is based on the actual test results of the corresponding devices (including pre-processing and post-processing)
-
-- <sup>1</sup> [ESP32-S3 (XIAO)](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/).
-
-- <sup>2</sup> [Grove Vision AI](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/).
-
-- <sup>3</sup> [SenseCAP A1101](https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/).
 
 ## Troubleshooting
 

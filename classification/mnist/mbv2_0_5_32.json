@@ -1,0 +1,99 @@
+{
+    "name": "MNIST Classification",
+    "version": "1.0.0",
+    "category": "Image Classification",
+    "algorithm": "MobileNetV2(0.5) Rep",
+    "description": "The model is a vision model designed for MNIST dataset",
+    "dataset": {
+        "name": "MNIST",
+        "url": "http://yann.lecun.com/exdb/mnist/"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                32,
+                32,
+                1
+            ],
+            "remark": "The input image should be resized to 32x32 pixels"
+        },
+        "output": {
+            "type": "classification",
+            "shape": [
+                10
+            ],
+            "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
+        }
+    },
+    "config": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py",
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png",
+    "classes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 99.01,
+                "Top-5(%)": 1.00,
+                "Flops(MB)": 0.21,
+                "Params(MB)": 0.082
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 99.01,
+                "Top-5(%)": 1.00,
+                "Params(MB)": 0.082
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 99.01,
+                "Top-5(%)": 1.00,
+                "Params(MB)": 0.72
+            },
+            "url": " https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "Top-1(%)": 98.98,
+                "Top-5(%)": 99.98,
+                "Params(MB)": 0.021,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 13
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite",
+            "author": "Seeed Studio"
+        }
+    ]
+}

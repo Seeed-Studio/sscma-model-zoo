@@ -1,0 +1,90 @@
+{
+    "name": "Digital Meter Water",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "YOLOv5",
+    "description": "The model is a YOLOv5-tiny model trained on the Digital Meter Water dataset, which can detect the water meter number.",
+    "dataset": {
+        "name": "Digital Meter Electricity",
+        "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-water"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                192,
+                192,
+                3
+            ],
+            "remark": "The input image should be resized to 192x192 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                2268,
+                5
+            ],
+            "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py",
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detect_meter.png",
+    "classes": [
+        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 95.3,
+                "MACs(MB)": 91.8,
+                "Params(MB)": 0.67
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 91.8,
+                "Params(MB)": 0.67,
+                "Peek RAM(MB)": 1.20
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 91.8,
+                "MACs(MB)": 89.00,
+                "Peek RAM(MB)": 1.20
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_float32_sha1_d523dd19922ff4a3a53a0795222121317d01354d.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "metrics": {
+                "mAP(%)": 88.3,
+                "MACs(MB)": 89.00,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 691.00
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "name": "Person Classification",
+    "version": "1.0.0",
+    "category": "Image Classification",
+    "algorithm": "MobileNetV2(0.35) Rep",
+    "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+    "dataset": {
+        "name": "VWW",
+        "url": "https://github.com/Mxbonn/visualwakewords"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                64,
+                64,
+                3
+            ],
+            "remark": "The input image should be resized to 32x32 pixels"
+        },
+        "output": {
+            "type": "classification",
+            "shape": [
+                2
+            ],
+            "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+        }
+    },
+    "config": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py",
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
+    "classes": [
+        "Not a person", "Person"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 85.22,
+                "Flops(MB)": 34,
+                "Params(MB)": 2.71
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 80.33,
+                "Params(MB)": 2.71
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 80.34,
+                "Params(MB)": 2.71
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "Top-1(%)": 80.23,
+                "Params(MB)": 0.021,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 101
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite",
+            "author": "Seeed Studio"
+        }
+    ]
+}

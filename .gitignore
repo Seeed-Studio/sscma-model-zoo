@@ -26,3 +26,6 @@ venv.bak/
 
 # Dump files
 dump
+
+# Distribution / packaging
+dist/

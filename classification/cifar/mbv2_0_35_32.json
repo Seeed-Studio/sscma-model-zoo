@@ -1,0 +1,102 @@
+{
+    "name": "CIFAR-10 Classification",
+    "version": "1.0.0",
+    "category": "Image Classification",
+    "algorithm": "MobileNetV2(0.35) Rep",
+    "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+    "dataset": {
+        "name": "CIFAR-10",
+        "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                32,
+                32,
+                3
+            ],
+            "remark": "The input image should be resized to 32x32 pixels"
+        },
+        "output": {
+            "type": "classification",
+            "shape": [
+                10
+            ],
+            "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
+        }
+    },
+    "config": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py",
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png",
+    "classes": [
+        "Airplane",
+        "Automobile",
+        "Bird",
+        "Cat",
+        "Deer",
+        "Dog",
+        "Frog",
+        "Horse",
+        "Ship",
+        "Truck"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 74.76,
+                "Top-5(%)": 98.26,
+                "Flops(MB)": 0.21,
+                "Params(MB)": 0.021
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 74.76,
+                "Top-5(%)": 98.26,
+                "Flops(MB)": 0.21,
+                "Params(MB)": 0.021
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 74.76,
+                "Top-5(%)": 98.26,
+                "Flops(MB)": 0.21,
+                "Params(MB)": 0.021
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "Top-1(%)": 74.56,
+                "Top-5(%)": 98.29,
+                "Flops(MB)": 0.21,
+                "Params(MB)": 0.021,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 13
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite",
+            "author": "Seeed Studio"
+        }
+    ]
+}
