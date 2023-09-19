@@ -2,8 +2,8 @@
     "name": "Face Detection",
     "version": "1.0.0",
     "category": "Object Detection",
-    "algorithm": "YOLOv5",
-    "description": "The model is a YOLOv5-tiny model trained on the Face dataset. The model can detect faces in images.",
+    "algorithm": "Swift-YOLO",
+    "description": "The model is a Swift-YOLO model trained on the Face dataset. The model can detect faces in images.",
     "dataset": {
         "name": "Face",
         "url": "https://universe.roboflow.com/detection-kgpie/face-detection-j0igc"
