@@ -1,0 +1,872 @@
+{
+    "version": "0e28ab88da7cc7917876cfbc9f020b4a6fcf4376",
+    "models": [
+        {
+            "name": "Person Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.35) Rep",
+            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "dataset": {
+                "name": "VWW",
+                "url": "https://github.com/Mxbonn/visualwakewords"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        96,
+                        96,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 96x96 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        2
+                    ],
+                    "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
+            "classes": [
+                "Not a person",
+                "Person"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 88.37,
+                        "Flops(MB)": 76.5,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 88.36,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 88.36,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 88.27,
+                        "Params(MB)": 0.021,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 582
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "Person Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.35) Rep",
+            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "dataset": {
+                "name": "VWW",
+                "url": "https://github.com/Mxbonn/visualwakewords"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        32,
+                        32,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 64x64 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        2
+                    ],
+                    "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
+            "classes": [
+                "Not a person",
+                "Person"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 85.22,
+                        "Flops(MB)": 34,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_6dec3c029041408de043c5921621ab7abc4c4ec4.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 85.23,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_aeb9c1f3bf7c19f3490daee7da1ac0d76b7e49d9.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 85.23,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_d44e8c1247dfc66e645f5d07b904e4a430149882.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 85.26,
+                        "Params(MB)": 0.021,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 286
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_int8_sha1_a939407d507b45ceca293e74c8961d59357b37b2.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "Person Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.35) Rep",
+            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "dataset": {
+                "name": "VWW",
+                "url": "https://github.com/Mxbonn/visualwakewords"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        64,
+                        64,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 32x32 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        2
+                    ],
+                    "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
+            "classes": [
+                "Not a person",
+                "Person"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 85.22,
+                        "Flops(MB)": 34,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 80.33,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 80.34,
+                        "Params(MB)": 2.71
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 80.23,
+                        "Params(MB)": 0.021,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 101
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "CIFAR-10 Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.5) Rep",
+            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.5) Rep algorithm.",
+            "dataset": {
+                "name": "CIFAR-10",
+                "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        32,
+                        32,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 32x32 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        10
+                    ],
+                    "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png",
+            "classes": [
+                "Airplane",
+                "Automobile",
+                "Bird",
+                "Cat",
+                "Deer",
+                "Dog",
+                "Frog",
+                "Horse",
+                "Ship",
+                "Truck"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 80.46,
+                        "Top-5(%)": 98.66,
+                        "Flops(MB)": 2.55,
+                        "Params(MB)": 0.021
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.5_cifar10_float32_sha1_461bb5ded0d24d338095fa4a09de9d9775a6bfd7.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 80.46,
+                        "Top-5(%)": 98.66,
+                        "Params(MB)": 0.72
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.5_cifar10_float32_sha1_8202733d350bf67de22c776a9e35d5b250941807.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 80.46,
+                        "Top-5(%)": 98.66,
+                        "Params(MB)": 0.72
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.5_cifar10_float32_sha1_426735eb781a233566ba426cd9b91bc1a58d0050.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 80.46,
+                        "Top-5(%)": 98.1,
+                        "Params(MB)": 0.18,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 24
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.5_cifar10_int8_sha1_56016374140f2e3960429e6dfd8ef1282b28c65d.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "CIFAR-10 Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.35) Rep",
+            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "dataset": {
+                "name": "CIFAR-10",
+                "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        32,
+                        32,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 32x32 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        10
+                    ],
+                    "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png",
+            "classes": [
+                "Airplane",
+                "Automobile",
+                "Bird",
+                "Cat",
+                "Deer",
+                "Dog",
+                "Frog",
+                "Horse",
+                "Ship",
+                "Truck"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 74.76,
+                        "Top-5(%)": 98.26,
+                        "Flops(MB)": 0.21,
+                        "Params(MB)": 0.021
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 74.76,
+                        "Top-5(%)": 98.26,
+                        "Flops(MB)": 0.21,
+                        "Params(MB)": 0.021
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 74.76,
+                        "Top-5(%)": 98.26,
+                        "Flops(MB)": 0.21,
+                        "Params(MB)": 0.021
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 74.56,
+                        "Top-5(%)": 98.29,
+                        "Flops(MB)": 0.21,
+                        "Params(MB)": 0.021,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 13
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "MNIST Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2(0.5) Rep",
+            "description": "The model is a vision model designed for MNIST dataset",
+            "dataset": {
+                "name": "MNIST",
+                "url": "http://yann.lecun.com/exdb/mnist/"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        32,
+                        32,
+                        1
+                    ],
+                    "remark": "The input image should be resized to 32x32 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        10
+                    ],
+                    "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
+                }
+            },
+            "config": {
+                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/mnist_cls.png",
+            "classes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 99.01,
+                        "Top-5(%)": 1.0,
+                        "Flops(MB)": 0.21,
+                        "Params(MB)": 0.082
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 99.01,
+                        "Top-5(%)": 1.0,
+                        "Params(MB)": 0.082
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 99.01,
+                        "Top-5(%)": 1.0,
+                        "Params(MB)": 0.72
+                    },
+                    "url": " https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 98.98,
+                        "Top-5(%)": 99.98,
+                        "Params(MB)": 0.021,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 13
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "Digital Meter Water",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the Digital Meter Water dataset, which can detect the water meter number.",
+            "dataset": {
+                "name": "Digital Meter Electricity",
+                "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-water"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        5
+                    ],
+                    "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detect_meter.png",
+            "classes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "-"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 95.3,
+                        "MACs(MB)": 91.8,
+                        "Params(MB)": 0.67
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 91.8,
+                        "Params(MB)": 0.67,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 91.8,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_float32_sha1_d523dd19922ff4a3a53a0795222121317d01354d.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "metrics": {
+                        "mAP(%)": 88.3,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 0.35,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 691.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe.tflite",
+                    "author": "Seeed Studio"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            }
+        },
+        {
+            "name": "Face Detection",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the Face dataset. The model can detect faces in images.",
+            "dataset": {
+                "name": "Face",
+                "url": "https://universe.roboflow.com/detection-kgpie/face-detection-j0igc"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        5
+                    ],
+                    "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detection_face.png",
+            "classes": [
+                "Face"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.4,
+                        "MACs(MB)": 90.56,
+                        "Params(MB)": 0.67
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_f2a3f61a271c467748e26f0fd6fdd82d740512ff.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.1,
+                        "Params(MB)": 0.67
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_e530c8df4b4474979cbfe2da447d06ab657289ce.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.1,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_float32_sha1_a647ee0f7eb8951b3d78c8048159e999029d7051.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "metrics": {
+                        "mAP(%)": 93.1,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 0.35,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 691.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_int8_sha1_e707d23e1b45b4a464e9ebedae0f6570a9d35a9c.tflite",
+                    "author": "Seeed Studio"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            }
+        },
+        {
+            "name": "Digital Meter Electricity",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the Digital Meter Electricity dataset, which can detect the 7-segment digital meter.",
+            "dataset": {
+                "name": "Digital Meter Electricity",
+                "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-electricity"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        5
+                    ],
+                    "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detect_meter.png",
+            "classes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 99.2,
+                        "MACs(MB)": 90.56,
+                        "Params(MB)": 0.67
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 98.8,
+                        "Params(MB)": 0.67,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 98.8,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "metrics": {
+                        "mAP(%)": 93.1,
+                        "MACs(MB)": 89.0,
+                        "Peek RAM(MB)": 0.35,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 691.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
+                    "author": "Seeed Studio"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            }
+        }
+    ]
+}

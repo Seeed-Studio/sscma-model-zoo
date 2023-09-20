@@ -28,7 +28,9 @@
             "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
         }
     },
-    "config": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py",
+    "config": {
+        "url": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+    },
     "guidelines": "",
     "license": "MIT",
     "image": "https://files.seeedstudio.com/sscma/static/detection_face.png",

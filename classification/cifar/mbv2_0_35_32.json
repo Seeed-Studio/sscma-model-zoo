@@ -27,7 +27,9 @@
             "remark": "The output is a 10-dimension vector, each of which represents the probability of the corresponding class."
         }
     },
-    "config": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py",
+    "config": {
+        "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+    },
     "guidelines": "",
     "license": "MIT",
     "image": "https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png",

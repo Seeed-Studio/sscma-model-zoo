@@ -1,5 +1,11 @@
 # SSCMA Model Zoo
 
+<div align="center">
+  <a href="https://sensecraftma.seeed.cc/" target="_blank"><img width="20%" src="https://sensecraftma.seeed.cc/images/SSCMA-Hero.png"></a>
+</div>
+
+English | [简体中文](README_zh_CN.md)
+
 ## Introduction
 
 Welcome to SSCMA Model Zoo. We provide a series of pre-trained models for different application scenarios for you to use, with [SSCMA](https://github.com/Seeed-Studio/SSCMA), you can test or inference on these models and easily deploy them to edge computing devices.
@@ -10,9 +16,26 @@ SSCMA Model Zoo focuses on providing models trained on SSCMA optimized neural ne
 
 Currently, SSCMA Model Zoo provides pre-trained models for the following application scenarios:
 
-- [**Classification**](classification/README.md)
-- [**Detection**](detection/README.md)
-- [**Pose**](pose/README.md)
+### Image Classification
+
+| Model                                                                                                           | Colab                                                                                                                                                                                                                                               |
+|:----------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Person_Classification_MobileNetV2(0.35)_Rep_96](docs/en/Person_Classification_MobileNetV2(0.35)_Rep_96.md)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Person_Classification_MobileNetV2(0.35)_Rep_96.ipynb)   |
+| [Person_Classification_MobileNetV2(0.35)_Rep_32](docs/en/Person_Classification_MobileNetV2(0.35)_Rep_32.md)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Person_Classification_MobileNetV2(0.35)_Rep_32.ipynb)   |
+| [Person_Classification_MobileNetV2(0.35)_Rep_64](docs/en/Person_Classification_MobileNetV2(0.35)_Rep_64.md)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Person_Classification_MobileNetV2(0.35)_Rep_64.ipynb)   |
+| [CIFAR-10_Classification_MobileNetV2(0.5)_Rep_32](docs/en/CIFAR-10_Classification_MobileNetV2(0.5)_Rep_32.md)   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/CIFAR-10_Classification_MobileNetV2(0.5)_Rep_32.ipynb)  |
+| [CIFAR-10_Classification_MobileNetV2(0.35)_Rep_32](docs/en/CIFAR-10_Classification_MobileNetV2(0.35)_Rep_32.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/CIFAR-10_Classification_MobileNetV2(0.35)_Rep_32.ipynb) |
+| [MNIST_Classification_MobileNetV2(0.5)_Rep_32](docs/en/MNIST_Classification_MobileNetV2(0.5)_Rep_32.md)         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/MNIST_Classification_MobileNetV2(0.5)_Rep_32.ipynb)     |
+
+### Object Detection
+
+| Model                                                                                           | Colab                                                                                                                                                                                                                                       |
+|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Digital_Meter_Water_Swift-YOLO_192](docs/en/Digital_Meter_Water_Swift-YOLO_192.md)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Digital_Meter_Water_Swift-YOLO_192.ipynb)       |
+| [Face_Detection_Swift-YOLO_192](docs/en/Face_Detection_Swift-YOLO_192.md)                       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Face_Detection_Swift-YOLO_192.ipynb)            |
+| [Digital_Meter_Electricity_Swift-YOLO_192](docs/en/Digital_Meter_Electricity_Swift-YOLO_192.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Digital_Meter_Electricity_Swift-YOLO_192.ipynb) |
+
+
 
 If you need any pre-trained model for a specific dataset in a specific scenario, feel free to submit a feature request to [Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues/new/choose).
 

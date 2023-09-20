@@ -27,12 +27,15 @@
             "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
         }
     },
-    "config": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py",
+    "config": {
+        "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+    },
     "guidelines": "",
     "license": "MIT",
     "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
     "classes": [
-        "Not a person", "Person"
+        "Not a person",
+        "Person"
     ],
     "benchmark": [
         {
