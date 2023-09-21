@@ -1,12 +1,12 @@
-# Person Classification - MobileNetV2(0.35) Rep
+# Person Classification - MobileNetV2 0.35 Rep
 
-[English](../en/Person_Classification_MobileNetV2(0.35)_Rep_64.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/Person_Classification_MobileNetV2(0.35)_Rep_64.ipynb)
+[English](../en/Person_Classification_MobileNetV2_0.35_Rep_96.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/Person_Classification_MobileNetV2_0.35_Rep_96.ipynb)
 
 **版本：** 1.0.0
 
 **类别：** Image Classification
 
-**算法：** [MobileNetV2(0.35) Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
+**算法：** [MobileNetV2 0.35 Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
 
 **数据集：** [VWW](https://github.com/Mxbonn/visualwakewords)
 
@@ -20,16 +20,16 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 
 |      | 类型           |  批次  | 形状        | 备注                                                                                                          |
 |:-----|:---------------|:------:|:------------|:--------------------------------------------------------------------------------------------------------------|
-| 输入 | image          |   1    | [64, 64, 3] | The input image should be resized to 32x32 pixels                                                             |
+| 输入 | image          |   1    | [96, 96, 3] | The input image should be resized to 96x96 pixels                                                             |
 | 输出 | classification |   1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### 基准测试
 
 |  框架   |  精度   |  Top-1(%)  |  Flops(MB)  |  Params(MB)  |   Inference(ms)   |                                                                                   下载                                                                                    |     作者     |
 |:-------:|:-------:|:----------:|:-----------:|:------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |   85.22    |     34      |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth)   | Seeed Studio |
-|  ONNX   | FLOAT32 |   80.33    |      -      |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx)  | Seeed Studio |
-| TFLite  | FLOAT32 |   80.34    |      -      |     2.71     |         -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite) | Seeed Studio |
-| TFLite  |  INT8   |   80.23    |      -      |     0.02     | 101<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite)   | Seeed Studio |
+| PyTorch | FLOAT32 |   88.37    |    76.5     |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth)   | Seeed Studio |
+|  ONNX   | FLOAT32 |   88.36    |      -      |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx)  | Seeed Studio |
+| TFLite  | FLOAT32 |   88.36    |      -      |     2.71     |         -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite) | Seeed Studio |
+| TFLite  |  INT8   |   88.27    |      -      |     0.02     | 582<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite)   | Seeed Studio |
 
 ***表格注释：***
 

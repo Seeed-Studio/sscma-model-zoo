@@ -1,11 +1,11 @@
 {
-    "version": "0e28ab88da7cc7917876cfbc9f020b4a6fcf4376",
+    "version": "347008cabbd6d50a3e7cc6b3a9c2c67c56395398",
     "models": [
         {
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.35) Rep",
+            "algorithm": "MobileNetV2 0.35 Rep",
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
@@ -94,7 +94,7 @@
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.35) Rep",
+            "algorithm": "MobileNetV2 0.35 Rep",
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
@@ -183,7 +183,7 @@
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.35) Rep",
+            "algorithm": "MobileNetV2 0.35 Rep",
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
@@ -272,11 +272,11 @@
             "name": "CIFAR-10 Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.5) Rep",
+            "algorithm": "MobileNetV2 0.5 Rep",
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.5) Rep algorithm.",
             "dataset": {
                 "name": "CIFAR-10",
-                "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+                "url": "https://www.cs.toronto.edu/~kriz/cifar.html"
             },
             "network": {
                 "batch": 1,
@@ -373,7 +373,7 @@
             "name": "CIFAR-10 Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.35) Rep",
+            "algorithm": "MobileNetV2 0.35 Rep",
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "CIFAR-10",
@@ -477,7 +477,7 @@
             "name": "MNIST Classification",
             "version": "1.0.0",
             "category": "Image Classification",
-            "algorithm": "MobileNetV2(0.5) Rep",
+            "algorithm": "MobileNetV2 0.5 Rep",
             "description": "The model is a vision model designed for MNIST dataset",
             "dataset": {
                 "name": "MNIST",
@@ -503,7 +503,7 @@
                 }
             },
             "config": {
-                "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+                "url": "https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -775,7 +775,8 @@
             "description": "The model is a Swift-YOLO model trained on the Digital Meter Electricity dataset, which can detect the 7-segment digital meter.",
             "dataset": {
                 "name": "Digital Meter Electricity",
-                "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-electricity"
+                "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-electricity",
+                "download": "https://universe.roboflow.com/ds/hK8PvFlIZ5?key=LxpaoUhp5i"
             },
             "network": {
                 "batch": 1,

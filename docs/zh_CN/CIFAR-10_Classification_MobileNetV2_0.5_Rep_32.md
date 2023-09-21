@@ -1,14 +1,14 @@
-# CIFAR-10 Classification - MobileNetV2(0.5) Rep
+# CIFAR-10 Classification - MobileNetV2 0.5 Rep
 
-[English](../en/CIFAR-10_Classification_MobileNetV2(0.5)_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/CIFAR-10_Classification_MobileNetV2(0.5)_Rep_32.ipynb)
+[English](../en/CIFAR-10_Classification_MobileNetV2_0.5_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/CIFAR-10_Classification_MobileNetV2_0.5_Rep_32.ipynb)
 
 **版本：** 1.0.0
 
 **类别：** Image Classification
 
-**算法：** [MobileNetV2(0.5) Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**算法：** [MobileNetV2 0.5 Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
 
-**数据集：** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+**数据集：** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 **类别：** `Airplane`, `Automobile`, `Bird`, `Cat`, `Deer`, `Dog`, `Frog`, `Horse`, `Ship`, `Truck`
 

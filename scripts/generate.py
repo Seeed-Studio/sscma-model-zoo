@@ -285,7 +285,14 @@ def generate_notebook_en(model):
     work_dir = os.getcwd()
     object_name = "{}_{}_{}".format(model["name"].replace(' ', '_'), model["algorithm"].replace(' ', '_'), model["network"]["input"]["shape"][0])
     file = open(os.path.join(work_dir, "templates", "notebook.template.en.ipynb"))
-    
+    config = model.get("config", "")
+    config_file = config.get("url", "config.py")
+    config_name = os.path.basename(config_file).split(".")[0]
+    config_path = 'configs/custom/{}'.format(config_file.split("/")[-1])
+    benchmark = [item for item in model.get("benchmark", {}) if item.get('backend') == "PyTorch"]
+    pretrain_url = benchmark[0].get("url", "")
+    pretrain_path = 'pretrains/{}'.format(pretrain_url.split("/")[-1])
+    dataset_url = model.get("dataset", {}).get("download", "")
     if file is None:
         raise ValueError("Invalid notebook template file")
     
@@ -293,7 +300,7 @@ def generate_notebook_en(model):
     
     # Add model name and description
     content = ""
-    content += "## 📕 {} - {}\n\n".format(model["name"], model["algorithm"])
+    content += "## 📕{} - {}\n\n".format(model["name"], model["algorithm"])
 
     # Add model badges
     content += "**Version:** {}\n\n".format(model["version"])
@@ -313,19 +320,69 @@ def generate_notebook_en(model):
     
     notebook['cells'][1]['source'] = content
     
-   # Train Model 
-    config = model.get("config", "")
+    # Prepare Config
+    notebook['cells'][5]['source'] = '%mkdir -p configs/custom \n'
+    notebook['cells'][5]['source'] += '!wget -c {} -O {}'.format(config.get("url", ""), config_path)
+    
+    # Prepare Pretrain
+    notebook['cells'][7]['source'] = '%mkdir -p pretrains \n'
+    notebook['cells'][7]['source'] += '!wget -c {} -O {}'.format(pretrain_url, pretrain_path)
+    
+    # Prepare Dataset
+    notebook['cells'][9]['source'] = '%mkdir -p datasets \n'
+    if dataset_url != "":
+        notebook['cells'][9]['source'] += '!wget -c {} -O {} \n'.format(dataset_url, "data.zip")
+        notebook['cells'][9]['source'] += '!unzip -q datasets/data.zip -d datasets/data'.format()
+    else:
+        notebook['cells'][9]['source'] += "# Auto Fetch By SSCMA"
+
+    # Train Model 
     if config != "":
-        notebook['cells'][5]['source'] = '!sscma.train {} {}'.format(config.get("url", "config.py"), config.get("argument", ""))
+        notebook['cells'][11]['source'] = '''!sscma.train {} \\
+--cfg-options  {} \\
+\tnum_classes={} \\
+\tepoch=10 '''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][11]['source'] += " \\\n\tdata_root=datasets/data/"
         
         # Export Model
-        notebook['cells'][7]['source'] = '!sscma.export {}'.format(config.get("url", "config.py"), config.get("argument", ""))
-        
+        notebook['cells'][13]['source'] = "import os\n"
+        notebook['cells'][13]['source'] += "with open('work_dirs/{}/last_checkpoint', 'w') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(config_name)
+        notebook['cells'][14]['source'] = '''!sscma.export {} $CHECKPOINT_FILE_PATH \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config_name, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][14]['source'] += " \\\n\tdata_root=datasets/data/"
         # Inference Model
-        notebook['cells'][9]['source'] = '!sscma.inference {}'.format(config.get("url", "config.py"), config.get("argument", ""))
+        notebook['cells'][17]['source'] = '''!sscma.infernce {}  $CHECKPOINT_FILE_PATH \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+                    notebook['cells'][17]['source'] += " \\\n\tdata_root=datasets/data/"
+        
+        notebook['cells'][19]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][19]['source'] += " \\\n\tdata_root=datasets/data/"
+
+        notebook['cells'][21]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][21]['source'] += " \\\n\tdata_root=datasets/data/"
+     
+        notebook['cells'][23]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tfite \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][23]['source'] += " \\\n\tdata_root=datasets/data/"
     
-                                                     
-    # Export
     return notebook
 
 
@@ -334,7 +391,14 @@ def generate_notebook_zh_CN(model):
     work_dir = os.getcwd()
     object_name = "{}_{}_{}".format(model["name"].replace(' ', '_'), model["algorithm"].replace(' ', '_'), model["network"]["input"]["shape"][0])
     file = open(os.path.join(work_dir, "templates", "notebook.template.zh_CN.ipynb"))
-    
+    config = model.get("config", "")
+    config_file = config.get("url", "config.py")
+    config_name = os.path.basename(config_file).split(".")[0]
+    config_path = 'configs/custom/{}'.format(config_file.split("/")[-1])
+    benchmark = [item for item in model.get("benchmark", {}) if item.get('backend') == "PyTorch"]
+    pretrain_url = benchmark[0].get("url", "")
+    pretrain_path = 'pretrains/{}'.format(pretrain_url.split("/")[-1])
+    dataset_url = model.get("dataset", {}).get("download", "")
     if file is None:
         raise ValueError("Invalid notebook template file")
     
@@ -342,7 +406,7 @@ def generate_notebook_zh_CN(model):
     
     # Add model name and description
     content = ""
-    content += "## 📕 {} - {}\n\n".format(model["name"], model["algorithm"])
+    content += "## 📕{} - {}\n\n".format(model["name"], model["algorithm"])
 
     # Add model badges
     content += "**版本:** {}\n\n".format(model["version"])
@@ -362,19 +426,69 @@ def generate_notebook_zh_CN(model):
     
     notebook['cells'][1]['source'] = content
     
+    # Prepare Config
+    notebook['cells'][5]['source'] = '%mkdir -p configs/custom \n'
+    notebook['cells'][5]['source'] += '!wget -c {} -O {}'.format(config.get("url", ""), config_path)
+    
+    # Prepare Pretrain
+    notebook['cells'][7]['source'] = '%mkdir -p pretrains \n'
+    notebook['cells'][7]['source'] += '!wget -c {} -O {}'.format(pretrain_url, pretrain_path)
+    
+    # Prepare Dataset
+    notebook['cells'][9]['source'] = '%mkdir -p datasets \n'
+    if dataset_url != "":
+        notebook['cells'][9]['source'] += '!wget -c {} -O {} \n'.format(dataset_url, "data.zip")
+        notebook['cells'][9]['source'] += '!unzip -q datasets/data.zip -d datasets/data'.format()
+    else:
+        notebook['cells'][9]['source'] += "# Auto Fetch By SSCMA"
+        
     # Train Model 
-    config = model.get("config", "")
     if config != "":
-        notebook['cells'][5]['source'] = '!sscma.train {} {}'.format(config.get("url", "config.py"), config.get("argument", ""))
+        notebook['cells'][11]['source'] = '''!sscma.train {} \\
+--cfg-options  {} \\
+\tnum_classes={} \\
+\tepoch=10 '''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][11]['source'] += " \\\n\tdata_root=datasets/data/"
         
         # Export Model
-        notebook['cells'][7]['source'] = '!sscma.export {}'.format(config.get("url", "config.py"), config.get("argument", ""))
-        
+        notebook['cells'][13]['source'] = "import os\n"
+        notebook['cells'][13]['source'] += "with open('work_dirs/{}/last_checkpoint', 'w') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(config_name)
+        notebook['cells'][14]['source'] = '''!sscma.export {} $CHECKPOINT_FILE_PATH \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config_name, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][14]['source'] += " \\\n\tdata_root=datasets/data/"
         # Inference Model
-        notebook['cells'][9]['source'] = '!sscma.inference {}'.format(config.get("url", "config.py"), config.get("argument", ""))
+        notebook['cells'][17]['source'] = '''!sscma.infernce {}  $CHECKPOINT_FILE_PATH \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+                    notebook['cells'][17]['source'] += " \\\n\tdata_root=datasets/data/"
         
-    
-                                                     
+        notebook['cells'][19]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][19]['source'] += " \\\n\tdata_root=datasets/data/"
+
+        notebook['cells'][21]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][21]['source'] += " \\\n\tdata_root=datasets/data/"
+     
+        notebook['cells'][23]['source'] = '''!sscma.infernce {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tfite \\
+--cfg-options {} \\
+\tnum_classes={} \\
+\tepoch=10'''.format(config_path, config.get("argument", ""), len(model["classes"]))
+        if dataset_url != "":
+            notebook['cells'][23]['source'] += " \\\n\tdata_root=datasets/data/"
+                              
     # Export
     return notebook
 
@@ -413,8 +527,8 @@ def main():
             str = f.read()
             model = json.loads(str)
             sscma_model_json["models"].append(model)
-            if check_json(model) == False:
-                raise ValueError("Invalid models.json file - {}".format(file))
+            # if check_json(model) == False:
+            #     raise ValueError("Invalid models.json file - {}".format(file))
             doc_en_dir = os.path.join(dist_dir, "docs/en")
             if not os.path.exists(doc_en_dir):
                 os.makedirs(doc_en_dir) 

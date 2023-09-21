@@ -1,12 +1,12 @@
-# MNIST Classification - MobileNetV2(0.5) Rep
+# MNIST Classification - MobileNetV2 0.5 Rep
 
-[English](../en/MNIST_Classification_MobileNetV2(0.5)_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/MNIST_Classification_MobileNetV2(0.5)_Rep_32.ipynb)
+[English](../en/MNIST_Classification_MobileNetV2_0.5_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/MNIST_Classification_MobileNetV2_0.5_Rep_32.ipynb)
 
 **版本：** 1.0.0
 
 **类别：** Image Classification
 
-**算法：** [MobileNetV2(0.5) Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**算法：** [MobileNetV2 0.5 Rep](https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py)
 
 **数据集：** [MNIST](http://yann.lecun.com/exdb/mnist/)
 

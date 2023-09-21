@@ -2,7 +2,7 @@
     "name": "MNIST Classification",
     "version": "1.0.0",
     "category": "Image Classification",
-    "algorithm": "MobileNetV2(0.5) Rep",
+    "algorithm": "MobileNetV2 0.5 Rep",
     "description": "The model is a vision model designed for MNIST dataset",
     "dataset": {
         "name": "MNIST",
@@ -28,7 +28,7 @@
         }
     },
     "config": {
-        "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+        "url": "https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py"
     },
     "guidelines": "",
     "license": "MIT",

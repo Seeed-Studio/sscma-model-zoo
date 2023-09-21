@@ -1,12 +1,12 @@
-# CIFAR-10 Classification - MobileNetV2(0.35) Rep
+# CIFAR-10 Classification - MobileNetV2 0.35 Rep
 
-English | [简体中文](../zh_CN/CIFAR-10_Classification_MobileNetV2(0.35)_Rep_32.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/CIFAR-10_Classification_MobileNetV2(0.35)_Rep_32.ipynb)
+English | [简体中文](../zh_CN/CIFAR-10_Classification_MobileNetV2_0.35_Rep_32.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/CIFAR-10_Classification_MobileNetV2_0.35_Rep_32.ipynb)
 
 **Version:** 1.0.0
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2(0.35) Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**Algorithm:** [MobileNetV2 0.35 Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
 
 **Dataset:** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 
