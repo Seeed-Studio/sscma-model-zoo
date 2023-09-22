@@ -6,7 +6,8 @@
     "description": "The model is a Swift-YOLO model trained on the Digital Meter Water dataset, which can detect the water meter number.",
     "dataset": {
         "name": "Digital Meter Electricity",
-        "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-water"
+        "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-water",
+        "download": "https://app.roboflow.com/ds/q2pdTCdiui?key=m452pDZgqp"
     },
     "network": {
         "batch": 1,
@@ -29,7 +30,7 @@
         }
     },
     "config": {
-        "url": "https://github.com/Seeed-Studio/SSCMA/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+        "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
@@ -54,7 +55,7 @@
             "metrics": {
                 "mAP(%)": 95.3,
                 "MACs(MB)": 91.8,
-                "Params(MB)": 0.67
+                "Params(M)": 0.67
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
             "author": "Seeed Studio"
@@ -64,7 +65,7 @@
             "precision": "FLOAT32",
             "metrics": {
                 "mAP(%)": 91.8,
-                "Params(MB)": 0.67,
+                "Params(M)": 0.67,
                 "Peek RAM(MB)": 1.20
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",

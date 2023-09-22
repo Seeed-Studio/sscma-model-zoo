@@ -4,13 +4,13 @@
 
 **版本：** 1.0.0
 
-**类别：** Image Classification
+**任务** Image Classification
 
-**算法：** [MobileNetV2 0.35 Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**算法：** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
 
-**数据集：** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+**数据集：** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 
-**类别：** `Airplane`, `Automobile`, `Bird`, `Cat`, `Deer`, `Dog`, `Frog`, `Horse`, `Ship`, `Truck`
+**类别** `Airplane`, `Automobile`, `Bird`, `Cat`, `Deer`, `Dog`, `Frog`, `Horse`, `Ship`, `Truck`
 
 ![CIFAR-10 Classification](https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png)
 
@@ -24,12 +24,12 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 | 输出 | classification |   1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### 基准测试
 
-|  框架   |  精度   |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(MB)  |  Inference(ms)   |                                                                                   下载                                                                                    |     作者     |
-|:-------:|:-------:|:----------:|:----------:|:-----------:|:------------:|:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |   74.76    |   98.26    |    0.21     |     0.02     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth)   | Seeed Studio |
-|  ONNX   | FLOAT32 |   74.76    |   98.26    |    0.21     |     0.02     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx)  | Seeed Studio |
-| TFLite  | FLOAT32 |   74.76    |   98.26    |    0.21     |     0.02     |        -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite) | Seeed Studio |
-| TFLite  |  INT8   |   74.56    |   98.29    |    0.21     |     0.02     | 13<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite)   | Seeed Studio |
+|  框架   |  精度   |  Top-1(%)  |  Top-5(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                                   下载                                                                                    |     作者     |
+|:-------:|:-------:|:----------:|:----------:|:----------:|:-----------:|:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+| PyTorch | FLOAT32 |   74.76    |   98.26    |    2.10    |    1.20     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth)   | Seeed Studio |
+|  ONNX   | FLOAT32 |   74.76    |   98.26    |    2.10    |    1.20     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx)  | Seeed Studio |
+| TFLite  | FLOAT32 |   74.76    |   98.26    |    2.10    |    1.20     |        -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite) | Seeed Studio |
+| TFLite  |  INT8   |   74.56    |   98.29    |    2.10    |    1.20     | 13<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite)   | Seeed Studio |
 
 ***表格注释：***
 

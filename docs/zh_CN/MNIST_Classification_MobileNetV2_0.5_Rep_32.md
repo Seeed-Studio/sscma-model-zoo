@@ -4,13 +4,13 @@
 
 **版本：** 1.0.0
 
-**类别：** Image Classification
+**任务** Image Classification
 
-**算法：** [MobileNetV2 0.5 Rep](https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py)
+**算法：** [MobileNetV2 0.5 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
 
 **数据集：** [MNIST](http://yann.lecun.com/exdb/mnist/)
 
-**类别：** `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`
+**类别** `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`
 
 ![MNIST Classification](https://files.seeedstudio.com/sscma/static/mnist_cls.png)
 
@@ -24,12 +24,12 @@ The model is a vision model designed for MNIST dataset
 | 输出 | classification |   1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### 基准测试
 
-|  框架   |  精度   |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(MB)  |  Inference(ms)   |                                                                                  下载                                                                                  |     作者     |
-|:-------:|:-------:|:----------:|:----------:|:-----------:|:------------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |   99.01    |    1.00    |    0.21     |     0.08     |        -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
-|  ONNX   | FLOAT32 |   99.01    |    1.00    |      -      |     0.08     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
-| TFLite  | FLOAT32 |   99.01    |    1.00    |      -      |     0.72     |        -         | [链接]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |
-| TFLite  |  INT8   |   98.98    |   99.98    |      -      |     0.02     | 13<sup>(1)</sup> |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)   | Seeed Studio |
+|  框架   |  精度   |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                                  下载                                                                                  |     作者     |
+|:-------:|:-------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+| PyTorch | FLOAT32 |   99.01    |    1.00    |     2.1     |    1.20     |        -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
+|  ONNX   | FLOAT32 |   99.01    |    1.00    |      -      |    1.20     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
+| TFLite  | FLOAT32 |   99.01    |    1.00    |      -      |    1.20     |        -         | [链接]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |
+| TFLite  |  INT8   |   98.98    |   99.98    |      -      |    1.20     | 13<sup>(1)</sup> |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)   | Seeed Studio |
 
 ***表格注释：***
 

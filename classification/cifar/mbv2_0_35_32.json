@@ -6,7 +6,7 @@
     "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
     "dataset": {
         "name": "CIFAR-10",
-        "url": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+        "url": "https://www.cs.toronto.edu/~kriz/cifar.html"
     },
     "network": {
         "batch": 1,
@@ -28,7 +28,7 @@
         }
     },
     "config": {
-        "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
+        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py"
     },
     "guidelines": "",
     "license": "MIT",
@@ -52,8 +52,8 @@
             "metrics": {
                 "Top-1(%)": 74.76,
                 "Top-5(%)": 98.26,
-                "Flops(MB)": 0.21,
-                "Params(MB)": 0.021
+                "Flops(M)": 2.1,
+                "Params(M)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth",
             "author": "Seeed Studio"
@@ -64,8 +64,8 @@
             "metrics": {
                 "Top-1(%)": 74.76,
                 "Top-5(%)": 98.26,
-                "Flops(MB)": 0.21,
-                "Params(MB)": 0.021
+                "Flops(M)": 2.1,
+                "Params(M)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx",
             "author": "Seeed Studio"
@@ -76,8 +76,8 @@
             "metrics": {
                 "Top-1(%)": 74.76,
                 "Top-5(%)": 98.26,
-                "Flops(MB)": 0.21,
-                "Params(MB)": 0.021
+                "Flops(M)": 2.1,
+                "Params(M)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite",
             "author": "Seeed Studio"
@@ -91,8 +91,8 @@
             "metrics": {
                 "Top-1(%)": 74.56,
                 "Top-5(%)": 98.29,
-                "Flops(MB)": 0.21,
-                "Params(MB)": 0.021,
+                "Flops(M)": 2.1,
+                "Params(M)": 1.2,
                 "Inference(ms)": {
                     "xiao_esp32s3": 13
                 }

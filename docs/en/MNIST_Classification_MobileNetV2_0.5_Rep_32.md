@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/MNIST_Classification_MobileNetV2_0.5_Rep_32.md
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2 0.5 Rep](https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py)
+**Algorithm:** [MobileNetV2 0.5 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
 
 **Dataset:** [MNIST](http://yann.lecun.com/exdb/mnist/)
 
@@ -24,12 +24,12 @@ The model is a vision model designed for MNIST dataset
 | Output | classification |    1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### Benchmark
 
-|  Backend  |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(MB)  |  Inference(ms)   |                                                                                Download                                                                                |    Author    |
-|:---------:|:-----------:|:----------:|:----------:|:-----------:|:------------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   99.01    |    1.00    |    0.21     |     0.08     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
-|   ONNX    |   FLOAT32   |   99.01    |    1.00    |      -      |     0.08     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
-|  TFLite   |   FLOAT32   |   99.01    |    1.00    |      -      |     0.72     |        -         | [Link]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |
-|  TFLite   |    INT8     |   98.98    |   99.98    |      -      |     0.02     | 13<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)   | Seeed Studio |
+|  Backend  |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                                Download                                                                                |    Author    |
+|:---------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|  PyTorch  |   FLOAT32   |   99.01    |    1.00    |     2.1     |    1.20     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
+|   ONNX    |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
+|  TFLite   |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         | [Link]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |
+|  TFLite   |    INT8     |   98.98    |   99.98    |      -      |    1.20     | 13<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)   | Seeed Studio |
 
 ***Table Notes:***
 

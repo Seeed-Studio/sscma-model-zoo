@@ -28,7 +28,7 @@
         }
     },
     "config": {
-        "url": "https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py"
     },
     "guidelines": "",
     "license": "MIT",
@@ -44,7 +44,7 @@
             "metrics": {
                 "Top-1(%)": 85.22,
                 "Flops(MB)": 34,
-                "Params(MB)": 2.71
+                "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth",
             "author": "Seeed Studio"
@@ -54,7 +54,7 @@
             "precision": "FLOAT32",
             "metrics": {
                 "Top-1(%)": 80.33,
-                "Params(MB)": 2.71
+                "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx",
             "author": "Seeed Studio"
@@ -64,7 +64,7 @@
             "precision": "FLOAT32",
             "metrics": {
                 "Top-1(%)": 80.34,
-                "Params(MB)": 2.71
+                "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite",
             "author": "Seeed Studio"
@@ -77,7 +77,7 @@
             ],
             "metrics": {
                 "Top-1(%)": 80.23,
-                "Params(MB)": 0.021,
+                "Params(M)": 0.021,
                 "Inference(ms)": {
                     "xiao_esp32s3": 101
                 }

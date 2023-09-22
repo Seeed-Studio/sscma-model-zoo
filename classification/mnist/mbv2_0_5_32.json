@@ -28,7 +28,7 @@
         }
     },
     "config": {
-        "url": "https://files.seeedstudio.com/sscma/model_zoo/config/MNIST_Classification_MobileNetV2(0.5)_Rep_32.py"
+        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py"
     },
     "guidelines": "",
     "license": "MIT",
@@ -52,8 +52,8 @@
             "metrics": {
                 "Top-1(%)": 99.01,
                 "Top-5(%)": 1.00,
-                "Flops(MB)": 0.21,
-                "Params(MB)": 0.082
+                "Flops(MB)": 2.1,
+                "Params(M)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth",
             "author": "Seeed Studio"
@@ -64,7 +64,7 @@
             "metrics": {
                 "Top-1(%)": 99.01,
                 "Top-5(%)": 1.00,
-                "Params(MB)": 0.082
+                "Params(M)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx",
             "author": "Seeed Studio"
@@ -75,7 +75,7 @@
             "metrics": {
                 "Top-1(%)": 99.01,
                 "Top-5(%)": 1.00,
-                "Params(MB)": 0.72
+                "Params(M)":1.2
             },
             "url": " https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite",
             "author": "Seeed Studio"
@@ -89,7 +89,7 @@
             "metrics": {
                 "Top-1(%)": 98.98,
                 "Top-5(%)": 99.98,
-                "Params(MB)": 0.021,
+                "Params(M)": 1.2,
                 "Inference(ms)": {
                     "xiao_esp32s3": 13
                 }

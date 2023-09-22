@@ -4,13 +4,13 @@
 
 **版本：** 1.0.0
 
-**类别：** Image Classification
+**任务** Image Classification
 
-**算法：** [MobileNetV2 0.35 Rep](https://raw.githubusercontent.com/Seeed-Studio/SSCMA/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
+**算法：** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py)
 
 **数据集：** [VWW](https://github.com/Mxbonn/visualwakewords)
 
-**类别：** `Not a person`, `Person`
+**类别** `Not a person`, `Person`
 
 ![Person Classification](https://files.seeedstudio.com/sscma/static/person_cls.png)
 
@@ -24,12 +24,12 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 | 输出 | classification |   1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### 基准测试
 
-|  框架   |  精度   |  Top-1(%)  |  Flops(MB)  |  Params(MB)  |   Inference(ms)   |                                                                                   下载                                                                                    |     作者     |
-|:-------:|:-------:|:----------:|:-----------:|:------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |   88.37    |    76.5     |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth)   | Seeed Studio |
-|  ONNX   | FLOAT32 |   88.36    |      -      |     2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx)  | Seeed Studio |
-| TFLite  | FLOAT32 |   88.36    |      -      |     2.71     |         -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite) | Seeed Studio |
-| TFLite  |  INT8   |   88.27    |      -      |     0.02     | 582<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite)   | Seeed Studio |
+|  框架   |  精度   |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                   下载                                                                                    |     作者     |
+|:-------:|:-------:|:----------:|:-----------:|:-----------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+| PyTorch | FLOAT32 |   88.37    |    76.5     |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth)   | Seeed Studio |
+|  ONNX   | FLOAT32 |   88.36    |      -      |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx)  | Seeed Studio |
+| TFLite  | FLOAT32 |   88.36    |      -      |    2.71     |         -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite) | Seeed Studio |
+| TFLite  |  INT8   |   88.27    |      -      |    2.71     | 582<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite)   | Seeed Studio |
 
 ***表格注释：***
 
