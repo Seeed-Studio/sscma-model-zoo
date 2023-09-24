@@ -6,15 +6,16 @@
     "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
     "dataset": {
         "name": "VWW",
-        "url": "https://github.com/Mxbonn/visualwakewords"
+        "url": "https://github.com/Mxbonn/visualwakewords",
+        "download": "https://universe.roboflow.com/ds/rvZt8qZfBp?key=WDJI0KBhlY"
     },
     "network": {
         "batch": 1,
         "input": {
             "type": "image",
             "shape": [
-                64,
-                64,
+                32,
+                32,
                 3
             ],
             "remark": "The input image should be resized to 32x32 pixels"
@@ -28,7 +29,7 @@
         }
     },
     "config": {
-        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py"
+        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
     },
     "guidelines": "",
     "license": "MIT",

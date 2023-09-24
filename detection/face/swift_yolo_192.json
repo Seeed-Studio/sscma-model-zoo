@@ -79,6 +79,7 @@
                 "MACs(MB)": 89.00,
                 "Peek RAM(MB)": 0.35,
                 "Inference(ms)": {
+                    "grove_vision_ai": 790.00,
                     "xiao_esp32s3": 691.00
                 }
             },

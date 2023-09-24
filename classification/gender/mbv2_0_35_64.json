@@ -1,21 +1,21 @@
 {
-    "name": "Person Classification",
+    "name": "Gender Classification",
     "version": "1.0.0",
     "category": "Image Classification",
     "algorithm": "MobileNetV2 0.35 Rep",
-    "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+    "description": "The model is a vision model designed for Gender classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
     "dataset": {
-        "name": "VWW",
-        "url": "https://github.com/Mxbonn/visualwakewords",
-        "download": "https://universe.roboflow.com/ds/rvZt8qZfBp?key=WDJI0KBhlY"
+        "name": "Gender",
+        "url": "https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd",
+        "download": "https://universe.roboflow.com/ds/CnPDloVfHN?key=BGRNmtbN5T"
     },
     "network": {
         "batch": 1,
         "input": {
             "type": "image",
             "shape": [
-                32,
-                32,
+                64,
+                64,
                 3
             ],
             "remark": "The input image should be resized to 64x64 pixels"
@@ -33,7 +33,7 @@
     },
     "guidelines": "",
     "license": "MIT",
-    "image": "https://files.seeedstudio.com/sscma/static/person_cls.png",
+    "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
     "classes": [
         "Not a person",
         "Person"
@@ -43,31 +43,31 @@
             "backend": "PyTorch",
             "precision": "FLOAT32",
             "metrics": {
-                "Top-1(%)": 85.22,
-                "Flops(MB)": 34,
-                "Params(M)": 2.71
+                "Top-1(%)": 94.5,
+                "Flops(M)": 5.49,
+                "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_6dec3c029041408de043c5921621ab7abc4c4ec4.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth",
             "author": "Seeed Studio"
         },
         {
             "backend": "ONNX",
             "precision": "FLOAT32",
             "metrics": {
-                "Top-1(%)": 85.23,
-                "Params(M)": 2.71
+                "Top-1(%)": 94.5,
+                "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_aeb9c1f3bf7c19f3490daee7da1ac0d76b7e49d9.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx",
             "author": "Seeed Studio"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
-                "Top-1(%)": 85.23,
-                "Params(M)": 2.71
+                "Top-1(%)": 94.5,
+                "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_d44e8c1247dfc66e645f5d07b904e4a430149882.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite",
             "author": "Seeed Studio"
         },
         {
@@ -77,13 +77,13 @@
                 "xiao_esp32s3"
             ],
             "metrics": {
-                "Top-1(%)": 85.26,
-                "Params(M)": 2.71,
+                "Top-1(%)": 94.3,
+                "Params(M)": 2.16,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 286
+                    "xiao_esp32s3": 40
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_int8_sha1_a939407d507b45ceca293e74c8961d59357b37b2.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite",
             "author": "Seeed Studio"
         }
     ]

@@ -1,5 +1,5 @@
 {
-    "version": "fede7758120aa6eec5e504e26f874867a025eb8e",
+    "version": "bb9662ba1a05cf49326ff847de331392eedde8b8",
     "models": [
         {
             "name": "Person Classification",
@@ -9,7 +9,8 @@
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
-                "url": "https://github.com/Mxbonn/visualwakewords"
+                "url": "https://github.com/Mxbonn/visualwakewords",
+                "download": "https://universe.roboflow.com/ds/rvZt8qZfBp?key=WDJI0KBhlY"
             },
             "network": {
                 "batch": 1,
@@ -31,7 +32,7 @@
                 }
             },
             "config": {
-                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py"
+                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -98,7 +99,8 @@
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
-                "url": "https://github.com/Mxbonn/visualwakewords"
+                "url": "https://github.com/Mxbonn/visualwakewords",
+                "download": "https://universe.roboflow.com/ds/rvZt8qZfBp?key=WDJI0KBhlY"
             },
             "network": {
                 "batch": 1,
@@ -120,7 +122,7 @@
                 }
             },
             "config": {
-                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py"
+                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -187,15 +189,16 @@
             "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
-                "url": "https://github.com/Mxbonn/visualwakewords"
+                "url": "https://github.com/Mxbonn/visualwakewords",
+                "download": "https://universe.roboflow.com/ds/rvZt8qZfBp?key=WDJI0KBhlY"
             },
             "network": {
                 "batch": 1,
                 "input": {
                     "type": "image",
                     "shape": [
-                        64,
-                        64,
+                        32,
+                        32,
                         3
                     ],
                     "remark": "The input image should be resized to 32x32 pixels"
@@ -209,7 +212,7 @@
                 }
             },
             "config": {
-                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py"
+                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -368,6 +371,96 @@
                         }
                     },
                     "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite",
+                    "author": "Seeed Studio"
+                }
+            ]
+        },
+        {
+            "name": "Gender Classification",
+            "version": "1.0.0",
+            "category": "Image Classification",
+            "algorithm": "MobileNetV2 0.35 Rep",
+            "description": "The model is a vision model designed for Gender classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "dataset": {
+                "name": "Gender",
+                "url": "https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd",
+                "download": "https://universe.roboflow.com/ds/CnPDloVfHN?key=BGRNmtbN5T"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        64,
+                        64,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 64x64 pixels"
+                },
+                "output": {
+                    "type": "classification",
+                    "shape": [
+                        2
+                    ],
+                    "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+                }
+            },
+            "config": {
+                "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
+            "classes": [
+                "Not a person",
+                "Person"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 94.5,
+                        "Flops(M)": 5.49,
+                        "Params(M)": 2.16
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 94.5,
+                        "Params(M)": 2.16
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "Top-1(%)": 94.5,
+                        "Params(M)": 2.16
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "Top-1(%)": 94.3,
+                        "Params(M)": 2.16,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 40
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite",
                     "author": "Seeed Studio"
                 }
             ]
@@ -657,10 +750,102 @@
                         "MACs(MB)": 89.0,
                         "Peek RAM(MB)": 0.35,
                         "Inference(ms)": {
+                            "grove_vision_ai": 790.0,
                             "xiao_esp32s3": 691.0
                         }
                     },
                     "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_int8_sha1_e707d23e1b45b4a464e9ebedae0f6570a9d35a9c.tflite",
+                    "author": "Seeed Studio"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            }
+        },
+        {
+            "name": "Gender Detection",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the face gender dataset. It can detect female and male faces in images.",
+            "dataset": {
+                "name": "Face Gender",
+                "url": "https://universe.roboflow.com/seeed-studio-esmjg/person-detection-eetev",
+                "download": "https://universe.roboflow.com/ds/JG3NSRibvH?key=lJLGEwG7Zr"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        96,
+                        96,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 96x96 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        567,
+                        5
+                    ],
+                    "remark": "The output is a 567x5 tensor, where 567 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
+            "classes": [
+                "Female",
+                "Male"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 98.2,
+                        "Flops(M)": 22.6,
+                        "Params(M)": 0.7
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.9,
+                        "Params(M)": 0.7
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.9,
+                        "Peek RAM(MB)": 1.2
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite",
+                    "author": "Seeed Studio"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "metrics": {
+                        "mAP(%)": 94.9,
+                        "Peek RAM(MB)": 0.35,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 200.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0.tflite",
                     "author": "Seeed Studio"
                 }
             ],

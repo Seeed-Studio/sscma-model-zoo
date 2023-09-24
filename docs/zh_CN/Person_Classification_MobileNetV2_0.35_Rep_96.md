@@ -6,7 +6,7 @@
 
 **任务** Image Classification
 
-**算法：** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_vww.py)
+**算法：** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
 
 **数据集：** [VWW](https://github.com/Mxbonn/visualwakewords)
 
