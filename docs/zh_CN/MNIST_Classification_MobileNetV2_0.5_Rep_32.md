@@ -1,6 +1,6 @@
 # MNIST Classification - MobileNetV2 0.5 Rep
 
-[English](../en/MNIST_Classification_MobileNetV2_0.5_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/MNIST_Classification_MobileNetV2_0.5_Rep_32.ipynb)
+[English](../en/MNIST_Classification_MobileNetV2_0.5_Rep_32.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/MNIST_Classification_MobileNetV2_0.5_Rep_32.ipynb)
 
 **版本：** 1.0.0
 

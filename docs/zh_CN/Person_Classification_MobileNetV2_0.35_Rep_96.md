@@ -1,6 +1,6 @@
 # Person Classification - MobileNetV2 0.35 Rep
 
-[English](../en/Person_Classification_MobileNetV2_0.35_Rep_96.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/Person_Classification_MobileNetV2_0.35_Rep_96.ipynb)
+[English](../en/Person_Classification_MobileNetV2_0.35_Rep_96.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Person_Classification_MobileNetV2_0.35_Rep_96.ipynb)
 
 **版本：** 1.0.0
 
