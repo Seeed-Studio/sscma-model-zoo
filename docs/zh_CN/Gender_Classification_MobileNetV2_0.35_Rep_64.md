@@ -1,6 +1,6 @@
 # Gender Classification - MobileNetV2 0.35 Rep
 
-[English](../en/Gender_Classification_MobileNetV2_0.35_Rep_64.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/zh_CN/Gender_Classification_MobileNetV2_0.35_Rep_64.ipynb)
+[English](../en/Gender_Classification_MobileNetV2_0.35_Rep_64.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Gender_Classification_MobileNetV2_0.35_Rep_64.ipynb)
 
 **版本：** 1.0.0
 

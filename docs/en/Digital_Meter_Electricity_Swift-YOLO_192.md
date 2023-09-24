@@ -1,6 +1,6 @@
 # Digital Meter Electricity - Swift-YOLO
 
-English | [简体中文](../zh_CN/Digital_Meter_Electricity_Swift-YOLO_192.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Digital_Meter_Electricity_Swift-YOLO_192.ipynb)
+English | [简体中文](../zh_CN/Digital_Meter_Electricity_Swift-YOLO_192.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/en/Digital_Meter_Electricity_Swift-YOLO_192.ipynb)
 
 **Version:** 1.0.0
 

@@ -1,5 +1,5 @@
 {
-    "version": "bb9662ba1a05cf49326ff847de331392eedde8b8",
+    "version": "cfee597006c3dbfe945cb74df329e02df824b03b",
     "models": [
         {
             "name": "Person Classification",
@@ -17,8 +17,8 @@
                 "input": {
                     "type": "image",
                     "shape": [
-                        32,
-                        32,
+                        64,
+                        64,
                         3
                     ],
                     "remark": "The input image should be resized to 64x64 pixels"

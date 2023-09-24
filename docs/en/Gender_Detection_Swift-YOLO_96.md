@@ -1,6 +1,6 @@
 # Gender Detection - Swift-YOLO
 
-English | [简体中文](../zh_CN/Gender_Detection_Swift-YOLO_96.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/refactor-auto-generate/notebooks/en/Gender_Detection_Swift-YOLO_96.ipynb)
+English | [简体中文](../zh_CN/Gender_Detection_Swift-YOLO_96.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/en/Gender_Detection_Swift-YOLO_96.ipynb)
 
 **Version:** 1.0.0
 

@@ -14,8 +14,8 @@
         "input": {
             "type": "image",
             "shape": [
-                32,
-                32,
+                64,
+                64,
                 3
             ],
             "remark": "The input image should be resized to 64x64 pixels"
