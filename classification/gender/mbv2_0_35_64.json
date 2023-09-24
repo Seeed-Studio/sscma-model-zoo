@@ -1,0 +1,90 @@
+{
+    "name": "Gender Classification",
+    "version": "1.0.0",
+    "category": "Image Classification",
+    "algorithm": "MobileNetV2 0.35 Rep",
+    "description": "The model is a vision model designed for Gender classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+    "dataset": {
+        "name": "Gender",
+        "url": "https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd",
+        "download": "https://universe.roboflow.com/ds/CnPDloVfHN?key=BGRNmtbN5T"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                64,
+                64,
+                3
+            ],
+            "remark": "The input image should be resized to 64x64 pixels"
+        },
+        "output": {
+            "type": "classification",
+            "shape": [
+                2
+            ],
+            "remark": "The output is a 2-element vector, which represents the probability of the input image belonging to each class"
+        }
+    },
+    "config": {
+        "url": "configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
+    "classes": [
+        "Not a person",
+        "Person"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 94.5,
+                "Flops(M)": 5.49,
+                "Params(M)": 2.16
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 94.5,
+                "Params(M)": 2.16
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "Top-1(%)": 94.5,
+                "Params(M)": 2.16
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "Top-1(%)": 94.3,
+                "Params(M)": 2.16,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 40
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite",
+            "author": "Seeed Studio"
+        }
+    ]
+}

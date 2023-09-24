@@ -1,2 +1,4 @@
 loguru
 termcolor
+nbformat
+openai
