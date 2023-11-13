@@ -1,0 +1,90 @@
+{
+    "name": "COCO Detection",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "Swift-YOLO",
+    "description": "The model is a Swift-YOLO model trained on the COCO2017 dataset.",
+    "dataset": {
+        "name": "COCO2017",
+        "url": "https://public.roboflow.com/object-detection/microsoft-coco-subset",
+        "download": "https://public.roboflow.com/ds/saZ2K9LYJf?key=FKkHrP6bjs"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                320,
+                320,
+                3
+            ],
+            "remark": "The input image should be resized to 320x320 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                6300,
+                85
+            ],
+            "remark": "The output is a 6300x85 tensor, where 6300 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": {
+        "url": "configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_coco.png",
+    "classes": [
+        "person"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 25.1,
+                "Flops(M)": 194,
+                "Params(M)": 0.63
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 25.1,
+                "Params(M)": 0.63
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 25.1,
+                "Peek RAM(MB)": 1.20
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "metrics": {
+                "mAP(%)": 25.1,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 200.00
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    }
+}
