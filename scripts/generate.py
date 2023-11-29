@@ -6,7 +6,6 @@ import openai
 import nbformat as nbf
 import hashlib
 from tabulate import tabulate
-import tqdm
 import argparse
 
 def find_files_in_folder(folder_path, extension, exclude=[]):
