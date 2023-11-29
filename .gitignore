@@ -29,3 +29,5 @@ dump
 
 # Distribution / packaging
 dist/
+
+model_zoo/

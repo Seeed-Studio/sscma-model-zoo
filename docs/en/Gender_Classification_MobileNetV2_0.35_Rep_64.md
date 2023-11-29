@@ -26,9 +26,9 @@ The model is a vision model designed for Gender classification. It utilizes the 
 
 |  Backend  |  Precision  |  Top-1(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                          Download                                                                          |    Author    |
 |:---------:|:-----------:|:----------:|:----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   94.50    |    5.49    |    2.16     |        -         | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth)  | Seeed Studio |
-|   ONNX    |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx)    | Seeed Studio |
-|  TFLite   |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite)   | Seeed Studio |
+|  PyTorch  |   FLOAT32   |   94.50    |    5.49    |    2.16     |        -         |     [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth)     | Seeed Studio |
+|   ONNX    |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |       [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx)       | Seeed Studio |
+|  TFLite   |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |      [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite)      | Seeed Studio |
 |  TFLite   |    INT8     |   94.30    |     -      |    2.16     | 40<sup>(1)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite) | Seeed Studio |
 
 ***Table Notes:***

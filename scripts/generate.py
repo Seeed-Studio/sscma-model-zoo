@@ -4,7 +4,10 @@ import requests
 import subprocess
 import openai
 import nbformat as nbf
+import hashlib
 from tabulate import tabulate
+import tqdm
+import argparse
 
 def find_files_in_folder(folder_path, extension, exclude=[]):
     files = []
@@ -49,6 +52,23 @@ def check_json(model):
     for item in model["benchmark"]:
         if is_link_valid(item["url"]) == False:
             raise ValueError("Invalid link: {}".format(item["url"]))
+        
+def get_file_md5(file_path):
+    with open(file_path, 'rb') as f:
+        md5obj = hashlib.md5()
+        md5obj.update(f.read())
+        hash = md5obj.hexdigest()
+        return  "md5:"+hash
+
+def download_file(url, folder_path):
+    local_filename = os.path.join(folder_path, url.split('/')[-1])
+    print("Downloading {} to {}".format(url, local_filename))
+    with requests.get(url, stream=True) as r:
+        r.raise_for_status()
+        with open(local_filename, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=8192):
+                f.write(chunk)
+    return local_filename
 
 def generate_doc_zh_CN(model):
     
@@ -563,7 +583,7 @@ def openai_reply(content, apikey):
     )
     return response.choices[0].message.content
 
-def main():
+def generate():
     
     branch = get_current_branch()
     work_dir = os.getcwd()
@@ -581,8 +601,6 @@ def main():
             model = json.loads(f.read())
             sscma_model_json["models"].append(model)
             
-            # if check_json(model) == False:
-            #     raise ValueError("Invalid models.json file - {}".format(file))
             
             object_name = "{}_{}_{}".format(model["name"].replace(' ', '_'), model["algorithm"].replace(' ', '_'), model["network"]["input"]["shape"][0])
             
@@ -677,5 +695,51 @@ def main():
             f.write(readme_zh_CN)
     
     
+def check():
+    for file in find_files_in_folder("./", "json", exclude=["./", "./dist", "./.github", "./docs", "./notebooks", "./scripts", "./templates"]):
+        print("check {}".format(file))
+        with open(file, "r") as f:
+            model = json.loads(f.read())
+            if check_json(model) == False:
+                raise ValueError("Invalid models.json file - {}".format(file))
+
+def download():
+    base_folder = "model_zoo"  # Replace with the actual base folder
+    for file in find_files_in_folder("./", "json", exclude=["./", "./dist", "./.github", "./docs", "./notebooks", "./scripts", "./templates"]):
+        with open(file, "r") as f:
+            model = json.loads(f.read())
+            for item in model["benchmark"]:
+                url = item["url"]
+                sub_path = os.path.dirname(file)  # Get the subpath relative to the base folder
+                download_folder = os.path.join(base_folder, sub_path)
+                if not os.path.exists(download_folder):
+                    os.makedirs(download_folder)
+                
+                file_path = download_file(url, download_folder)
+                item["checksum"] = get_file_md5(file_path)
+            model["uuid"] = hashlib.md5(json.dumps(model).encode()).hexdigest()
+            
+        json.dump(model, open(file, "w"), indent=4) 
+
+            
+def main():
+    parser = argparse.ArgumentParser(description='SSCMA Model Zoo')
+    parser.add_argument('-g', '--generate', action='store_true', help='Generate Model Zoo')
+    parser.add_argument('-c', '--check', action='store_true', help='Check Model Zoo')
+    parser.add_argument('-d', '--download', action='store_true', help='Download Model Zoo')
+    parser.add_argument('--apikey', type=str, help='OpenAI API Key')
+    args = parser.parse_args()
+    
+    if args.check:
+        check()
+    
+    if args.download:
+        download()
+        
+    if args.generate:
+        generate()
+        
+
+   
 if __name__ == "__main__":
     main()

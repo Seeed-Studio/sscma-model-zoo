@@ -1,4 +1,5 @@
 {
+    "uuid": "1ccd72c1154838f1cfcd195de2c1fcdf",
     "name": "COCO Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -48,7 +49,8 @@
                 "Params(M)": 0.63
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:79a08ceed5d9ff8e033c8a6ffd5c6093"
         },
         {
             "backend": "ONNX",
@@ -58,17 +60,19 @@
                 "Params(M)": 0.63
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:2ca5762b62cc8ff143d44c3233a3b2c5"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
                 "mAP(%)": 25.1,
-                "Peek RAM(MB)": 1.20
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:42c97149bcf0a241951a0756f1cc2a31"
         },
         {
             "backend": "TFLite",
@@ -77,11 +81,12 @@
                 "mAP(%)": 25.1,
                 "Peek RAM(MB)": 0.35,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 200.00
+                    "xiao_esp32s3": 200.0
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:e2f7586cd6389f3e54acb01912681dd6"
         }
     ],
     "benchmark_note": {
