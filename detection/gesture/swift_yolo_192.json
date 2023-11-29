@@ -1,0 +1,90 @@
+{
+    "name": "Gesture Detection",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "Swift-YOLO",
+    "description": "The model is a Swift-YOLO model trained on the gesture detection dataset.",
+    "dataset": {
+        "name": "Gesture",
+        "url": "https://app.roboflow.com/rsp/paper-aaj0p/33",
+        "download": "https://app.roboflow.com/ds/xaMM3ZTeWy?key=5bznPZyI0t"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                192,
+                192,
+                3
+            ],
+            "remark": "The input image should be resized to 192x192 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                2268,
+                8
+            ],
+            "remark": "The output is a 2268x8 tensor, where 2268 is the number of candidate boxes and 8 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": {
+        "url": "configs/yolov5/swift_yolo_1xb16_300e_coco.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_gesture.png",
+    "classes": [
+        "paper",
+        "rock",
+        "scissors"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 90.6,
+                "Flops(M)": 90.80,
+                "Params(M)": 0.7
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_adda465db843aae8384c90c82e223c2cd931cad2.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 91.9,
+                "Params(M)": 0.7
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_6f0e8c8ad5a6eb5c9afb5f18f43063dcc065c4b8.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 91.9
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_54f794c25b545a1d33502e3f93a620c4cecfb1f9.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "metrics": {
+                "mAP(%)": 93.0,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 642.00
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_8d25b2b0be2a0ea38d3fe0aca5ce3891f7aa67c5.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    }
+}
