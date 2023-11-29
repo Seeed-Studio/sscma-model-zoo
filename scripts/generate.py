@@ -6,7 +6,6 @@ import openai
 import nbformat as nbf
 import hashlib
 from tabulate import tabulate
-import tqdm
 import argparse
 
 def find_files_in_folder(folder_path, extension, exclude=[]):
@@ -717,6 +716,7 @@ def download():
                 
                 file_path = download_file(url, download_folder)
                 item["checksum"] = get_file_md5(file_path)
+            model["uuid"] = "0000"
             model["uuid"] = hashlib.md5(json.dumps(model).encode()).hexdigest()
             
         json.dump(model, open(file, "w"), indent=4) 

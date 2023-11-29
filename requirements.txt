@@ -2,3 +2,4 @@ loguru
 termcolor
 nbformat
 openai
+tabulate 
