@@ -1,4 +1,5 @@
 {
+    "uuid": "251a5a01ff917f506752a60fda905d53",
     "name": "Gender Classification",
     "version": "1.0.0",
     "category": "Image Classification",
@@ -47,8 +48,9 @@
                 "Flops(M)": 5.49,
                 "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth",
-            "author": "Seeed Studio"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth",
+            "author": "Seeed Studio",
+            "checksum": "md5:4d15c10ce4fb53caf159ff4fdf07d360"
         },
         {
             "backend": "ONNX",
@@ -57,8 +59,9 @@
                 "Top-1(%)": 94.5,
                 "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx",
-            "author": "Seeed Studio"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx",
+            "author": "Seeed Studio",
+            "checksum": "md5:6a61966198d37cf18f436bf782d328f1"
         },
         {
             "backend": "TFLite",
@@ -67,8 +70,9 @@
                 "Top-1(%)": 94.5,
                 "Params(M)": 2.16
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite",
-            "author": "Seeed Studio"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:dac8f6c254ce477e053639cacdf31dbe"
         },
         {
             "backend": "TFLite",
@@ -84,7 +88,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:853967d1e961a9fdef02122437efa239"
         }
     ]
 }

@@ -1,4 +1,5 @@
 {
+    "uuid": "18a2a69a67d69025972f496640e55279",
     "name": "Gender Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -49,7 +50,8 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:e0dd9251cd0f1e4e6fd3bfc081d22769"
         },
         {
             "backend": "ONNX",
@@ -59,17 +61,19 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:b00096087213bcf63d6126b84989bf62"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
                 "mAP(%)": 94.9,
-                "Peek RAM(MB)": 1.20
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:f38c4f024609327bd3bf572723f3c755"
         },
         {
             "backend": "TFLite",
@@ -78,11 +82,12 @@
                 "mAP(%)": 94.9,
                 "Peek RAM(MB)": 0.35,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 200.00
+                    "xiao_esp32s3": 200.0
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:42e591520b7fe34af2abcd27d08910db"
         }
     ],
     "benchmark_note": {

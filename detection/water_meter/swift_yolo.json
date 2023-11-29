@@ -1,4 +1,5 @@
 {
+    "uuid": "ee17b297e107d5684ffb3e38034c1cf9",
     "name": "Digital Meter Water",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -58,7 +59,8 @@
                 "Params(M)": 0.67
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:5b782dd05f3a7af22cd7b3508c543925"
         },
         {
             "backend": "ONNX",
@@ -66,35 +68,38 @@
             "metrics": {
                 "mAP(%)": 91.8,
                 "Params(M)": 0.67,
-                "Peek RAM(MB)": 1.20
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:4314cc6cdc385b664f7c17dbf8b42b1b"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
                 "mAP(%)": 91.8,
-                "MACs(MB)": 89.00,
-                "Peek RAM(MB)": 1.20
+                "MACs(MB)": 89.0,
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_float32_sha1_d523dd19922ff4a3a53a0795222121317d01354d.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:4042bcce210ed9d06d15dc9a9678ca40"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
             "metrics": {
                 "mAP(%)": 88.3,
-                "MACs(MB)": 89.00,
+                "MACs(MB)": 89.0,
                 "Peek RAM(MB)": 0.35,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 691.00
+                    "xiao_esp32s3": 691.0
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:0ce672bc4bb710d7b5fde39529d5668c"
         }
     ],
     "benchmark_note": {

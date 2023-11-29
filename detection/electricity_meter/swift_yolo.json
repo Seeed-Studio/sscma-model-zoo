@@ -1,4 +1,5 @@
 {
+    "uuid": "22bed5351c1bb7e49bc13eb2b668c2a4",
     "name": "Digital Meter Electricity",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -29,15 +30,23 @@
             "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
         }
     },
-    "config": 
-    {
-        "url":"configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+    "config": {
+        "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
     "image": "https://files.seeedstudio.com/sscma/static/detect_meter.png",
     "classes": [
-        "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
     ],
     "benchmark": [
         {
@@ -49,7 +58,8 @@
                 "Params(M)": 0.67
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:dc4f0332c6a339f2eaa8b3d4baad5041"
         },
         {
             "backend": "ONNX",
@@ -57,35 +67,38 @@
             "metrics": {
                 "mAP(%)": 98.8,
                 "Params(M)": 0.67,
-                "Peek RAM(MB)": 1.20
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:b764db53c927d4e0f0f04c14845f47d7"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
                 "mAP(%)": 98.8,
-                "MACs(MB)": 89.00,
-                "Peek RAM(MB)": 1.20
+                "MACs(MB)": 89.0,
+                "Peek RAM(MB)": 1.2
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:05bc8bc7fdacef7e2d2f2694ca838864"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
             "metrics": {
                 "mAP(%)": 93.1,
-                "MACs(MB)": 89.00,
+                "MACs(MB)": 89.0,
                 "Peek RAM(MB)": 0.35,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 691.00
+                    "xiao_esp32s3": 691.0
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:05bc8bc7fdacef7e2d2f2694ca838864"
         }
     ],
     "benchmark_note": {

@@ -1,4 +1,5 @@
 {
+    "uuid": "b0a5f7f9e92628c35be142123d4b67d6",
     "name": "Person Classification",
     "version": "1.0.0",
     "category": "Image Classification",
@@ -48,7 +49,8 @@
                 "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:a595b2e5962ef8b582506232fba4953b"
         },
         {
             "backend": "ONNX",
@@ -58,7 +60,8 @@
                 "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:6c2c7f2829096c28b8cf6abd7641fdd8"
         },
         {
             "backend": "TFLite",
@@ -68,7 +71,8 @@
                 "Params(M)": 2.71
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:38ad2d9ad0ef9b6e014d4fab02aa5713"
         },
         {
             "backend": "TFLite",
@@ -84,7 +88,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:a1dd5b834a1ecc38eae1be230f4be9b1"
         }
     ]
 }
