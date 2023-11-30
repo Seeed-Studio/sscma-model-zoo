@@ -1,8 +1,8 @@
 {
-    "version": "588048f918105342b4cf068ec665b76c6cfdb43c",
+    "version": "687e74d9e9301836c943a4bbecba194358545de0",
     "models": [
         {
-            "uuid": "8168e4e47a6604e9d3e95fca0ae1ec19",
+            "uuid": "08f2b17b0669615f3de79c9cb15426d8",
             "name": "Gender Detection",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -98,7 +98,7 @@
             }
         },
         {
-            "uuid": "48b4b1f3a8a0be893b5789d214226f4d",
+            "uuid": "e714d87ffa56a1331130e33b90576b5d",
             "name": "Face Detection",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -196,7 +196,7 @@
             }
         },
         {
-            "uuid": "d31983c6bb6938197bd2c5048bf218df",
+            "uuid": "6eb9e1a2981eaf53f489da9cb5ae1cbf",
             "name": "person Detection",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -370,7 +370,7 @@
             }
         },
         {
-            "uuid": "d03f430fbf1dde58017762a383612029",
+            "uuid": "b1e48d95cc4d5c9119471b616cc38bbb",
             "name": "Digital Meter Water",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -478,7 +478,7 @@
             }
         },
         {
-            "uuid": "9eb8b2fb5a0e5f62d5892ed44a20035c",
+            "uuid": "88f43053f0577f2542c47f07f73f65f9",
             "name": "COCO Detection",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -573,7 +573,7 @@
             }
         },
         {
-            "uuid": "25cb3ac84273f60ca7b487a2fd4b6661",
+            "uuid": "9612634f56d74ac8961fe1777d79ab43",
             "name": "Digital Meter Electricity",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -680,7 +680,7 @@
             }
         },
         {
-            "uuid": "56c3c48269f96e628fc6e1bdcebf176a",
+            "uuid": "c6f25676e57aecf061acb3370d99699c",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -775,7 +775,7 @@
             ]
         },
         {
-            "uuid": "67a2d798e84f056e1690e487b7c05cd6",
+            "uuid": "a374d7a53cd06a14c9f00dd1a87fee2e",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -870,7 +870,7 @@
             ]
         },
         {
-            "uuid": "e76e12f8982208f3928d46a06f68a6be",
+            "uuid": "243c8ae036ce2fae7fe8214f50800579",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -965,7 +965,7 @@
             ]
         },
         {
-            "uuid": "dd7830bdb1a65fbd2ab2832cf9700179",
+            "uuid": "9242073de1c6817ea0b0e0382fff2413",
             "name": "CIFAR-10 Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -1074,7 +1074,7 @@
             ]
         },
         {
-            "uuid": "3138f3cd65cefd233cbb81115c8580ec",
+            "uuid": "af9579a5c8e9dd6a97324244c8d2092f",
             "name": "MNIST Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -1180,7 +1180,7 @@
             ]
         },
         {
-            "uuid": "794e1db19c815c4128a4e391f3d371a3",
+            "uuid": "45829a7e9ea1df3c8645c934f3e2e2c9",
             "name": "Gender Classification",
             "version": "1.0.0",
             "category": "Image Classification",
