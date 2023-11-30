@@ -1,5 +1,5 @@
 {
-    "uuid": "23a4eb2415f0292498ec706d9e1f6d16",
+    "uuid": "c465095d3d13da70c6ca0d1e1e82020d",
     "name": "Digital Meter Water",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -58,7 +58,7 @@
                 "MACs(MB)": 91.8,
                 "Params(M)": 0.67
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_sha1_e10d262518622edc50e0820b213581fc8d628e2b.pth",
             "author": "Seeed Studio",
             "checksum": "md5:5b782dd05f3a7af22cd7b3508c543925"
         },
@@ -70,7 +70,7 @@
                 "Params(M)": 0.67,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_sha1_e4139097229c74d6d627a769e788374f7bd23e48.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:4314cc6cdc385b664f7c17dbf8b42b1b"
         },
@@ -82,13 +82,16 @@
                 "MACs(MB)": 89.0,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_float32_sha1_d523dd19922ff4a3a53a0795222121317d01354d.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_float32_sha1_d523dd19922ff4a3a53a0795222121317d01354d.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:4042bcce210ed9d06d15dc9a9678ca40"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
             "metrics": {
                 "mAP(%)": 88.3,
                 "MACs(MB)": 89.0,
@@ -97,9 +100,27 @@
                     "xiao_esp32s3": 691.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Water/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:0ce672bc4bb710d7b5fde39529d5668c"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 88.3,
+                "MACs(MB)": 89.0,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 49
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:b0b1870a62dd7b432d4658eb791022a7"
         }
     ],
     "benchmark_note": {

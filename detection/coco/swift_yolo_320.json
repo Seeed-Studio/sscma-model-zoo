@@ -1,5 +1,5 @@
 {
-    "uuid": "93de5b8faf7a3d5c664fd4646919290e",
+    "uuid": "d07b6be0796b2684c987e5222831459c",
     "name": "COCO Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -48,7 +48,7 @@
                 "Flops(M)": 194,
                 "Params(M)": 0.63
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/coco/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
             "author": "Seeed Studio",
             "checksum": "md5:79a08ceed5d9ff8e033c8a6ffd5c6093"
         },
@@ -59,7 +59,7 @@
                 "mAP(%)": 25.1,
                 "Params(M)": 0.63
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/coco/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:2ca5762b62cc8ff143d44c3233a3b2c5"
         },
@@ -70,13 +70,16 @@
                 "mAP(%)": 25.1,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/coco/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:42c97149bcf0a241951a0756f1cc2a31"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
             "metrics": {
                 "mAP(%)": 25.1,
                 "Peek RAM(MB)": 0.35,
@@ -84,9 +87,26 @@
                     "xiao_esp32s3": 200.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/coco/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:e2f7586cd6389f3e54acb01912681dd6"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 25.1,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 20.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/coco/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:053f314c9f8c31147aab8c96412c0773"
         }
     ],
     "benchmark_note": {

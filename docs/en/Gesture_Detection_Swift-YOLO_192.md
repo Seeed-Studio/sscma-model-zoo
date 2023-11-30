@@ -24,12 +24,13 @@ The model is a Swift-YOLO model trained on the gesture detection dataset.
 | Output | bbox   |    1    | [2268, 8]     | The output is a 2268x8 tensor, where 2268 is the number of candidate boxes and 8 is [x, y, w, h, score, [class]] |
 ### Benchmark
 
-|  Backend  |  Precision  |  mAP(%)  |  Flops(M)  |  Params(M)  |    Inference(ms)    |                                                                                 Download                                                                                  |    Author    |
-|:---------:|:-----------:|:--------:|:----------:|:-----------:|:-------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |  90.60   |    90.8    |     0.7     |          -          |  [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_adda465db843aae8384c90c82e223c2cd931cad2.pth)   | Seeed Studio |
-|   ONNX    |   FLOAT32   |  91.90   |     -      |     0.7     |          -          |  [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_6f0e8c8ad5a6eb5c9afb5f18f43063dcc065c4b8.onnx)  | Seeed Studio |
-|  TFLite   |   FLOAT32   |  91.90   |     -      |      -      |          -          | [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_54f794c25b545a1d33502e3f93a620c4cecfb1f9.tflite) | Seeed Studio |
-|  TFLite   |    INT8     |  93.00   |     -      |      -      | 642.0<sup>(1)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/models/swift-yolo/gesture/swift_yolo_1xb16_300e_coco_sha1_8d25b2b0be2a0ea38d3fe0aca5ce3891f7aa67c5.tflite) | Seeed Studio |
+|   Backend    |  Precision  |  mAP(%)  |  Flops(M)  |  Params(M)  |    Inference(ms)    |                                                                           Download                                                                           |    Author    |
+|:------------:|:-----------:|:--------:|:----------:|:-----------:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    |   FLOAT32   |  90.60   |    90.8    |     0.7     |          -          |     [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_adda465db843aae8384c90c82e223c2cd931cad2.pth)     | Seeed Studio |
+|     ONNX     |   FLOAT32   |  91.90   |     -      |     0.7     |          -          |    [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_6f0e8c8ad5a6eb5c9afb5f18f43063dcc065c4b8.onnx)     | Seeed Studio |
+|    TFLite    |   FLOAT32   |  91.90   |     -      |      -      |          -          |   [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_54f794c25b545a1d33502e3f93a620c4cecfb1f9.tflite)    | Seeed Studio |
+|    TFLite    |    INT8     |  93.00   |     -      |      -      | 642.0<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_8d25b2b0be2a0ea38d3fe0aca5ce3891f7aa67c5.tflite)    | Seeed Studio |
+| TFLite(vela) |    INT8     |  93.00   |     -      |      -      |  47<sup>(2)</sup>   | [Link](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_8d25b2b0be2a0ea38d3fe0aca5ce3891f7aa67c5_vela.tflite) | Seeed Studio |
 
 ***Table Notes:***
 
@@ -39,6 +40,7 @@ The model is a Swift-YOLO model trained on the gesture detection dataset.
 - ***Metrics:** The metrics used to evaluate the model.*
 - ***Inference(ms):** The inference time of the model in milliseconds.*
   - ***1:** xiao_esp32s3.*
+  - ***2:** grove_vision_ai_we2.*
 - ***Link:** The link to the model.*
 - ***Author:** The author of the model.*
 

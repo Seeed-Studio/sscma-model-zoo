@@ -24,12 +24,13 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 | Output | classification |    1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### Benchmark
 
-|  Backend  |  Precision  |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                 Download                                                                                  |    Author    |
-|:---------:|:-----------:|:----------:|:-----------:|:-----------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   85.22    |     34      |    2.71     |         -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_6dec3c029041408de043c5921621ab7abc4c4ec4.pth)   | Seeed Studio |
-|   ONNX    |   FLOAT32   |   85.23    |      -      |    2.71     |         -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_aeb9c1f3bf7c19f3490daee7da1ac0d76b7e49d9.onnx)  | Seeed Studio |
-|  TFLite   |   FLOAT32   |   85.23    |      -      |    2.71     |         -         | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_float32_sha1_d44e8c1247dfc66e645f5d07b904e4a430149882.tflite) | Seeed Studio |
-|  TFLite   |    INT8     |   85.26    |      -      |    2.71     | 286<sup>(1)</sup> |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww64_int8_sha1_a939407d507b45ceca293e74c8961d59357b37b2.tflite)   | Seeed Studio |
+|   Backend    |  Precision  |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                               Download                                                                               |    Author    |
+|:------------:|:-----------:|:----------:|:-----------:|:-----------:|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    |   FLOAT32   |   85.22    |     34      |    2.71     |         -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_6dec3c029041408de043c5921621ab7abc4c4ec4.pth)    | Seeed Studio |
+|     ONNX     |   FLOAT32   |   85.23    |      -      |    2.71     |         -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_aeb9c1f3bf7c19f3490daee7da1ac0d76b7e49d9.onnx)   | Seeed Studio |
+|    TFLite    |   FLOAT32   |   85.23    |      -      |    2.71     |         -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_d44e8c1247dfc66e645f5d07b904e4a430149882.tflite)  | Seeed Studio |
+|    TFLite    |    INT8     |   85.26    |      -      |    2.71     | 286<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_int8_sha1_a939407d507b45ceca293e74c8961d59357b37b2.tflite)    | Seeed Studio |
+| TFLite(vela) |    INT8     |   85.26    |      -      |    2.71     | 8.0<sup>(2)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_int8_sha1_a939407d507b45ceca293e74c8961d59357b37b2_vela.tflite) | Seeed Studio |
 
 ***Table Notes:***
 
@@ -38,6 +39,7 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 - ***Metrics:** The metrics used to evaluate the model.*
 - ***Inference(ms):** The inference time of the model in milliseconds.*
   - ***1:** xiao_esp32s3.*
+  - ***2:** grove_vision_ai_we2.*
 - ***Link:** The link to the model.*
 - ***Author:** The author of the model.*
 

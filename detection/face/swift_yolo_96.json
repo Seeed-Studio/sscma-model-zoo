@@ -1,5 +1,5 @@
 {
-    "uuid": "c2a2ec06785d998389d6cb542afae239",
+    "uuid": "86076c63da1b619e0af9ce0b15dafda5",
     "name": "Gender Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -49,7 +49,7 @@
                 "Flops(M)": 22.6,
                 "Params(M)": 0.7
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth",
             "author": "Seeed Studio",
             "checksum": "md5:e0dd9251cd0f1e4e6fd3bfc081d22769"
         },
@@ -60,7 +60,7 @@
                 "mAP(%)": 94.9,
                 "Params(M)": 0.7
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:b00096087213bcf63d6126b84989bf62"
         },
@@ -71,13 +71,16 @@
                 "mAP(%)": 94.9,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:f38c4f024609327bd3bf572723f3c755"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
             "metrics": {
                 "mAP(%)": 94.9,
                 "Peek RAM(MB)": 0.35,
@@ -85,9 +88,26 @@
                     "xiao_esp32s3": 200.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:42e591520b7fe34af2abcd27d08910db"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 94.9,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 20.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:519dadae498ba6f94eb8b7e848d2e37a"
         }
     ],
     "benchmark_note": {

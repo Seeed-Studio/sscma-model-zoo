@@ -1,5 +1,5 @@
 {
-    "uuid": "32406521749bf05a816515d911460987",
+    "uuid": "97ae77dad19e9a9d33c755596f533916",
     "name": "Digital Meter Electricity",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -57,7 +57,7 @@
                 "MACs(MB)": 90.56,
                 "Params(M)": 0.67
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth",
             "author": "Seeed Studio",
             "checksum": "md5:dc4f0332c6a339f2eaa8b3d4baad5041"
         },
@@ -69,7 +69,7 @@
                 "Params(M)": 0.67,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:b764db53c927d4e0f0f04c14845f47d7"
         },
@@ -81,13 +81,16 @@
                 "MACs(MB)": 89.0,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:05bc8bc7fdacef7e2d2f2694ca838864"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
             "metrics": {
                 "mAP(%)": 93.1,
                 "MACs(MB)": 89.0,
@@ -96,9 +99,27 @@
                     "xiao_esp32s3": 691.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:05bc8bc7fdacef7e2d2f2694ca838864"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 93.1,
+                "MACs(MB)": 89.0,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 50
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:f3dd771780632a1434b43053973a2ffb"
         }
     ],
     "benchmark_note": {

@@ -145,7 +145,7 @@ def generate_doc_zh_CN(model):
         for key in metrics_headers:
             if key in metrics:
                 if key == "Inference(ms)":
-                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in inference]))
+                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in metrics[key]]))
                 else:
                     benchmark_table[-1].append(metrics[key])
             else:
@@ -261,7 +261,7 @@ def generate_doc_en(model):
         for key in metrics_headers:
             if key in metrics:
                 if key == "Inference(ms)":
-                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in inference]))
+                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in key]))
                 else:
                     benchmark_table[-1].append(metrics[key])
             else:
@@ -424,7 +424,7 @@ def generate_doc_en(model):
     benchmark_table = []
     metrics_headers = []
     inference = []
-        
+
     benchmarks = model["benchmark"]
     for benchmark in benchmarks:
         metrics = benchmark.get("metrics", {})
@@ -452,7 +452,7 @@ def generate_doc_en(model):
         for key in metrics_headers:
             if key in metrics:
                 if key == "Inference(ms)":
-                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in inference]))
+                    benchmark_table[-1].append("<br>".join([str("{}<sup>({})</sup>".format(metrics[key].get(k, "-"), inference.index(k)+1)) for k in metrics[key]]))
                 else:
                     benchmark_table[-1].append(metrics[key])
             else:

@@ -1,5 +1,5 @@
 {
-    "uuid": "345da9d85d96347e6e300379546cf7d1",
+    "uuid": "baa1d123a0284f5fd0c4bcecac1e687c",
     "name": "Person Classification",
     "version": "1.0.0",
     "category": "Image Classification",
@@ -48,7 +48,7 @@
                 "Flops(MB)": 76.5,
                 "Params(M)": 2.71
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww96_float32_sha1_0b47deccb4ffab4d8f970ea6379b838163e5bd8f.pth",
             "author": "Seeed Studio",
             "checksum": "md5:d29fae6afd2e9069d8df46df61e6b6fa"
         },
@@ -59,7 +59,7 @@
                 "Top-1(%)": 88.36,
                 "Params(M)": 2.71
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww96_float32_sha1_689cbad95dc725880861e72b5b9f7878f04ce17f.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:11cab18ffe33314ac59e7c3dc0ba9280"
         },
@@ -70,7 +70,7 @@
                 "Top-1(%)": 88.36,
                 "Params(M)": 2.71
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww96_float32_sha1_a92eb1b9420f2947bfb65153e1def12097fdb977.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:7ff86dbf4e69ecd035344da4abb1988d"
         },
@@ -87,9 +87,26 @@
                     "xiao_esp32s3": 582
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:beb714685e497664b90c98a5cfa66aba"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "Top-1(%)": 88.27,
+                "Params(M)": 2.71,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 15.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww96_int8_sha1_f1a66ce5a3f05bc1293920e5a95f547e27df6550_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:eef4655855f6300aa3cec2d357af0573"
         }
     ]
 }

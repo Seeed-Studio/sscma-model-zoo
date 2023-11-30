@@ -18,18 +18,19 @@ The model is a Swift-YOLO model trained on the Digital Meter Electricity dataset
 
 ### 网络架构
 
-|    | 类型    |  批次  | 形状            | 备注                                                                                                               |
-|:---|:------|:----:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| 输出 | bbox  |  1   | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
+|      | 类型   |  批次  | 形状          | 备注                                                                                                             |
+|:-----|:-------|:------:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
+| 输入 | image  |   1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
+| 输出 | bbox   |   1    | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
-|   框架    |   精度    |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                           下载                                                                                            |      作者      |
-|:-------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |  99.20   |   90.56    |    0.67     |       -        |          -          |      [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth)       | Seeed Studio |
-|  ONNX   | FLOAT32 |  98.80   |     -      |    0.67     |      1.2       |          -          | [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite) | Seeed Studio |
-| TFLite  | FLOAT32 |  98.80   |    89.0    |      -      |      1.2       |          -          |  [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite)   | Seeed Studio |
-| TFLite  |  INT8   |  93.10   |    89.0    |      -      |      0.35      | 691.0<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Digital_Meter_Seg7/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite)   | Seeed Studio |
+|     框架     |  精度   |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                     下载                                                                                     |     作者     |
+|:------------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    | FLOAT32 |  99.20   |   90.56    |    0.67     |       -        |          -          |       [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_sha1_b26cffe14038a7155315c40b49f851679a547dec.pth)        | Seeed Studio |
+|     ONNX     | FLOAT32 |  98.80   |     -      |    0.67     |      1.2       |          -          |  [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_float32_sha1_e46a4c7183d073a5807e327d6b6d788853f2acf7.tflite)  | Seeed Studio |
+|    TFLite    | FLOAT32 |  98.80   |    89.0    |      -      |      1.2       |          -          |   [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite)    | Seeed Studio |
+|    TFLite    |  INT8   |  93.10   |    89.0    |      -      |      0.35      | 691.0<sup>(1)</sup> |   [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73.tflite)    | Seeed Studio |
+| TFLite(vela) |  INT8   |  93.10   |    89.0    |      -      |      0.35      |  50<sup>(2)</sup>   | [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/electricity_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_d670a8f8ceb3691beaa89da352c678634a29df73_vela.tflite) | Seeed Studio |
 
 ***表格注释：***
 
@@ -39,6 +40,7 @@ The model is a Swift-YOLO model trained on the Digital Meter Electricity dataset
 - ***指标：** 用于评估模型的指标.*
 - ***推理时间（毫秒）：** 模型的推理时间（以毫秒为单位）.*
   - ***1：** xiao_esp32s3.*
+  - ***2：** grove_vision_ai_we2.*
 - ***链接：** 模型的链接.*
 - ***作者：** 模型的作者.*
 

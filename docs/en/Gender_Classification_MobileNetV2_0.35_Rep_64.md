@@ -24,12 +24,13 @@ The model is a vision model designed for Gender classification. It utilizes the 
 | Output | classification |    1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### Benchmark
 
-|  Backend  |  Precision  |  Top-1(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                          Download                                                                          |    Author    |
-|:---------:|:-----------:|:----------:|:----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   94.50    |    5.49    |    2.16     |        -         |     [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth)     | Seeed Studio |
-|   ONNX    |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |       [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx)       | Seeed Studio |
-|  TFLite   |   FLOAT32   |   94.50    |     -      |    2.16     |        -         |      [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite)      | Seeed Studio |
-|  TFLite   |    INT8     |   94.30    |     -      |    2.16     | 40<sup>(1)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite) | Seeed Studio |
+|   Backend    |  Precision  |  Top-1(%)  |  Flops(M)  |  Params(M)  |   Inference(ms)   |                                                                            Download                                                                             |    Author    |
+|:------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    |   FLOAT32   |   94.50    |    5.49    |    2.16     |         -         |       [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth)        | Seeed Studio |
+|     ONNX     |   FLOAT32   |   94.50    |     -      |    2.16     |         -         |         [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx)          | Seeed Studio |
+|    TFLite    |   FLOAT32   |   94.50    |     -      |    2.16     |         -         |        [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite)         | Seeed Studio |
+|    TFLite    |    INT8     |   94.30    |     -      |    2.16     | 40<sup>(1)</sup>  |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite)    | Seeed Studio |
+| TFLite(vela) |    INT8     |   94.30    |     -      |    2.16     | 4.0<sup>(2)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41_vela.tflite) | Seeed Studio |
 
 ***Table Notes:***
 
@@ -38,6 +39,7 @@ The model is a vision model designed for Gender classification. It utilizes the 
 - ***Metrics:** The metrics used to evaluate the model.*
 - ***Inference(ms):** The inference time of the model in milliseconds.*
   - ***1:** xiao_esp32s3.*
+  - ***2:** grove_vision_ai_we2.*
 - ***Link:** The link to the model.*
 - ***Author:** The author of the model.*
 

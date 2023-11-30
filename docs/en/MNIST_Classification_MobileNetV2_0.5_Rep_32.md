@@ -24,12 +24,13 @@ The model is a vision model designed for MNIST dataset
 | Output | classification |    1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### Benchmark
 
-|  Backend  |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                                Download                                                                                |    Author    |
-|:---------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   99.01    |    1.00    |     2.1     |    1.20     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
-|   ONNX    |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
-|  TFLite   |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         | [Link]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |
-|  TFLite   |    INT8     |   98.98    |   99.98    |      -      |    1.20     | 13<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)   | Seeed Studio |
+|   Backend    |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                             Download                                                                             |    Author    |
+|:------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    |   FLOAT32   |   99.01    |    1.00    |     2.1     |    1.20     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)    | Seeed Studio |
+|     ONNX     |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
+|    TFLite    |   FLOAT32   |   99.01    |    1.00    |      -      |    1.20     |        -         | [Link]( https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite)  | Seeed Studio |
+|    TFLite    |    INT8     |   98.98    |   99.98    |      -      |    1.20     | 13<sup>(1)</sup> |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite)    | Seeed Studio |
+| TFLite(vela) |    INT8     |   98.98    |   99.98    |      -      |    1.20     | 2<sup>(2)</sup>  | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c_vela.tflite) | Seeed Studio |
 
 ***Table Notes:***
 
@@ -38,6 +39,7 @@ The model is a vision model designed for MNIST dataset
 - ***Metrics:** The metrics used to evaluate the model.*
 - ***Inference(ms):** The inference time of the model in milliseconds.*
   - ***1:** xiao_esp32s3.*
+  - ***2:** grove_vision_ai_we2.*
 - ***Link:** The link to the model.*
 - ***Author:** The author of the model.*
 
