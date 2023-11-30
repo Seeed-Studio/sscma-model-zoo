@@ -18,14 +18,14 @@ The model is a vision model designed for MNIST dataset
 
 ### 网络架构
 
-|      | 类型           |  批次  | 形状        | 备注                                                                                                      |
-|:-----|:---------------|:------:|:------------|:----------------------------------------------------------------------------------------------------------|
-| 输入 | image          |   1    | [32, 32, 1] | The input image should be resized to 32x32 pixels                                                         |
-| 输出 | classification |   1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
+|    | 类型             |  批次  | 形状          | 备注                                                                                                        |
+|:---|:---------------|:----:|:------------|:----------------------------------------------------------------------------------------------------------|
+| 输入 | image          |  1   | [32, 32, 1] | The input image should be resized to 32x32 pixels                                                         |
+| 输出 | classification |  1   | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### 基准测试
 
-|  框架   |  精度   |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                                  下载                                                                                  |     作者     |
-|:-------:|:-------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   框架    |   精度    |  Top-1(%)  |  Top-5(%)  |  Flops(MB)  |  Params(M)  |  Inference(ms)   |                                                                                  下载                                                                                  |      作者      |
+|:-------:|:-------:|:----------:|:----------:|:-----------:|:-----------:|:----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 | PyTorch | FLOAT32 |   99.01    |    1.00    |     2.1     |    1.20     |        -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth)   | Seeed Studio |
 |  ONNX   | FLOAT32 |   99.01    |    1.00    |      -      |    1.20     |        -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx)   | Seeed Studio |
 | TFLite  | FLOAT32 |   99.01    |    1.00    |      -      |    1.20     |        -         | [链接]( https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite) | Seeed Studio |

@@ -18,14 +18,14 @@ The model is a Swift-YOLO model trained on the Face dataset. The model can detec
 
 ### 网络架构
 
-|      | 类型   |  批次  | 形状          | 备注                                                                                                             |
-|:-----|:-------|:------:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| 输入 | image  |   1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| 输出 | bbox   |   1    | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
+|    | 类型    |  批次  | 形状            | 备注                                                                                                               |
+|:---|:------|:----:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
+| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
+| 输出 | bbox  |  1   | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
-|  框架   |  精度   |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |               Inference(ms)                |                                                                                    下载                                                                                     |     作者     |
-|:-------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   框架    |   精度    |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |               Inference(ms)                |                                                                                    下载                                                                                     |      作者      |
+|:-------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 | PyTorch | FLOAT32 |  94.40   |   90.56    |    0.67     |       -        |                     -                      |      [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_f2a3f61a271c467748e26f0fd6fdd82d740512ff.pth)       | Seeed Studio |
 |  ONNX   | FLOAT32 |  94.10   |     -      |    0.67     |       -        |                     -                      |      [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_e530c8df4b4474979cbfe2da447d06ab657289ce.onnx)      | Seeed Studio |
 | TFLite  | FLOAT32 |  94.10   |    89.0    |      -      |      1.2       |                     -                      | [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_float32_sha1_a647ee0f7eb8951b3d78c8048159e999029d7051.tflite) | Seeed Studio |

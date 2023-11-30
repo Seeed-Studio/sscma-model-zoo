@@ -18,14 +18,14 @@ The model is a vision model designed for Gender classification. It utilizes the 
 
 ### 网络架构
 
-|      | 类型           |  批次  | 形状        | 备注                                                                                                          |
-|:-----|:---------------|:------:|:------------|:--------------------------------------------------------------------------------------------------------------|
-| 输入 | image          |   1    | [64, 64, 3] | The input image should be resized to 64x64 pixels                                                             |
-| 输出 | classification |   1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
+|    | 类型             |  批次  | 形状          | 备注                                                                                                            |
+|:---|:---------------|:----:|:------------|:--------------------------------------------------------------------------------------------------------------|
+| 输入 | image          |  1   | [64, 64, 3] | The input image should be resized to 64x64 pixels                                                             |
+| 输出 | classification |  1   | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### 基准测试
 
-|  框架   |  精度   |  Top-1(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                            下载                                                                            |     作者     |
-|:-------:|:-------:|:----------:|:----------:|:-----------:|:----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   框架    |   精度    |  Top-1(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                            下载                                                                            |      作者      |
+|:-------:|:-------:|:----------:|:----------:|:-----------:|:----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 | PyTorch | FLOAT32 |   94.50    |    5.49    |    2.16     |        -         |     [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_sha1_62336a001f0cd58d2ac8ed5a6823b9ac7374f276.pth)     | Seeed Studio |
 |  ONNX   | FLOAT32 |   94.50    |     -      |    2.16     |        -         |       [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_a9031151303fb4eaeae99262d26c0719a7bca7d7.onnx)       | Seeed Studio |
 | TFLite  | FLOAT32 |   94.50    |     -      |    2.16     |        -         |      [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_5e6dc80bd5f3ddb429326a27f767816d998c919b.tflite)      | Seeed Studio |

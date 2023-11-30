@@ -18,14 +18,14 @@ The model is a Swift-YOLO model trained on the face gender dataset. It can detec
 
 ### 网络架构
 
-|      | 类型   |  批次  | 形状        | 备注                                                                                                           |
-|:-----|:-------|:------:|:------------|:---------------------------------------------------------------------------------------------------------------|
-| 输入 | image  |   1    | [96, 96, 3] | The input image should be resized to 96x96 pixels.                                                             |
-| 输出 | bbox   |   1    | [567, 5]    | The output is a 567x5 tensor, where 567 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
+|    | 类型    |  批次  | 形状          | 备注                                                                                                             |
+|:---|:------|:----:|:------------|:---------------------------------------------------------------------------------------------------------------|
+| 输入 | image |  1   | [96, 96, 3] | The input image should be resized to 96x96 pixels.                                                             |
+| 输出 | bbox  |  1   | [567, 5]    | The output is a 567x5 tensor, where 567 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
-|  框架   |  精度   |  mAP(%)  |  Flops(M)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                 下载                                                                                 |     作者     |
-|:-------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   框架    |   精度    |  mAP(%)  |  Flops(M)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                 下载                                                                                 |      作者      |
+|:-------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 | PyTorch | FLOAT32 |  98.20   |    22.6    |     0.7     |       -        |          -          |      [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth)       | Seeed Studio |
 |  ONNX   | FLOAT32 |  94.90   |     -      |     0.7     |       -        |          -          |  [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx)  | Seeed Studio |
 | TFLite  | FLOAT32 |  94.90   |     -      |      -      |      1.2       |          -          | [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/models/gender/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite) | Seeed Studio |
