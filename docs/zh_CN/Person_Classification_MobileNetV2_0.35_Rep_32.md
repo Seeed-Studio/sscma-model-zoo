@@ -18,18 +18,19 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 
 ### 网络架构
 
-|    | 类型             |  批次  | 形状          | 备注                                                                                                            |
-|:---|:---------------|:----:|:------------|:--------------------------------------------------------------------------------------------------------------|
-| 输入 | image          |  1   | [32, 32, 3] | The input image should be resized to 32x32 pixels                                                             |
-| 输出 | classification |  1   | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
+|      | 类型           |  批次  | 形状        | 备注                                                                                                          |
+|:-----|:---------------|:------:|:------------|:--------------------------------------------------------------------------------------------------------------|
+| 输入 | image          |   1    | [32, 32, 3] | The input image should be resized to 32x32 pixels                                                             |
+| 输出 | classification |   1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### 基准测试
 
-|   框架    |   精度    |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                   下载                                                                                    |      作者      |
-|:-------:|:-------:|:----------:|:-----------:|:-----------:|:-----------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-| PyTorch | FLOAT32 |   85.22    |     34      |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth)   | Seeed Studio |
-|  ONNX   | FLOAT32 |   80.33    |      -      |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx)  | Seeed Studio |
-| TFLite  | FLOAT32 |   80.34    |      -      |    2.71     |         -         | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite) | Seeed Studio |
-| TFLite  |  INT8   |   80.23    |      -      |    0.02     | 101<sup>(1)</sup> |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/models/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite)   | Seeed Studio |
+|     框架     |  精度   |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                 下载                                                                                 |     作者     |
+|:------------:|:-------:|:----------:|:-----------:|:-----------:|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    | FLOAT32 |   85.22    |     34      |    2.71     |         -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww32_float32_sha1_c0bb3413912614cb90492eb4c2fbfbf6d3005874.pth)    | Seeed Studio |
+|     ONNX     | FLOAT32 |   80.33    |      -      |    2.71     |         -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww32_float32_sha1_1cf8b63ca70b701385f0fc15294593dd356ad60f.onnx)   | Seeed Studio |
+|    TFLite    | FLOAT32 |   80.34    |      -      |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww32_float32_sha1_5231d2f72ff1668e202cf80d7735e8878f706cda.tflite)  | Seeed Studio |
+|    TFLite    |  INT8   |   80.23    |      -      |    0.02     | 101<sup>(1)</sup> |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59.tflite)    | Seeed Studio |
+| TFLite(vela) |  INT8   |   80.23    |      -      |    0.02     |  1<sup>(2)</sup>  | [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww32_int8_sha1_a90a9f8f09ac45022ced9ded3ab84790e5b35e59_vela.tflite) | Seeed Studio |
 
 ***表格注释：***
 
@@ -38,6 +39,7 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 - ***指标：** 用于评估模型的指标.*
 - ***推理时间（毫秒）：** 模型的推理时间（以毫秒为单位）.*
   - ***1：** xiao_esp32s3.*
+  - ***2：** grove_vision_ai_we2.*
 - ***链接：** 模型的链接.*
 - ***作者：** 模型的作者.*
 

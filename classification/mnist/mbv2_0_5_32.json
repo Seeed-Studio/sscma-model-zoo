@@ -1,5 +1,5 @@
 {
-    "uuid": "c7d3ad2bc4ad1b0eae2c39a4f66c191e",
+    "uuid": "25389385a6d58cfbf7c1a6d92a6c0183",
     "name": "MNIST Classification",
     "version": "1.0.0",
     "category": "Image Classification",
@@ -56,7 +56,7 @@
                 "Flops(MB)": 2.1,
                 "Params(M)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_41b743d3bceb50b5b677c7688567a87612e8435a.pth",
             "author": "Seeed Studio",
             "checksum": "md5:c701b05fdb404df73d154b5d6e93d718"
         },
@@ -68,7 +68,7 @@
                 "Top-5(%)": 1.0,
                 "Params(M)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_068ee0fe613d40158cecd34427bbf52b1bc2d738.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:61b5725d4786fc7e506b6e73728bcdc5"
         },
@@ -80,7 +80,7 @@
                 "Top-5(%)": 1.0,
                 "Params(M)": 1.2
             },
-            "url": " https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite",
+            "url": " https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_float32_sha1_b27cb353f199e0378783585790c2798186f6a000.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:41703fd04143a664a68e198ec02e5a97"
         },
@@ -98,9 +98,27 @@
                     "xiao_esp32s3": 13
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/models/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:5a4ab46854ce1baa345a909c84f73565"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "Top-1(%)": 98.98,
+                "Top-5(%)": 99.98,
+                "Params(M)": 1.2,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 2
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/mnist/mobilenetv2_0.35_mnist_int8_sha1_ae68f9558b3808650005587411d04a87a441300c_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:8233f08f98911eb637d149b4f18495dd"
         }
     ]
 }

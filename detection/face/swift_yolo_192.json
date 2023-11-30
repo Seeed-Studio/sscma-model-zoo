@@ -1,5 +1,5 @@
 {
-    "uuid": "818d34aca006f3c42c21b1c5ef8529b3",
+    "uuid": "c8af94420f4a683cd4d74c942d8e8564",
     "name": "Face Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -48,7 +48,7 @@
                 "MACs(MB)": 90.56,
                 "Params(M)": 0.67
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_f2a3f61a271c467748e26f0fd6fdd82d740512ff.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/yolov5_tiny_1xb16_300e_coco_sha1_f2a3f61a271c467748e26f0fd6fdd82d740512ff.pth",
             "author": "Seeed Studio",
             "checksum": "md5:98ea1dadb2c39c0772487936d4a03598"
         },
@@ -59,7 +59,7 @@
                 "mAP(%)": 94.1,
                 "Params(M)": 0.67
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_sha1_e530c8df4b4474979cbfe2da447d06ab657289ce.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/yolov5_tiny_1xb16_300e_coco_sha1_e530c8df4b4474979cbfe2da447d06ab657289ce.onnx",
             "author": "Seeed Studio",
             "checksum": "md5:eb5027539f764fdf6299be1c25da99c6"
         },
@@ -71,13 +71,17 @@
                 "MACs(MB)": 89.0,
                 "Peek RAM(MB)": 1.2
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_float32_sha1_a647ee0f7eb8951b3d78c8048159e999029d7051.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/yolov5_tiny_1xb16_300e_coco_float32_sha1_a647ee0f7eb8951b3d78c8048159e999029d7051.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:d49da717ff571ca9d9f5ef42e9df3d38"
         },
         {
             "backend": "TFLite",
             "precision": "INT8",
+            "device": [
+                "xiao_esp32s3",
+                "grove_vision_ai_we1"
+            ],
             "metrics": {
                 "mAP(%)": 93.1,
                 "MACs(MB)": 89.0,
@@ -87,9 +91,27 @@
                     "xiao_esp32s3": 691.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/models/yolov5/Face/yolov5_tiny_1xb16_300e_coco_int8_sha1_e707d23e1b45b4a464e9ebedae0f6570a9d35a9c.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/yolov5_tiny_1xb16_300e_coco_int8_sha1_e707d23e1b45b4a464e9ebedae0f6570a9d35a9c.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:c2944878c91696dd5521d35676700d24"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 93.1,
+                "MACs(MB)": 89.0,
+                "Peek RAM(MB)": 0.35,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 56
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/yolov5_tiny_1xb16_300e_coco_int8_sha1_e707d23e1b45b4a464e9ebedae0f6570a9d35a9c_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:15d2f72ace6eaf4b54743299f87ef577"
         }
     ],
     "benchmark_note": {

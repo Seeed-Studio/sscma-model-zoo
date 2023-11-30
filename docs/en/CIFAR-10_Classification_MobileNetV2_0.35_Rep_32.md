@@ -24,12 +24,13 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 | Output | classification |    1    | [10]        | The output is a 10-dimension vector, each of which represents the probability of the corresponding class. |
 ### Benchmark
 
-|  Backend  |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(M)  |  Params(M)  |  Inference(ms)   |                                                                                 Download                                                                                  |    Author    |
-|:---------:|:-----------:|:----------:|:----------:|:----------:|:-----------:|:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
-|  PyTorch  |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth)   | Seeed Studio |
-|   ONNX    |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |        -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx)  | Seeed Studio |
-|  TFLite   |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |        -         | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite) | Seeed Studio |
-|  TFLite   |    INT8     |   74.56    |   98.29    |    2.10    |    1.20     | 13<sup>(1)</sup> |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/models/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite)   | Seeed Studio |
+|   Backend    |  Precision  |  Top-1(%)  |  Top-5(%)  |  Flops(M)  |  Params(M)  |   Inference(ms)   |                                                                               Download                                                                               |    Author    |
+|:------------:|:-----------:|:----------:|:----------:|:----------:|:-----------:|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|   PyTorch    |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |         -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_229a650d3d6352349bbe09f27120b0ffaea03154.pth)    | Seeed Studio |
+|     ONNX     |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |         -         |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_5de550613080ddb9e9c48917abae402b72fb1f7c.onnx)   | Seeed Studio |
+|    TFLite    |   FLOAT32   |   74.76    |   98.26    |    2.10    |    1.20     |         -         |  [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/cifar10/mobilenetv2_0.35_cifar10_float32_sha1_8573efa98eb573ce709d0eeef97cac84a4a54442.tflite)  | Seeed Studio |
+|    TFLite    |    INT8     |   74.56    |   98.29    |    2.10    |    1.20     | 13<sup>(1)</sup>  |   [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8.tflite)    | Seeed Studio |
+| TFLite(vela) |    INT8     |   74.56    |   98.29    |    2.10    |    1.20     | 2.0<sup>(2)</sup> | [Link](https://files.seeedstudio.com/sscma/model_zoo/classification/cifar10/mobilenetv2_0.35_cifar10_int8_sha1_84561285cfef22718d41b93f81853143746293d8_vela.tflite) | Seeed Studio |
 
 ***Table Notes:***
 
@@ -38,6 +39,7 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 - ***Metrics:** The metrics used to evaluate the model.*
 - ***Inference(ms):** The inference time of the model in milliseconds.*
   - ***1:** xiao_esp32s3.*
+  - ***2:** grove_vision_ai_we2.*
 - ***Link:** The link to the model.*
 - ***Author:** The author of the model.*
 

@@ -1,5 +1,5 @@
 {
-    "uuid": "4d8e3919790b6d0137a2fcf7ca5717e4",
+    "uuid": "4d0ece3100308902382ca1db3099483e",
     "name": "Gender Classification",
     "version": "1.0.0",
     "category": "Image Classification",
@@ -90,6 +90,23 @@
             "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41.tflite",
             "author": "Seeed Studio",
             "checksum": "md5:853967d1e961a9fdef02122437efa239"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "Top-1(%)": 94.3,
+                "Params(M)": 2.16,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 4.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/classification/gender/mbv2_0.35_rep_gender_int8_sha1_2bc5677615f8aeb41bffe21e25de6d01f91c3a41_vela.tflite",
+            "author": "Seeed Studio",
+            "checksum": "md5:ed0c4d7d93abc31463f65677567e2a18"
         }
     ]
 }
