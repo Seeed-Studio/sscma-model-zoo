@@ -18,14 +18,14 @@ The model is a vision model designed for CIFAR-10 classification. It utilizes th
 
 ### 网络架构
 
-|      | 类型           |  批次  | 形状        | 备注                                                                                                          |
-|:-----|:---------------|:------:|:------------|:--------------------------------------------------------------------------------------------------------------|
-| 输入 | image          |   1    | [64, 64, 3] | The input image should be resized to 64x64 pixels                                                             |
-| 输出 | classification |   1    | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
+|    | 类型             |  批次  | 形状          | 备注                                                                                                            |
+|:---|:---------------|:----:|:------------|:--------------------------------------------------------------------------------------------------------------|
+| 输入 | image          |  1   | [64, 64, 3] | The input image should be resized to 64x64 pixels                                                             |
+| 输出 | classification |  1   | [2]         | The output is a 2-element vector, which represents the probability of the input image belonging to each class |
 ### 基准测试
 
-|     框架     |  精度   |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                 下载                                                                                 |     作者     |
-|:------------:|:-------:|:----------:|:-----------:|:-----------:|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|      框架      |   精度    |  Top-1(%)  |  Flops(MB)  |  Params(M)  |   Inference(ms)   |                                                                                 下载                                                                                 |      作者      |
+|:------------:|:-------:|:----------:|:-----------:|:-----------:|:-----------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 |   PyTorch    | FLOAT32 |   85.22    |     34      |    2.71     |         -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_6dec3c029041408de043c5921621ab7abc4c4ec4.pth)    | Seeed Studio |
 |     ONNX     | FLOAT32 |   85.23    |      -      |    2.71     |         -         |   [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_aeb9c1f3bf7c19f3490daee7da1ac0d76b7e49d9.onnx)   | Seeed Studio |
 |    TFLite    | FLOAT32 |   85.23    |      -      |    2.71     |         -         |  [链接](https://files.seeedstudio.com/sscma/model_zoo/classification/person/mobilenetv2_0.35rep_vww64_float32_sha1_d44e8c1247dfc66e645f5d07b904e4a430149882.tflite)  | Seeed Studio |

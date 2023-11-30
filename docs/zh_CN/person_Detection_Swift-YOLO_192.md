@@ -18,14 +18,14 @@ The model is a Swift-YOLO model trained on the person detection dataset.
 
 ### 网络架构
 
-|      | 类型   |  批次  | 形状          | 备注                                                                                                             |
-|:-----|:-------|:------:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| 输入 | image  |   1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| 输出 | bbox   |   1    | [2268, 6]     | The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]] |
+|    | 类型    |  批次  | 形状            | 备注                                                                                                               |
+|:---|:------|:----:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
+| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
+| 输出 | bbox  |  1   | [2268, 6]     | The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
-|     框架     |  精度   |  mAP(%)  |  Flops(M)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                               下载                                                                                |     作者     |
-|:------------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|      框架      |   精度    |  mAP(%)  |  Flops(M)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                               下载                                                                                |      作者      |
+|:------------:|:-------:|:--------:|:----------:|:-----------:|:--------------:|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 |   PyTorch    | FLOAT32 |  95.40   |    194     |     0.7     |       -        |          -          |   [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth)    | Seeed Studio |
 |     ONNX     | FLOAT32 |  95.40   |     -      |     0.7     |       -        |          -          |   [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx)   | Seeed Studio |
 |    TFLite    | FLOAT32 |  95.40   |     -      |      -      |      1.2       |          -          |  [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite)  | Seeed Studio |

@@ -18,14 +18,14 @@ The model is a Swift-YOLO model trained on the gesture detection dataset.
 
 ### 网络架构
 
-|      | 类型   |  批次  | 形状          | 备注                                                                                                             |
-|:-----|:-------|:------:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| 输入 | image  |   1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| 输出 | bbox   |   1    | [2268, 8]     | The output is a 2268x8 tensor, where 2268 is the number of candidate boxes and 8 is [x, y, w, h, score, [class]] |
+|    | 类型    |  批次  | 形状            | 备注                                                                                                               |
+|:---|:------|:----:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
+| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
+| 输出 | bbox  |  1   | [2268, 8]     | The output is a 2268x8 tensor, where 2268 is the number of candidate boxes and 8 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
-|     框架     |  精度   |  mAP(%)  |  Flops(M)  |  Params(M)  |    Inference(ms)    |                                                                             下载                                                                             |     作者     |
-|:------------:|:-------:|:--------:|:----------:|:-----------:|:-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
+|      框架      |   精度    |  mAP(%)  |  Flops(M)  |  Params(M)  |    Inference(ms)    |                                                                             下载                                                                             |      作者      |
+|:------------:|:-------:|:--------:|:----------:|:-----------:|:-------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|
 |   PyTorch    | FLOAT32 |  90.60   |    90.8    |     0.7     |          -          |     [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_adda465db843aae8384c90c82e223c2cd931cad2.pth)     | Seeed Studio |
 |     ONNX     | FLOAT32 |  91.90   |     -      |     0.7     |          -          |    [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_6f0e8c8ad5a6eb5c9afb5f18f43063dcc065c4b8.onnx)     | Seeed Studio |
 |    TFLite    | FLOAT32 |  91.90   |     -      |      -      |          -          |   [链接](https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_54f794c25b545a1d33502e3f93a620c4cecfb1f9.tflite)    | Seeed Studio |
