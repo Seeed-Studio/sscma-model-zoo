@@ -48,7 +48,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_sha1_fe1d7dec30d62e583a7ccf717fd6585c792570bf.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:f56eaee97a7e4b12a69d28bb4044072d"
         },
         {
             "backend": "ONNX",
@@ -58,7 +59,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_float32_sha1_441e4868e17a9bac5740280b3db791a6d75ac8a7.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:5507b43f7a947a69a329d1842d8a483d"
         },
         {
             "backend": "TFLite",
@@ -67,7 +69,8 @@
                 "mAP(%)": 97.9
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_float32_sha1_7c75dc6e777e3d3098d7f0bdb3e5c529c4d2865a.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:a330f4da70f258ab8a7d55bdbbf112a0"
         },
         {
             "backend": "TFLite",
@@ -82,10 +85,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_int8_sha1_2287b951101007d4cd1d09c3da68e53e6f23a071.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:18c320dbf7c6ecc3c4ad216da2070d26"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
-    }
+    },
+    "uuid": "df83ecf396df2bebf1b0f94c90041068"
 }
