@@ -6,8 +6,8 @@
     "description": "The model is a Swift-YOLO model trained on the gesture detection dataset.",
     "dataset": {
         "name": "Gesture",
-        "url": "https://app.roboflow.com/rsp/paper-aaj0p/33",
-        "download": "https://app.roboflow.com/ds/xaMM3ZTeWy?key=5bznPZyI0t"
+        "url": "https://universe.roboflow.com/rsp/paper-aaj0p/dataset/33",
+        "download": "https://universe.roboflow.com/ds/xaMM3ZTeWy?key=5bznPZyI0t"
     },
     "network": {
         "batch": 1,

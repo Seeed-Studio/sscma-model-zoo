@@ -8,7 +8,7 @@
     "dataset": {
         "name": "Digital Meter Electricity",
         "url": "https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-water",
-        "download": "https://app.roboflow.com/ds/q2pdTCdiui?key=m452pDZgqp"
+        "download": "https://universe.roboflow.com/ds/GiPpzvOtZJ?key=xsAuy7kg92"
     },
     "network": {
         "batch": 1,
