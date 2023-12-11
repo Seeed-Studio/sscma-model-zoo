@@ -89,7 +89,7 @@ def generate_doc_zh_CN(model):
     # 添加模型徽章
     doc += "**版本：** {}\n\n".format(model["version"])
     doc += "**任务** {}\n\n".format(model["category"])
-    doc += "**算法：** [{}]({})\n\n".format(model["algorithm"], model["config"]["url"])
+    doc += "**算法：** [{}]({})\n\n".format(model["algorithm"],  "https://github.com/Seeed-Studio/ModelAssistant/blob/main/" + model["config"]["url"])
     doc += "**数据集：** [{}]({})\n\n".format(model["dataset"]["name"], model["dataset"]["url"])
 
     # 添加类别
@@ -396,7 +396,7 @@ def generate_doc_en(model):
     # Add model badges
     doc += "**Version:** {}\n\n".format(model["version"])
     doc += "**Category:** {}\n\n".format(model["category"])
-    doc += "**Algorithm:** [{}]({})\n\n".format(model["algorithm"], model["config"]["url"])
+    doc += "**Algorithm:** [{}]({})\n\n".format(model["algorithm"],  "https://github.com/Seeed-Studio/ModelAssistant/blob/main/" + model["config"]["url"])
     doc += "**Dataset:** [{}]({})\n\n".format(model["dataset"]["name"], model["dataset"]["url"])
 
     # Add class
