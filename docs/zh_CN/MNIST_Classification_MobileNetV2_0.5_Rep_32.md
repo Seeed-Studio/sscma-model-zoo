@@ -6,7 +6,7 @@
 
 **任务** Image Classification
 
-**算法：** [MobileNetV2 0.5 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
+**算法：** [MobileNetV2 0.5 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
 
 **数据集：** [MNIST](http://yann.lecun.com/exdb/mnist/)
 

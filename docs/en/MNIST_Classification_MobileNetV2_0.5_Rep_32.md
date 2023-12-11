@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/MNIST_Classification_MobileNetV2_0.5_Rep_32.md
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2 0.5 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
+**Algorithm:** [MobileNetV2 0.5 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_mnist.py)
 
 **Dataset:** [MNIST](http://yann.lecun.com/exdb/mnist/)
 

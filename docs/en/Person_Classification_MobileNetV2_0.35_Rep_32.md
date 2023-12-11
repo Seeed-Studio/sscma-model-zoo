@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/Person_Classification_MobileNetV2_0.35_Rep_32.
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
+**Algorithm:** [MobileNetV2 0.35 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
 
 **Dataset:** [VWW](https://github.com/Mxbonn/visualwakewords)
 

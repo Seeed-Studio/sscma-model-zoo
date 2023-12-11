@@ -1,5 +1,5 @@
 {
-    "uuid": "a38217fb8edded975a682e7456ad5278",
+    "uuid": "caa42993be588cdb959cfc00c71d8076",
     "name": "person Detection",
     "version": "1.0.0",
     "category": "Object Detection",
@@ -15,7 +15,7 @@
         "input": {
             "type": "image",
             "shape": [
-                192, 
+                192,
                 192,
                 3
             ],

@@ -6,7 +6,7 @@
 
 **任务** Image Classification
 
-**算法：** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**算法：** [MobileNetV2 0.35 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
 
 **数据集：** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 

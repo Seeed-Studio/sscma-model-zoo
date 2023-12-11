@@ -6,9 +6,9 @@
 
 **任务** Object Detection
 
-**算法：** [Swift-YOLO](configs/yolov5/swift_yolo_1xb16_300e_coco.py)
+**算法：** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/swift_yolo_1xb16_300e_coco.py)
 
-**数据集：** [Gesture](https://app.roboflow.com/rsp/paper-aaj0p/33)
+**数据集：** [Gesture](https://universe.roboflow.com/rsp/paper-aaj0p/dataset/33)
 
 **类别** `paper`, `rock`, `scissors`
 

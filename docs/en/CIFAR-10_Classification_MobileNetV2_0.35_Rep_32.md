@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/CIFAR-10_Classification_MobileNetV2_0.35_Rep_3
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
+**Algorithm:** [MobileNetV2 0.35 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_cifar10.py)
 
 **Dataset:** [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 
