@@ -1,14 +1,13 @@
 {
-    "uuid": "86076c63da1b619e0af9ce0b15dafda5",
-    "name": "Gender Detection",
+    "name": "Face Detection",
     "version": "1.0.0",
     "category": "Object Detection",
     "algorithm": "Swift-YOLO",
-    "description": "The model is a Swift-YOLO model trained on the face gender dataset. It can detect female and male faces in images.",
+    "description": "The model is a Swift-YOLO model trained on the face detection dataset.",
     "dataset": {
-        "name": "Face Gender",
-        "url": "https://universe.roboflow.com/seeed-studio-esmjg/person-detection-eetev",
-        "download": "https://universe.roboflow.com/ds/JG3NSRibvH?key=lJLGEwG7Zr"
+        "name": "face detection",
+        "url": "https://universe.roboflow.com/detection-02p2y/face-b3jhr/dataset/2",
+        "download": "https://universe.roboflow.com/ds/tCPeEouXqt?key=uohxULat1Q"
     },
     "network": {
         "batch": 1,
@@ -25,55 +24,53 @@
             "type": "bbox",
             "shape": [
                 567,
-                5
+                6
             ],
-            "remark": "The output is a 567x5 tensor, where 567 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+            "remark": "The output is a 567x6 tensor, where 567 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
         }
     },
     "config": {
-        "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+        "url": "configs/yolov5/swift_yolo_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
-    "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_face.png",
     "classes": [
-        "Female",
-        "Male"
+        "face"
     ],
     "benchmark": [
         {
             "backend": "PyTorch",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 98.2,
-                "Flops(M)": 22.6,
-                "Params(M)": 0.7
+                "mAP(%)": 98.7,
+                "Flops(M)": 22.641,
+                "Params(M)": 0.699
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_sha1_9d62ea47febade3f95cde715588b0e98377cd2f5.pth",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_sha1_fe1d7dec30d62e583a7ccf717fd6585c792570bf.pth",
             "author": "Seeed Studio",
-            "checksum": "md5:e0dd9251cd0f1e4e6fd3bfc081d22769"
+            "checksum": "md5:f56eaee97a7e4b12a69d28bb4044072d"
         },
         {
             "backend": "ONNX",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 94.9,
-                "Params(M)": 0.7
+                "mAP(%)": 97.9,
+                "Params(M)": 0.699
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_float32_sha1_16032922c6531011b1bfdbb2468415211c6dfc85.onnx",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_float32_sha1_441e4868e17a9bac5740280b3db791a6d75ac8a7.onnx",
             "author": "Seeed Studio",
-            "checksum": "md5:b00096087213bcf63d6126b84989bf62"
+            "checksum": "md5:5507b43f7a947a69a329d1842d8a483d"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 94.9,
-                "Peek RAM(MB)": 1.2
+                "mAP(%)": 97.9
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_float32_sha1_dfee634f289c9a7ad692c8bd558bdb3212756a4c.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_float32_sha1_7c75dc6e777e3d3098d7f0bdb3e5c529c4d2865a.tflite",
             "author": "Seeed Studio",
-            "checksum": "md5:f38c4f024609327bd3bf572723f3c755"
+            "checksum": "md5:a330f4da70f258ab8a7d55bdbbf112a0"
         },
         {
             "backend": "TFLite",
@@ -82,35 +79,18 @@
                 "xiao_esp32s3"
             ],
             "metrics": {
-                "mAP(%)": 94.9,
-                "Peek RAM(MB)": 0.35,
+                "mAP(%)": 97.9,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 200.0
+                    "xiao_esp32s3": 180.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0.tflite",
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_int8_sha1_2287b951101007d4cd1d09c3da68e53e6f23a071.tflite",
             "author": "Seeed Studio",
-            "checksum": "md5:42e591520b7fe34af2abcd27d08910db"
-        },
-        {
-            "backend": "TFLite(vela)",
-            "precision": "INT8",
-            "device": [
-                "grove_vision_ai_we2"
-            ],
-            "metrics": {
-                "mAP(%)": 94.9,
-                "Peek RAM(MB)": 0.35,
-                "Inference(ms)": {
-                    "grove_vision_ai_we2": 20.0
-                }
-            },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face/swift-yolo_tiny_gender_96_int8_sha1_8078326f275ce87a371bbb273b010f9dce93f1c0_vela.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:519dadae498ba6f94eb8b7e848d2e37a"
+            "checksum": "md5:18c320dbf7c6ecc3c4ad216da2070d26"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
-    }
+    },
+    "uuid": "df83ecf396df2bebf1b0f94c90041068"
 }
