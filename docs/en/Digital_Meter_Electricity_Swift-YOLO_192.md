@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/Digital_Meter_Electricity_Swift-YOLO_192.md) [
 
 **Category:** Object Detection
 
-**Algorithm:** [Swift-YOLO](configs/yolov5/yolov5_tiny_1xb16_300e_coco.py)
+**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/yolov5_tiny_1xb16_300e_coco.py)
 
 **Dataset:** [Digital Meter Electricity](https://universe.roboflow.com/seeed-studio-dbk14/digital-meter-electricity)
 
