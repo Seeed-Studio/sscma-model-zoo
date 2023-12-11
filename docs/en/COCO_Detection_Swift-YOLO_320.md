@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/COCO_Detection_Swift-YOLO_320.md) [![Open in C
 
 **Category:** Object Detection
 
-**Algorithm:** [Swift-YOLO](configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py)
+**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py)
 
 **Dataset:** [COCO2017](https://public.roboflow.com/object-detection/microsoft-coco-subset)
 

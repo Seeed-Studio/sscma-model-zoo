@@ -101,11 +101,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_int8_sha1_2287b951101007d4cd1d09c3da68e53e6f23a071_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:377aee70190387cc4cf2435f13aab3af"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "df83ecf396df2bebf1b0f94c90041068"
+    "uuid": "8875be475fdba3388ec530826499ad30"
 }

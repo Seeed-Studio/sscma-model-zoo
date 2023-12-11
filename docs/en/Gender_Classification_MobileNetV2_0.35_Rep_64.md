@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/Gender_Classification_MobileNetV2_0.35_Rep_64.
 
 **Category:** Image Classification
 
-**Algorithm:** [MobileNetV2 0.35 Rep](configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
+**Algorithm:** [MobileNetV2 0.35 Rep](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/classification/mobnetv2_0.35_rep_1bx16_300e_custom.py)
 
 **Dataset:** [Gender](https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd)
 
