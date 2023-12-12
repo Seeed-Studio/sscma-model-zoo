@@ -8,7 +8,7 @@
 
 ## 简介
 
-欢迎来到 Seeed Studio SSCMA Model Zoo。我们针对不同的应用场景，提供了一系列预训练的模型供您使用，配合 [Seeed Studio SSCMA](https://github.com/Seeed-Studio/SSCMA)，您可以对这些模型进行测试和推理，并轻松地部署到边缘计算设备上。
+欢迎来到 Seeed Studio SSCMA Model Zoo。我们针对不同的应用场景，提供了一系列预训练的模型供您使用，配合 [Seeed Studio SSCMA](https://github.com/Seeed-Studio/ModelAssistant)，您可以对这些模型进行测试和推理，并轻松地部署到边缘计算设备上。
 
 SSCMA Model Zoo 专注于提供在 SSCMA 优化的神经网络上训练得到的模型，这些模型针对现实应用场景，能够在嵌入式设备上实现更快和更准确的推理。
 
@@ -40,7 +40,7 @@ SSCMA Model Zoo 专注于提供在 SSCMA 优化的神经网络上训练得到的
 
 
 
-如果您需要特定场景下特定数据集的预训练模型，欢迎向我们[提交 Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues/new/choose)。
+如果您需要特定场景下特定数据集的预训练模型，欢迎向我们[提交 Issues](https://github.com/Seeed-Studio/ModelAssistant-model-zoo/issues/new/choose)。
 
 ## 快速上手
 
@@ -55,9 +55,9 @@ SSCMA Model Zoo 专注于提供在 SSCMA 优化的神经网络上训练得到的
 如果您在使用 SSCMA Model Zoo 中预训练模型时遇到任何问题，我们建议您先按照以下步骤排查:
 
 1. 检查下载模型的正确性。预训练模型文件名的末尾包含该模型的 SHA-1 哈希值，您可以自行计算下载模型的 SHA-1 并与模型文件名中的进行比对 (如使用 Linux 下的 `sha1sum` 命令)，校验模型一致性。
-2. 搜索 [SSCMA Model Zoo - Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues) 和 [SSCMA - Issues](https://github.com/Seeed-Studio/SSCMA/issues)，浏览是否有其他人反馈类似的问题。
+2. 搜索 [SSCMA Model Zoo - Issues](https://github.com/Seeed-Studio/ModelAssistant-model-zoo/issues) 和 [SSCMA - Issues](https://github.com/Seeed-Studio/ModelAssistant/issues)，浏览是否有其他人反馈类似的问题。
 
-如果以上方法都不能起到帮助，或者有其他关于 SSCMA Model Zoo 的问题，请向我们[提交 Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues/new/choose)。
+如果以上方法都不能起到帮助，或者有其他关于 SSCMA Model Zoo 的问题，请向我们[提交 Issues](https://github.com/Seeed-Studio/ModelAssistant-model-zoo/issues/new/choose)。
 
 ## 开源许可证
 

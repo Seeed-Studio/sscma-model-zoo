@@ -14,7 +14,7 @@
 
 ![Person Classification](https://files.seeedstudio.com/sscma/static/person_cls.png)
 
-The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.
+The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.
 
 ### 网络架构
 
