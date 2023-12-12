@@ -341,7 +341,7 @@ def generate_notebook_en(model):
         notebook['cells'][7]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
         notebook['cells'][7]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
     else:
-        notebook['cells'][7]['source'] += "# Auto Fetch By SSCMA"
+        notebook['cells'][7]['source'] += "# Auto Fetch By ModelAssistant"
         
     
     cfg_options = '''--cfg-options  \\
@@ -531,7 +531,7 @@ def generate_notebook_zh_CN(model):
         notebook['cells'][7]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
         notebook['cells'][7]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
     else:
-        notebook['cells'][7]['source'] += "# Auto Fetch By SSCMA"
+        notebook['cells'][7]['source'] += "# Auto Fetch By ModelAssistant"
         
     
     cfg_options = '''--cfg-options  \\
