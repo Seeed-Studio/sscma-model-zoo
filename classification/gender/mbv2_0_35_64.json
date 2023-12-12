@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "category": "Image Classification",
     "algorithm": "MobileNetV2 0.35 Rep",
-    "description": "The model is a vision model designed for Gender classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+    "description": "The model is a vision model designed for Gender classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
     "dataset": {
         "name": "Gender",
         "url": "https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd",
