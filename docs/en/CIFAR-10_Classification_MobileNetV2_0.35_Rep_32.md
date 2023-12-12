@@ -14,7 +14,7 @@ English | [简体中文](../zh_CN/CIFAR-10_Classification_MobileNetV2_0.35_Rep_3
 
 ![CIFAR-10 Classification](https://files.seeedstudio.com/sscma/static/cifar10_cls_0_35.png)
 
-The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/SSCMA) training and employs the MobileNetV2 (0.35) Rep algorithm.
+The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.
 
 ### Network 
 
