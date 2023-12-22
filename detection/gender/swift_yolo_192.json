@@ -84,6 +84,21 @@
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_int8.tflite",
             "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 95.5,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 45
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_int8_vela.tflite",
+            "author": "Seeed Studio"
         }
     ],
     "benchmark_note": {
