@@ -10,7 +10,7 @@
 
 **数据集：** [Gender](https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd)
 
-**类别** `Not a person`, `Person`
+**类别** `female`, `male`
 
 ![Gender Classification](https://files.seeedstudio.com/sscma/static/gender_cls.png)
 

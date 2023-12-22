@@ -10,7 +10,7 @@ English | [简体中文](../zh_CN/Gender_Classification_MobileNetV2_0.35_Rep_64.
 
 **Dataset:** [Gender](https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd)
 
-**Class:** `Not a person`, `Person`
+**Class:** `female`, `male`
 
 ![Gender Classification](https://files.seeedstudio.com/sscma/static/gender_cls.png)
 
