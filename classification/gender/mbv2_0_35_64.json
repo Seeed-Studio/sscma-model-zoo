@@ -36,8 +36,8 @@
     "license": "MIT",
     "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
     "classes": [
-        "Not a person",
-        "Person"
+        "female",
+        "male"
     ],
     "benchmark": [
         {
