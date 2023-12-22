@@ -49,7 +49,8 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:7cf06ac986af08038b22bf1ff4e80b38"
         },
         {
             "backend": "ONNX",
@@ -59,7 +60,8 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:6feba1a4f1dae6e537ee528450fdab86"
         },
         {
             "backend": "TFLite",
@@ -68,7 +70,8 @@
                 "mAP(%)": 95.6
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:eef4d08c06f0f26194d1df3a19ce4743"
         },
         {
             "backend": "TFLite",
@@ -83,7 +86,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:d4e554fa19f4fb84dd27dc056767207c"
         },
         {
             "backend": "TFLite(vela)",
@@ -98,11 +102,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_int8_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:22da293b391c08f90cbd7ed8b545ddce"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "2e8dd8426d835ef797a7315f4fe5a2f4"
+    "uuid": "c3eefe1c76e42206b1ce4e838e8943cc"
 }
