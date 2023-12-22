@@ -1,5 +1,5 @@
 {
-    "version": "c6db3051c5dee51e8eef17a7abed5b9ae8c164fe",
+    "version": "5cb6c3c7888d0141498cff8873c12c001c8540d4",
     "models": [
         {
             "name": "Gender Detection",
@@ -1064,7 +1064,7 @@
             ]
         },
         {
-            "uuid": "c29b33f693d0ca8d3a4e31cd9399c620",
+            "uuid": "fee63b1d204cc2ff54b5e1767c9166dc",
             "name": "Gender Classification",
             "version": "1.0.0",
             "category": "Image Classification",
@@ -1101,8 +1101,8 @@
             "license": "MIT",
             "image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
             "classes": [
-                "Not a person",
-                "Person"
+                "female",
+                "male"
             ],
             "benchmark": [
                 {
@@ -1176,12 +1176,12 @@
             ]
         },
         {
-            "uuid": "88b91dc5ada902eefacd24a46ed8d4ad",
+            "uuid": "acac6bd6e1f883a274b480c29f3fb962",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
             "algorithm": "MobileNetV2 0.35 Rep",
-            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "description": "The model is a vision model designed for person classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
                 "url": "https://github.com/Mxbonn/visualwakewords",
@@ -1288,12 +1288,12 @@
             ]
         },
         {
-            "uuid": "9b528e57ecddb6ca77f0a17c55576359",
+            "uuid": "85b9a21113a3708d5a3744a80b26068a",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
             "algorithm": "MobileNetV2 0.35 Rep",
-            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "description": "The model is a vision model designed for person classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
                 "url": "https://github.com/Mxbonn/visualwakewords",
@@ -1400,12 +1400,12 @@
             ]
         },
         {
-            "uuid": "b6cb3d8f106c1fbf7c7bb7a25cdbdbbf",
+            "uuid": "7ed115afbe3a915729f49f72de87aca4",
             "name": "Person Classification",
             "version": "1.0.0",
             "category": "Image Classification",
             "algorithm": "MobileNetV2 0.35 Rep",
-            "description": "The model is a vision model designed for CIFAR-10 classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
+            "description": "The model is a vision model designed for person classification. It utilizes the [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) training and employs the MobileNetV2 (0.35) Rep algorithm.",
             "dataset": {
                 "name": "VWW",
                 "url": "https://github.com/Mxbonn/visualwakewords",
