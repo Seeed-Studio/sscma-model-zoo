@@ -48,7 +48,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/fruit/apple_detection.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:6b4c1beb9a8372ccb51dd285437e25bc"
         },
         {
             "backend": "ONNX",
@@ -58,7 +59,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/fruit/apple_detection_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:b1ce1586a52e0390dd8111fc80d026df"
         },
         {
             "backend": "TFLite",
@@ -67,7 +69,8 @@
                 "mAP(%)": 89.5
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/fruit/apple_detection_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:872caf833788b1b7e5798e346da52446"
         },
         {
             "backend": "TFLite",
@@ -82,7 +85,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/fruit/apple_detection_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:d6204144c69170dc43fd3dc01c05aa39"
         },
         {
             "backend": "TFLite(vela)",
@@ -97,11 +101,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/fruit/apple_detection_int8_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:bd1b4b6e2446b6dadf3a6a2c6066686c"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "2e8dd8426d835ef797a7315f4fe5a2f4"
+    "uuid": "eddf9a1eeb6e0be17f39f88afa15fb79"
 }
