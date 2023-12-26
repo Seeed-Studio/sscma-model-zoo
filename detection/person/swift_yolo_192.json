@@ -31,7 +31,7 @@
         }
     },
     "config": {
-        "url": "configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py"
+        "url": "configs/swift_yolo/swift_yolo_shuff_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
