@@ -108,5 +108,5 @@
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "8875be475fdba3388ec530826499ad30"
+    "uuid": "89b6ea7192f70451db72ad5121857f53"
 }

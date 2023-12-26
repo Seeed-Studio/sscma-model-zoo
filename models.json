@@ -1,5 +1,5 @@
 {
-    "version": "5cb6c3c7888d0141498cff8873c12c001c8540d4",
+    "version": "938aabaee60408f7f319564460e2f5daa7627f6c",
     "models": [
         {
             "name": "Gender Detection",
@@ -33,7 +33,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/swift_yolo_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -112,10 +112,10 @@
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
             },
-            "uuid": "c3eefe1c76e42206b1ce4e838e8943cc"
+            "uuid": "3cfb3c55609550994c76f1490f7b00c3"
         },
         {
-            "uuid": "7f5467ba440905f85980b8eb7b695294",
+            "uuid": "fbbc0648e605ce6397e4c847842751ee",
             "name": "Digital Meter Water",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -147,7 +147,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -275,7 +275,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -353,10 +353,10 @@
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
             },
-            "uuid": "eddf9a1eeb6e0be17f39f88afa15fb79"
+            "uuid": "39c1b25338e5b01ec1784aa11e3828a0"
         },
         {
-            "uuid": "caa42993be588cdb959cfc00c71d8076",
+            "uuid": "bc2bffd02fc92ea7b6f4c63cea369d53",
             "name": "person Detection",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -388,7 +388,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_shuff_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -502,7 +502,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/swift_yolo_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -580,7 +580,7 @@
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
             },
-            "uuid": "8875be475fdba3388ec530826499ad30"
+            "uuid": "89b6ea7192f70451db72ad5121857f53"
         },
         {
             "uuid": "d07b6be0796b2684c987e5222831459c",
@@ -729,7 +729,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/swift_yolo_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
@@ -809,10 +809,10 @@
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
             },
-            "uuid": "2e8dd8426d835ef797a7315f4fe5a2f4"
+            "uuid": "60eb2fe141549daef6989609601e9b28"
         },
         {
-            "uuid": "97ae77dad19e9a9d33c755596f533916",
+            "uuid": "91907a020c8b6a16d9b9337e617ce7dc",
             "name": "Digital Meter Electricity",
             "version": "1.0.0",
             "category": "Object Detection",
@@ -844,7 +844,7 @@
                 }
             },
             "config": {
-                "url": "configs/yolov5/yolov5_tiny_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",

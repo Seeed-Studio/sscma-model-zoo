@@ -6,7 +6,7 @@
 
 **任务** Object Detection
 
-**算法：** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/swift_yolo_shuff_1xb16_300e_coco.py)
+**算法：** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/swift_yolo/swift_yolo_shuff_1xb16_300e_coco.py)
 
 **数据集：** [](https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7)
 
