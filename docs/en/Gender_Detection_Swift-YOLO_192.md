@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/Gender_Detection_Swift-YOLO_192.md) [![Open in
 
 **Category:** Object Detection
 
-**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/swift_yolo_1xb16_300e_coco.py)
+**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py)
 
 **Dataset:** [Gender](https://universe.roboflow.com/aaa-61999/gender-ymxim/dataset/6)
 
