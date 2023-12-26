@@ -6,7 +6,7 @@ English | [简体中文](../zh_CN/Face_Detection_Swift-YOLO_96.md) [![Open in Co
 
 **Category:** Object Detection
 
-**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/yolov5/swift_yolo_1xb16_300e_coco.py)
+**Algorithm:** [Swift-YOLO](https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py)
 
 **Dataset:** [face detection](https://universe.roboflow.com/detection-02p2y/face-b3jhr/dataset/2)
 
