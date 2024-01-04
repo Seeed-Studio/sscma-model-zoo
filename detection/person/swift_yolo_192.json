@@ -1,13 +1,12 @@
 {
-    "uuid": "bc2bffd02fc92ea7b6f4c63cea369d53",
     "name": "person Detection",
     "version": "1.0.0",
     "category": "Object Detection",
     "algorithm": "Swift-YOLO",
     "description": "The model is a Swift-YOLO model trained on the person detection dataset.",
     "dataset": {
-        "name": "",
-        "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7",
+        "name": "Person",
+        "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7#",
         "download": "https://universe.roboflow.com/ds/RFhocq9L2g?key=Ttmf6Fgq19"
     },
     "network": {
@@ -31,7 +30,7 @@
         }
     },
     "config": {
-        "url": "configs/swift_yolo/swift_yolo_shuff_1xb16_300e_coco.py"
+        "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
@@ -44,35 +43,31 @@
             "backend": "PyTorch",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 95.4,
-                "Flops(M)": 194,
-                "Params(M)": 0.7
+                "mAP(%)": 95.3,
+                "Flops(M)": 90.564,
+                "Params(M)": 0.699
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
-            "author": "Seeed Studio",
-            "checksum": "md5:79a08ceed5d9ff8e033c8a6ffd5c6093"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection.pth",
+            "author": "Seeed Studio"
         },
         {
             "backend": "ONNX",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 95.4,
-                "Params(M)": 0.7
+                "mAP(%)": 91.7,
+                "Params(M)": 0.699
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
-            "author": "Seeed Studio",
-            "checksum": "md5:2ca5762b62cc8ff143d44c3233a3b2c5"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.onnx",
+            "author": "Seeed Studio"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 95.4,
-                "Peek RAM(MB)": 1.2
+                "mAP(%)": 91.7
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:42c97149bcf0a241951a0756f1cc2a31"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.tflite",
+            "author": "Seeed Studio"
         },
         {
             "backend": "TFLite",
@@ -81,32 +76,13 @@
                 "xiao_esp32s3"
             ],
             "metrics": {
-                "mAP(%)": 91.7,
-                "Peek RAM(MB)": 0.35,
+                "mAP(%)": 91.6,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 200.0
+                    "xiao_esp32s3": 608.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:e2f7586cd6389f3e54acb01912681dd6"
-        },
-        {
-            "backend": "TFLite(vela)",
-            "precision": "INT8",
-            "device": [
-                "grove_vision_ai_we2"
-            ],
-            "metrics": {
-                "mAP(%)": 91.7,
-                "Peek RAM(MB)": 0.35,
-                "Inference(ms)": {
-                    "grove_vision_ai_we2": 46.0
-                }
-            },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b_vela.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:053f314c9f8c31147aab8c96412c0773"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_int8.tflite",
+            "author": "Seeed Studio"
         }
     ],
     "benchmark_note": {
