@@ -34,7 +34,7 @@
     },
     "guidelines": "",
     "license": "MIT",
-    "image": "https://files.seeedstudio.com/sscma/static/detection_coco.png",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_person.png",
     "classes": [
         "person"
     ],
