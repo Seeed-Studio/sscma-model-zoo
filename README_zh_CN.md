@@ -1,7 +1,7 @@
 # Seeed Studio SSCMA Model Zoo
 
 <div align="center">
-  <a href="https://sensecraftma.seeed.cc/" target="_blank"><img width="20%" src="https://sensecraftma.seeed.cc/images/SSCMA-Hero.png"></a>
+  <a href="https://sensecraftma.seeed.cc/" target="_blank"><img width="20%" src="https://files.seeedstudio.com/sscma/docs/images/SSCMA-Hero.png"></a>
 </div>
 
 [English](README.md) | 简体中文
@@ -20,14 +20,17 @@ SSCMA Model Zoo 专注于提供在 SSCMA 优化的神经网络上训练得到的
 
 | 模型                                                                                                 | Colab                                                                                                                                                                                                                        |
 |:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Cat_Detection_Swift-YOLO_192](docs/zh_CN/Cat_Detection_Swift-YOLO_192.md)                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Cat_Detection_Swift-YOLO_192.ipynb)             |
 | [Gender_Detection_Swift-YOLO_192](docs/zh_CN/Gender_Detection_Swift-YOLO_192.md)                   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Gender_Detection_Swift-YOLO_192.ipynb)          |
 | [Digital_Meter_Water_Swift-YOLO_192](docs/zh_CN/Digital_Meter_Water_Swift-YOLO_192.md)             | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Digital_Meter_Water_Swift-YOLO_192.ipynb)       |
 | [Apple_Detection_Swift-YOLO_192](docs/zh_CN/Apple_Detection_Swift-YOLO_192.md)                     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Apple_Detection_Swift-YOLO_192.ipynb)           |
+| [person_Detection_Swift-YOLO_Nano_192](docs/zh_CN/person_Detection_Swift-YOLO_Nano_192.md)         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/person_Detection_Swift-YOLO_Nano_192.ipynb)     |
 | [person_Detection_Swift-YOLO_192](docs/zh_CN/person_Detection_Swift-YOLO_192.md)                   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/person_Detection_Swift-YOLO_192.ipynb)          |
 | [Face_Detection_Swift-YOLO_96](docs/zh_CN/Face_Detection_Swift-YOLO_96.md)                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Face_Detection_Swift-YOLO_96.ipynb)             |
 | [COCO_Detection_Swift-YOLO_320](docs/zh_CN/COCO_Detection_Swift-YOLO_320.md)                       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/COCO_Detection_Swift-YOLO_320.ipynb)            |
 | [Gesture_Detection_Swift-YOLO_192](docs/zh_CN/Gesture_Detection_Swift-YOLO_192.md)                 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Gesture_Detection_Swift-YOLO_192.ipynb)         |
 | [Digital_Meter_Electricity_Swift-YOLO_192](docs/zh_CN/Digital_Meter_Electricity_Swift-YOLO_192.md) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Digital_Meter_Electricity_Swift-YOLO_192.ipynb) |
+| [Strawberry_Detection_Swift-YOLO_192](docs/zh_CN/Strawberry_Detection_Swift-YOLO_192.md)           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/Strawberry_Detection_Swift-YOLO_192.ipynb)      |
 
 ### Image Classification
 
