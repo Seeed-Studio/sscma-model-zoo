@@ -48,7 +48,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:631cb2fd97812e02cc7dd6794babaaab"
         },
         {
             "backend": "ONNX",
@@ -58,7 +59,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:1ec47dcaedbec638d39b7933ebfbb4a4"
         },
         {
             "backend": "TFLite",
@@ -67,7 +69,8 @@
                 "mAP(%)": 92.6
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:36eef926c333afc79f2936ba6a63c79a"
         },
         {
             "backend": "TFLite",
@@ -82,7 +85,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:2fc9d702843193e4c5e477856b6c1560"
         },
         {
             "backend": "TFLite(vela)",
@@ -97,11 +101,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_int8_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:310fd2117a464b36aa21da1af900d44d"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "39c1b25338e5b01ec1784aa11e3828a0"
+    "uuid": "c81231c3a036eda27b88054286a7d2c3"
 }

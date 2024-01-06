@@ -48,7 +48,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:947d7945fa252b9910b415768ed6f7b4"
         },
         {
             "backend": "ONNX",
@@ -58,7 +59,8 @@
                 "Params(M)": 0.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:f759a4da265358b2baa097509ac1d89f"
         },
         {
             "backend": "TFLite",
@@ -67,7 +69,8 @@
                 "mAP(%)": 91.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:8102564fee876677b14336779dfe18db"
         },
         {
             "backend": "TFLite",
@@ -82,10 +85,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:7c8836e80ae2810e9a3980770dd4f2c7"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
-    }
+    },
+    "uuid": "d518f043500b8e27cf294904e43b6538"
 }

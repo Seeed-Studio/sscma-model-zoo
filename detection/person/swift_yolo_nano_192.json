@@ -48,7 +48,8 @@
                 "Params(M)": 1.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:038039dfac923a3841d3bb290e249bd2"
         },
         {
             "backend": "ONNX",
@@ -58,7 +59,8 @@
                 "Params(M)": 1.699
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:3872088fccc618bb47a34031a5df4ab0"
         },
         {
             "backend": "TFLite",
@@ -67,7 +69,8 @@
                 "mAP(%)": 92.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:6c68054a3c55fd1e3137bf95d7e7bd43"
         },
         {
             "backend": "TFLite",
@@ -82,7 +85,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:bee22bbad91c87a6787ee606d4f799a2"
         },
         {
             "backend": "TFLite(vela)",
@@ -97,10 +101,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:f2b99229ba108c82de9379c4b6ad6354"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
-    }
+    },
+    "uuid": "ea57d226365069fb01e7c1d02081f3a5"
 }
