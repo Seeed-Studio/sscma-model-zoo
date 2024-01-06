@@ -1,7 +1,7 @@
 # Seeed Studio SSCMA Model Zoo
 
 <div align="center">
-  <a href="https://sensecraftma.seeed.cc/" target="_blank"><img width="20%" src="https://sensecraftma.seeed.cc/images/SSCMA-Hero.png"></a>
+  <a href="https://sensecraftma.seeed.cc/" target="_blank"><img width="20%" src="https://files.seeedstudio.com/sscma/docs/images/SSCMA-Hero.png"></a>
 </div>
 
 [English](README.md) | 简体中文
