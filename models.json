@@ -1,6 +1,118 @@
 {
-    "version": "938aabaee60408f7f319564460e2f5daa7627f6c",
+    "version": "7ae8a668b426874f3c4d52b23372ad195a8a057b",
     "models": [
+        {
+            "name": "Cat Detection",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the cat detection dataset.",
+            "dataset": {
+                "name": "Cat",
+                "url": "https://universe.roboflow.com/animal-cegrr/cat-x8ov4/dataset/1",
+                "download": "https://universe.roboflow.com/ds/jQlY72X41h?key=PC0cA0EVOm"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        6
+                    ],
+                    "remark": "The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detection_cat.png",
+            "classes": [
+                "cat"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 96.9,
+                        "Flops(M)": 90.564,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection.pth",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:631cb2fd97812e02cc7dd6794babaaab"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 92.6,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_float32.onnx",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:1ec47dcaedbec638d39b7933ebfbb4a4"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 92.6
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_float32.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:36eef926c333afc79f2936ba6a63c79a"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "mAP(%)": 92.7,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 625.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_int8.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:2fc9d702843193e4c5e477856b6c1560"
+                },
+                {
+                    "backend": "TFLite(vela)",
+                    "precision": "INT8",
+                    "device": [
+                        "grove_vision_ai_we2"
+                    ],
+                    "metrics": {
+                        "mAP(%)": 92.7,
+                        "Inference(ms)": {
+                            "grove_vision_ai_we2": 45
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/cat/cat_detection_int8_vela.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:310fd2117a464b36aa21da1af900d44d"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            },
+            "uuid": "c81231c3a036eda27b88054286a7d2c3"
+        },
         {
             "name": "Gender Detection",
             "version": "1.0.0",
@@ -356,15 +468,14 @@
             "uuid": "39c1b25338e5b01ec1784aa11e3828a0"
         },
         {
-            "uuid": "bc2bffd02fc92ea7b6f4c63cea369d53",
             "name": "person Detection",
             "version": "1.0.0",
             "category": "Object Detection",
-            "algorithm": "Swift-YOLO",
+            "algorithm": "Swift-YOLO Nano",
             "description": "The model is a Swift-YOLO model trained on the person detection dataset.",
             "dataset": {
-                "name": "",
-                "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7",
+                "name": "Person",
+                "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7#",
                 "download": "https://universe.roboflow.com/ds/RFhocq9L2g?key=Ttmf6Fgq19"
             },
             "network": {
@@ -388,11 +499,11 @@
                 }
             },
             "config": {
-                "url": "configs/swift_yolo/swift_yolo_shuff_1xb16_300e_coco.py"
+                "url": "configs/swift_yolo/swift_yolo_nano_1xb16_300e_coco.py"
             },
             "guidelines": "",
             "license": "MIT",
-            "image": "https://files.seeedstudio.com/sscma/static/detection_coco.png",
+            "image": "https://files.seeedstudio.com/sscma/static/detection_person.png",
             "classes": [
                 "person"
             ],
@@ -401,35 +512,34 @@
                     "backend": "PyTorch",
                     "precision": "FLOAT32",
                     "metrics": {
-                        "mAP(%)": 95.4,
-                        "Flops(M)": 194,
-                        "Params(M)": 0.7
+                        "mAP(%)": 95.5,
+                        "Flops(M)": 190.164,
+                        "Params(M)": 1.699
                     },
-                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_a5927bd6a6c6569d27edb98da946a8e75a8d816f.pth",
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192.pth",
                     "author": "Seeed Studio",
-                    "checksum": "md5:79a08ceed5d9ff8e033c8a6ffd5c6093"
+                    "checksum": "md5:038039dfac923a3841d3bb290e249bd2"
                 },
                 {
                     "backend": "ONNX",
                     "precision": "FLOAT32",
                     "metrics": {
-                        "mAP(%)": 95.4,
-                        "Params(M)": 0.7
+                        "mAP(%)": 92.7,
+                        "Params(M)": 1.699
                     },
-                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_20bc2c8517a8e42699bf46f1409f7541e52345ac.onnx",
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.onnx",
                     "author": "Seeed Studio",
-                    "checksum": "md5:2ca5762b62cc8ff143d44c3233a3b2c5"
+                    "checksum": "md5:3872088fccc618bb47a34031a5df4ab0"
                 },
                 {
                     "backend": "TFLite",
                     "precision": "FLOAT32",
                     "metrics": {
-                        "mAP(%)": 95.4,
-                        "Peek RAM(MB)": 1.2
+                        "mAP(%)": 92.7
                     },
-                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_float32_sha1_5dfa1a16d27ef347c0173c5297395963760fcc57.tflite",
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.tflite",
                     "author": "Seeed Studio",
-                    "checksum": "md5:42c97149bcf0a241951a0756f1cc2a31"
+                    "checksum": "md5:6c68054a3c55fd1e3137bf95d7e7bd43"
                 },
                 {
                     "backend": "TFLite",
@@ -438,37 +548,132 @@
                         "xiao_esp32s3"
                     ],
                     "metrics": {
-                        "mAP(%)": 91.7,
-                        "Peek RAM(MB)": 0.35,
+                        "mAP(%)": 92.6,
                         "Inference(ms)": {
-                            "xiao_esp32s3": 200.0
+                            "xiao_esp32s3": 2608.0
                         }
                     },
-                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b.tflite",
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8.tflite",
                     "author": "Seeed Studio",
-                    "checksum": "md5:e2f7586cd6389f3e54acb01912681dd6"
+                    "checksum": "md5:bee22bbad91c87a6787ee606d4f799a2"
                 },
                 {
                     "backend": "TFLite(vela)",
                     "precision": "INT8",
                     "device": [
-                        "grove_vision_ai_we2"
+                        "we2"
                     ],
                     "metrics": {
-                        "mAP(%)": 91.7,
-                        "Peek RAM(MB)": 0.35,
+                        "mAP(%)": 92.6,
                         "Inference(ms)": {
-                            "grove_vision_ai_we2": 46.0
+                            "we2": 76.0
                         }
                     },
-                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_shuffle_coco_320_int8_sha1_3b0a6d7fd95e9dd21902beae6fa2d1cd0807bd7b_vela.tflite",
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8_vela.tflite",
                     "author": "Seeed Studio",
-                    "checksum": "md5:053f314c9f8c31147aab8c96412c0773"
+                    "checksum": "md5:f2b99229ba108c82de9379c4b6ad6354"
                 }
             ],
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
-            }
+            },
+            "uuid": "ea57d226365069fb01e7c1d02081f3a5"
+        },
+        {
+            "name": "person Detection",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the person detection dataset.",
+            "dataset": {
+                "name": "Person",
+                "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7#",
+                "download": "https://universe.roboflow.com/ds/RFhocq9L2g?key=Ttmf6Fgq19"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        6
+                    ],
+                    "remark": "The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detection_person.png",
+            "classes": [
+                "person"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 95.3,
+                        "Flops(M)": 90.564,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection.pth",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:947d7945fa252b9910b415768ed6f7b4"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 91.7,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.onnx",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:f759a4da265358b2baa097509ac1d89f"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 91.7
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_float32.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:8102564fee876677b14336779dfe18db"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "mAP(%)": 91.6,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 608.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/person_detection_int8.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:7c8836e80ae2810e9a3980770dd4f2c7"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            },
+            "uuid": "d518f043500b8e27cf294904e43b6538"
         },
         {
             "name": "Face Detection",
@@ -938,6 +1143,118 @@
             "benchmark_note": {
                 "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
             }
+        },
+        {
+            "name": "Strawberry Detection",
+            "version": "1.0.0",
+            "category": "Object Detection",
+            "algorithm": "Swift-YOLO",
+            "description": "The model is a Swift-YOLO model trained on the strawberry detection dataset.",
+            "dataset": {
+                "name": "Strawberry",
+                "url": "https://universe.roboflow.com/bbb-ynve2/caomei-i40aq/dataset/8",
+                "download": "https://universe.roboflow.com/ds/hm4qHytEO4?key=TeF7sjHrH5"
+            },
+            "network": {
+                "batch": 1,
+                "input": {
+                    "type": "image",
+                    "shape": [
+                        192,
+                        192,
+                        3
+                    ],
+                    "remark": "The input image should be resized to 192x192 pixels."
+                },
+                "output": {
+                    "type": "bbox",
+                    "shape": [
+                        2268,
+                        6
+                    ],
+                    "remark": "The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
+                }
+            },
+            "config": {
+                "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+            },
+            "guidelines": "",
+            "license": "MIT",
+            "image": "https://files.seeedstudio.com/sscma/static/detection_strawberry.png",
+            "classes": [
+                "strawberry"
+            ],
+            "benchmark": [
+                {
+                    "backend": "PyTorch",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 94.7,
+                        "Flops(M)": 90.564,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/strawberry/strawberry_detection.pth",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:a5d2603e002a05936fd0364a732c34a4"
+                },
+                {
+                    "backend": "ONNX",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 92.6,
+                        "Params(M)": 0.699
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/strawberry/strawberry_detection_float32.onnx",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:45f0480ad8b0a092d1fc5361ac83e257"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "FLOAT32",
+                    "metrics": {
+                        "mAP(%)": 92.6
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/strawberry/strawberry_detection_float32.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:b679f194c23ea358b7c042099f18e3e6"
+                },
+                {
+                    "backend": "TFLite",
+                    "precision": "INT8",
+                    "device": [
+                        "xiao_esp32s3"
+                    ],
+                    "metrics": {
+                        "mAP(%)": 91.8,
+                        "Inference(ms)": {
+                            "xiao_esp32s3": 616.0
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/strawberry/strawberry_detection_int8.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:6f8529c3d8a73be60fd7ad6a690210c4"
+                },
+                {
+                    "backend": "TFLite(vela)",
+                    "precision": "INT8",
+                    "device": [
+                        "grove_vision_ai_we2"
+                    ],
+                    "metrics": {
+                        "mAP(%)": 91.8,
+                        "Inference(ms)": {
+                            "grove_vision_ai_we2": 45
+                        }
+                    },
+                    "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/strawberry/strawberry_detection_int8_vela.tflite",
+                    "author": "Seeed Studio",
+                    "checksum": "md5:bd436b117ebf531b22b0157f5c1d3162"
+                }
+            ],
+            "benchmark_note": {
+                "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+            },
+            "uuid": "248553e02d3be1fdc1b4908e374dc35f"
         },
         {
             "uuid": "25389385a6d58cfbf7c1a6d92a6c0183",
