@@ -1,0 +1,106 @@
+{
+    "name": "person Detection",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "Swift-YOLO Nano",
+    "description": "The model is a Swift-YOLO model trained on the person detection dataset.",
+    "dataset": {
+        "name": "Person",
+        "url": "https://universe.roboflow.com/hanzhou-7mktt/ssperson/dataset/7#",
+        "download": "https://universe.roboflow.com/ds/RFhocq9L2g?key=Ttmf6Fgq19"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                192,
+                192,
+                3
+            ],
+            "remark": "The input image should be resized to 192x192 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                2268,
+                6
+            ],
+            "remark": "The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": {
+        "url": "configs/swift_yolo/swift_yolo_nano_1xb16_300e_coco.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_person.png",
+    "classes": [
+        "person"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 95.5,
+                "Flops(M)": 190.164,
+                "Params(M)": 1.699
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 92.7,
+                "Params(M)": 1.699
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 92.7
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_float32.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "mAP(%)": 92.6,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 2608.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "we2"
+            ],
+            "metrics": {
+                "mAP(%)": 92.6,
+                "Inference(ms)": {
+                    "we2": 76.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8_vela.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    }
+}
