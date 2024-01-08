@@ -1,0 +1,108 @@
+{
+    "name": "Pet Detection",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "Swift-YOLO",
+    "description": "The model is a Swift-YOLO model trained on the animal detection dataset for cat and dog.",
+    "dataset": {
+        "name": "Animal",
+        "url": "https://universe.roboflow.com/animal-cegrr/animal-ph37i/dataset/11",
+        "download": "https://universe.roboflow.com/ds/5RkM7lqc1k?key=xPrRirL4BH"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                192,
+                192,
+                3
+            ],
+            "remark": "The input image should be resized to 192x192 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                2268,
+                7
+            ],
+            "remark": "The output is a 2268x7 tensor, where 2268 is the number of candidate boxes and 7 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": {
+        "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_animal.png",
+    "classes": [
+        "cat",
+        "dog"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 93.3,
+                "Flops(M)": 90.685,
+                "Params(M)": 0.7
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 88.3,
+                "Params(M)": 0.7
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 88.3
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "mAP(%)": 87.1,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 706.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 87.1,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 45
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8_vela.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    },
+    "uuid": "c81231c3a036eda27b88054286a7d2c3"
+}
