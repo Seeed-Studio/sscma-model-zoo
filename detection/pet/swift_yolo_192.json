@@ -49,7 +49,8 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection.pth",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:6e808cc7f5da04844a29bb78a63d4c15"
         },
         {
             "backend": "ONNX",
@@ -59,7 +60,8 @@
                 "Params(M)": 0.7
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.onnx",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:975fbe6e1b6613b3f21a89db3e1dafea"
         },
         {
             "backend": "TFLite",
@@ -68,7 +70,8 @@
                 "mAP(%)": 88.3
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:7185076304fc99d36172a84d11287ff6"
         },
         {
             "backend": "TFLite",
@@ -83,7 +86,8 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:433f5ac6d86026904b2b8db58262f4e9"
         },
         {
             "backend": "TFLite(vela)",
@@ -98,11 +102,12 @@
                 }
             },
             "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8_vela.tflite",
-            "author": "Seeed Studio"
+            "author": "Seeed Studio",
+            "checksum": "md5:a5e3e6b2e8d2151c04ad8909cc8626fe"
         }
     ],
     "benchmark_note": {
         "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
     },
-    "uuid": "c81231c3a036eda27b88054286a7d2c3"
+    "uuid": "2752623ddc29b22a939cda6283b1d3dc"
 }
