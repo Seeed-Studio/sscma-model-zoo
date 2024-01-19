@@ -5,9 +5,9 @@
     "algorithm": "Swift-YOLO",
     "description": "The model is a Swift-YOLO model trained on the animal detection dataset for cat and dog.",
     "dataset": {
-        "name": "Animal",
-        "url": "https://universe.roboflow.com/animal-cegrr/animal-ph37i/dataset/11",
-        "download": "https://universe.roboflow.com/ds/5RkM7lqc1k?key=xPrRirL4BH"
+        "name": "Pets",
+        "url": "https://universe.roboflow.com/pets-m14dy/pets-detection-crtzq/dataset/5",
+        "download": "https://universe.roboflow.com/ds/TWBNZdWlWU?key=4pojUPmMqt"
     },
     "network": {
         "batch": 1,
@@ -30,11 +30,11 @@
         }
     },
     "config": {
-        "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+        "url": "configs/swift_yolo/swift_yolo_nano_1xb16_300e_coco.py"
     },
     "guidelines": "",
     "license": "MIT",
-    "image": "https://files.seeedstudio.com/sscma/static/detection_animal.png",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_pet.png",
     "classes": [
         "cat",
         "dog"
@@ -44,34 +44,31 @@
             "backend": "PyTorch",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 93.3,
-                "Flops(M)": 90.685,
-                "Params(M)": 0.7
+                "mAP(%)": 97.9,
+                "Flops(M)": 0.188,
+                "Params(M)": 1.767
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection.pth",
-            "author": "Seeed Studio",
-            "checksum": "md5:6e808cc7f5da04844a29bb78a63d4c15"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/pet/pet_detection.pth",
+            "author": "Seeed Studio"
         },
         {
             "backend": "ONNX",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 88.3,
-                "Params(M)": 0.7
+                "mAP(%)": 94.9,
+                "Params(M)": 1.767
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.onnx",
-            "author": "Seeed Studio",
-            "checksum": "md5:975fbe6e1b6613b3f21a89db3e1dafea"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/pet/pet_detection_float32.onnx",
+            "author": "Seeed Studio"
         },
         {
             "backend": "TFLite",
             "precision": "FLOAT32",
             "metrics": {
-                "mAP(%)": 88.3
+                "mAP(%)": 94.9
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_float32.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:7185076304fc99d36172a84d11287ff6"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/pet/pet_detection_float32.tflite",
+            "author": "Seeed Studio"
         },
         {
             "backend": "TFLite",
@@ -80,14 +77,13 @@
                 "xiao_esp32s3"
             ],
             "metrics": {
-                "mAP(%)": 87.1,
+                "mAP(%)": 95.3,
                 "Inference(ms)": {
-                    "xiao_esp32s3": 706.0
+                    "xiao_esp32s3": 1416.0
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:433f5ac6d86026904b2b8db58262f4e9"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/pet/pet_detection_int8.tflite",
+            "author": "Seeed Studio"
         },
         {
             "backend": "TFLite(vela)",
@@ -96,14 +92,13 @@
                 "grove_vision_ai_we2"
             ],
             "metrics": {
-                "mAP(%)": 87.1,
+                "mAP(%)": 95.3,
                 "Inference(ms)": {
-                    "grove_vision_ai_we2": 45
+                    "grove_vision_ai_we2": 77
                 }
             },
-            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/animal/animal_detection_int8_vela.tflite",
-            "author": "Seeed Studio",
-            "checksum": "md5:a5e3e6b2e8d2151c04ad8909cc8626fe"
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/pet/pet_detection_int8_vela.tflite",
+            "author": "Seeed Studio"
         }
     ],
     "benchmark_note": {
