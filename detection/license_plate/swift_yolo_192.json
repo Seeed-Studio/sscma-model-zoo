@@ -1,0 +1,107 @@
+{
+    "name": "License Plate Detection",
+    "version": "1.0.0",
+    "category": "Object Detection",
+    "algorithm": "Swift-YOLO",
+    "description": "The model is a Swift-YOLO model trained on the license plate detection dataset.",
+    "dataset": {
+        "name": "License Plate",
+        "url": "https://universe.roboflow.com/licenseplate-vbfxg/liceseplate/dataset/3",
+        "download": "https://universe.roboflow.com/ds/J9NiX1efYg?key=msZ31Sn8d5"
+    },
+    "network": {
+        "batch": 1,
+        "input": {
+            "type": "image",
+            "shape": [
+                192,
+                192,
+                3
+            ],
+            "remark": "The input image should be resized to 192x192 pixels."
+        },
+        "output": {
+            "type": "bbox",
+            "shape": [
+                2268,
+                6
+            ],
+            "remark": "The output is a 2268x6 tensor, where 2268 is the number of candidate boxes and 6 is [x, y, w, h, score, [class]]"
+        }
+    },
+    "config": {
+        "url": "configs/swift_yolo/swift_yolo_tiny_1xb16_300e_coco.py"
+    },
+    "guidelines": "",
+    "license": "MIT",
+    "image": "https://files.seeedstudio.com/sscma/static/detection_license_plate.png",
+    "classes": [
+        "license plate"
+    ],
+    "benchmark": [
+        {
+            "backend": "PyTorch",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 97.3,
+                "Flops(M)": 90.564,
+                "Params(M)": 0.699
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/license_plate/license_plate_detection.pth",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "ONNX",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 96.1,
+                "Params(M)": 0.699
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/license_plate/license_plate_detection_float32.onnx",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "FLOAT32",
+            "metrics": {
+                "mAP(%)": 96.1
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/license_plate/license_plate_detection_float32.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite",
+            "precision": "INT8",
+            "device": [
+                "xiao_esp32s3"
+            ],
+            "metrics": {
+                "mAP(%)": 96.9,
+                "Inference(ms)": {
+                    "xiao_esp32s3": 616.0
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/license_plate/license_plate_detection_int8.tflite",
+            "author": "Seeed Studio"
+        },
+        {
+            "backend": "TFLite(vela)",
+            "precision": "INT8",
+            "device": [
+                "grove_vision_ai_we2"
+            ],
+            "metrics": {
+                "mAP(%)": 96.9,
+                "Inference(ms)": {
+                    "grove_vision_ai_we2": 46
+                }
+            },
+            "url": "https://files.seeedstudio.com/sscma/model_zoo/detection/license_plate/license_plate_detection_int8_vela.tflite",
+            "author": "Seeed Studio"
+        }
+    ],
+    "benchmark_note": {
+        "Evaluation Parameters": " Confidence Threshold: 0.001, IoU Threshold: 0.55, mAP Eval IoU: 0.50."
+    },
+    "uuid": "2752623ddc29b22a939cda6283b1d3dc"
+}
