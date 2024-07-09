@@ -51,7 +51,7 @@ If you need any pre-trained model for a specific dataset in a specific scenario,
 
 If you wish to use the model provided by SSCMA Model Zoo, we recommend that you follow the following steps:
 
-1. Based on actual needs, select corresponding application scenario and choose appropriate neural networks. You can browse the test results that we provide for dicision.
+1. Based on actual needs, select corresponding application scenario and choose appropriate neural networks. You can browse the test results that we provide for decision.
 2. Download the selected pre-trained model. For public pre-trained models, you can directly download them through the model link in the test results table.
 3. Please refer to [SSCMA Documentation - Deployment Example](https://sensecraftma.seeed.cc/SSCMA/examples/examples) to deploy on edge computing devices. You can also use SSCMA to run our models on your computer, reproduce our test results or infer directly.
 
