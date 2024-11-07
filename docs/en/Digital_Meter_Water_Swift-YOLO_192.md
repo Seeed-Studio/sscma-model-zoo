@@ -18,10 +18,10 @@ The model is a Swift-YOLO model trained on the Digital Meter Water dataset, whic
 
 ### Network 
 
-|        | Type   |  Batch  | Shape         | Remark                                                                                                           |
-|:-------|:-------|:-------:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| Input  | image  |    1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| Output | bbox   |    1    | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
+|        | Type   |  Batch  | Shape         | Remark                                                                                                             |
+|:-------|:-------|:-------:|:--------------|:-------------------------------------------------------------------------------------------------------------------|
+| Input  | image  |    1    | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                               |
+| Output | bbox   |    1    | [2268, 15]    | The output is a 2268x15 tensor, where 2268 is the number of candidate boxes and 15 is [x, y, w, h, score, [class]] |
 ### Benchmark
 
 |   Backend    |  Precision  |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                Download                                                                                |    Author    |
