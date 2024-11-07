@@ -18,10 +18,10 @@ The model is a Swift-YOLO model trained on the Digital Meter Electricity dataset
 
 ### 网络架构
 
-|    | 类型    |  批次  | 形状            | 备注                                                                                                               |
-|:---|:------|:----:|:--------------|:-----------------------------------------------------------------------------------------------------------------|
-| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                             |
-| 输出 | bbox  |  1   | [2268, 5]     | The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]] |
+|    | 类型    |  批次  | 形状            | 备注                                                                                                                 |
+|:---|:------|:----:|:--------------|:-------------------------------------------------------------------------------------------------------------------|
+| 输入 | image |  1   | [192, 192, 3] | The input image should be resized to 192x192 pixels.                                                               |
+| 输出 | bbox  |  1   | [2268, 15]    | The output is a 2268x15 tensor, where 2268 is the number of candidate boxes and 15 is [x, y, w, h, score, [class]] |
 ### 基准测试
 
 |      框架      |   精度    |  mAP(%)  |  MACs(MB)  |  Params(M)  |  Peek RAM(MB)  |    Inference(ms)    |                                                                                     下载                                                                                     |      作者      |
