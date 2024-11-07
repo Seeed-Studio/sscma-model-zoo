@@ -25,9 +25,9 @@
             "type": "bbox",
             "shape": [
                 2268,
-                5
+                15
             ],
-            "remark": "The output is a 2268x5 tensor, where 2268 is the number of candidate boxes and 5 is [x, y, w, h, score, [class]]"
+            "remark": "The output is a 2268x15 tensor, where 2268 is the number of candidate boxes and 15 is [x, y, w, h, score, [class]]"
         }
     },
     "config": {
