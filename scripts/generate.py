@@ -329,19 +329,26 @@ def generate_notebook_en(model):
     model_info += "![{}]({})\n\n".format(model["name"], model["image"])
     model_info += model["description"] + "\n\n"
     
-    notebook['cells'][1]['source'] = model_info
+    # Cell 0: Welcome title
+    # Cell 1: Important notice (added)
+    # Cell 2: Model info ({{model_info}})
+    notebook['cells'][2]['source'] = model_info
     
-    # Prepare Pretrain
-    notebook['cells'][5]['source'] = '%mkdir -p {} \n'.format(work_dir)
-    notebook['cells'][5]['source'] += '!wget -c {} -O {}/pretrain.pth'.format(pretrain_url, work_dir)
+    # Cell 3: Prerequisites markdown
+    # Cell 4: Setup SSCMA code
+    # Cell 5: Download pretrain markdown
+    # Cell 6: Download pretrain code ({{download_pretrained_model}})
+    notebook['cells'][6]['source'] = '%mkdir -p {} \n'.format(work_dir)
+    notebook['cells'][6]['source'] += '!wget -c {} -O {}/pretrain.pth'.format(pretrain_url, work_dir)
     
-    # Prepare Dataset
-    notebook['cells'][7]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
+    # Cell 7: Download dataset markdown
+    # Cell 8: Download dataset code ({{download_dataset}})
+    notebook['cells'][8]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
     if dataset_url != "":
-        notebook['cells'][7]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
-        notebook['cells'][7]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
+        notebook['cells'][8]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
+        notebook['cells'][8]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
     else:
-        notebook['cells'][7]['source'] += "# Auto Fetch By ModelAssistant"
+        notebook['cells'][8]['source'] += "# Auto Fetch By ModelAssistant"
         
     
     cfg_options = '''--cfg-options  \\
@@ -360,17 +367,32 @@ def generate_notebook_en(model):
 
     # Train Model 
     if config != "":
-        notebook['cells'][9]['source'] = "!sscma.train {} \\\n{}".format(config_file, cfg_options)
+        # Cell 9: Train markdown
+        # Cell 10: Train code ({{train_model}})
+        notebook['cells'][10]['source'] = "!sscma.train {} \\\n{}".format(config_file, cfg_options)
 
-        # Export Model
-        notebook['cells'][11]['source'] = "import os\n"
-        notebook['cells'][11]['source'] += "with open('{}/last_checkpoint', 'r') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(work_dir)
-        notebook['cells'][12]['source'] = "!sscma.export {} $CHECKPOINT_FILE_PATH {}".format(config_file, cfg_options)
-        notebook['cells'][15]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}.pth \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][17]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][19]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][21]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tflite \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][23]['source'] = "%ls -lh {}/".format(work_dir)
+        # Cell 11: Export markdown
+        # Cell 12: Set env checkpoint ({{set_env_checkpoint}})
+        notebook['cells'][12]['source'] = "import os\n"
+        notebook['cells'][12]['source'] += "with open('{}/last_checkpoint', 'r') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(work_dir)
+        # Cell 13: Export code ({{export_model}})
+        notebook['cells'][13]['source'] = "!sscma.export {} $CHECKPOINT_FILE_PATH {}".format(config_file, cfg_options)
+        # Cell 14: Eval markdown
+        # Cell 15: Eval PTH markdown
+        # Cell 16: Eval PTH code ({{eval_model_pth}})
+        notebook['cells'][16]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}.pth \\\n{}".format(config_file, cfg_options)
+        # Cell 17: Eval ONNX markdown
+        # Cell 18: Eval ONNX code ({{eval_model_tflite_flot32}})
+        notebook['cells'][18]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\\n{}".format(config_file, cfg_options)
+        # Cell 19: Eval TFLite Float32 markdown
+        # Cell 20: Eval TFLite Float32 code
+        notebook['cells'][20]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\\n{}".format(config_file, cfg_options)
+        # Cell 21: Eval TFLite INT8 markdown
+        # Cell 22: Eval TFLite INT8 code ({{eval_model_tflite_int8}})
+        notebook['cells'][22]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tflite \\\n{}".format(config_file, cfg_options)
+        # Cell 23: Deploy markdown
+        # Cell 24: Show result code ({{show_result}})
+        notebook['cells'][24]['source'] = "%ls -lh {}/".format(work_dir)
 
     return notebook
 
@@ -519,19 +541,26 @@ def generate_notebook_zh_CN(model):
     model_info += "![{}]({})\n\n".format(model["name"], model["image"])
     model_info += model["description"] + "\n\n"
     
-    notebook['cells'][1]['source'] = model_info
+    # Cell 0: Welcome title
+    # Cell 1: Important notice (added)
+    # Cell 2: Model info ({{model_info}})
+    notebook['cells'][2]['source'] = model_info
     
-    # Prepare Pretrain
-    notebook['cells'][5]['source'] = '%mkdir -p {} \n'.format(work_dir)
-    notebook['cells'][5]['source'] += '!wget -c {} -O {}/pretrain.pth'.format(pretrain_url, work_dir)
+    # Cell 3: Prerequisites markdown
+    # Cell 4: Setup SSCMA code
+    # Cell 5: Download pretrain markdown
+    # Cell 6: Download pretrain code ({{download_pretrained_model}})
+    notebook['cells'][6]['source'] = '%mkdir -p {} \n'.format(work_dir)
+    notebook['cells'][6]['source'] += '!wget -c {} -O {}/pretrain.pth'.format(pretrain_url, work_dir)
     
-    # Prepare Dataset
-    notebook['cells'][7]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
+    # Cell 7: Download dataset markdown
+    # Cell 8: Download dataset code ({{download_dataset}})
+    notebook['cells'][8]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
     if dataset_url != "":
-        notebook['cells'][7]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
-        notebook['cells'][7]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
+        notebook['cells'][8]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
+        notebook['cells'][8]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
     else:
-        notebook['cells'][7]['source'] += "# Auto Fetch By ModelAssistant"
+        notebook['cells'][8]['source'] += "# Auto Fetch By ModelAssistant"
         
     
     cfg_options = '''--cfg-options  \\
@@ -550,17 +579,32 @@ def generate_notebook_zh_CN(model):
 
     # Train Model 
     if config != "":
-        notebook['cells'][9]['source'] = "!sscma.train {} \\\n{}".format(config_file, cfg_options)
+        # Cell 9: Train markdown
+        # Cell 10: Train code ({{train_model}})
+        notebook['cells'][10]['source'] = "!sscma.train {} \\\n{}".format(config_file, cfg_options)
 
-        # Export Model
-        notebook['cells'][11]['source'] = "import os\n"
-        notebook['cells'][11]['source'] += "with open('{}/last_checkpoint', 'r') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(work_dir)
-        notebook['cells'][12]['source'] = "!sscma.export {} $CHECKPOINT_FILE_PATH {}".format(config_file, cfg_options)
-        notebook['cells'][15]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}.pth \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][17]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][19]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][21]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tflite \\\n{}".format(config_file, cfg_options)
-        notebook['cells'][23]['source'] = "%ls -lh {}/".format(work_dir)
+        # Cell 11: Export markdown
+        # Cell 12: Set env checkpoint ({{set_env_checkpoint}})
+        notebook['cells'][12]['source'] = "import os\n"
+        notebook['cells'][12]['source'] += "with open('{}/last_checkpoint', 'r') as f:\n\tos.environ['CHECKPOINT_FILE_PATH'] = f.read()".format(work_dir)
+        # Cell 13: Export code ({{export_model}})
+        notebook['cells'][13]['source'] = "!sscma.export {} $CHECKPOINT_FILE_PATH {}".format(config_file, cfg_options)
+        # Cell 14: Eval markdown
+        # Cell 15: Eval PTH markdown
+        # Cell 16: Eval PTH code ({{eval_model_pth}})
+        notebook['cells'][16]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}.pth \\\n{}".format(config_file, cfg_options)
+        # Cell 17: Eval ONNX markdown
+        # Cell 18: Eval ONNX code ({{eval_model_tflite_flot32}})
+        notebook['cells'][18]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.onnx \\\n{}".format(config_file, cfg_options)
+        # Cell 19: Eval TFLite Float32 markdown
+        # Cell 20: Eval TFLite Float32 code
+        notebook['cells'][20]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_float32.tflite \\\n{}".format(config_file, cfg_options)
+        # Cell 21: Eval TFLite INT8 markdown
+        # Cell 22: Eval TFLite INT8 code ({{eval_model_tflite_int8}})
+        notebook['cells'][22]['source'] = "!sscma.inference {} ${{CHECKPOINT_FILE_PATH%.*}}_int8.tflite \\\n{}".format(config_file, cfg_options)
+        # Cell 23: Deploy markdown
+        # Cell 24: Show result code ({{show_result}})
+        notebook['cells'][24]['source'] = "%ls -lh {}/".format(work_dir)
 
     return notebook
 
