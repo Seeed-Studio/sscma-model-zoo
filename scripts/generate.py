@@ -325,7 +325,11 @@ def generate_notebook_en(model):
     model_info += "**Algorithm:** [{}]({})\n\n".format(model["algorithm"], model["config"]["url"])
     model_info += "**Dataset:** [{}]({})\n\n".format(model["dataset"]["name"], model["dataset"]["url"])
     if "roboflow" in model["dataset"]["url"].lower():
-        model_info += "**Note:** To download the dataset, you need to set your Roboflow API key. Go to your [Roboflow Settings](https://app.roboflow.com/settings/api), copy your private API key, and store it as `ROBOFLOW_API_KEY` in Colab secrets.\n\n"
+        model_info += "**⚠️ IMPORTANT: To download the dataset, you need to set your Roboflow API key.**\n\n"
+        model_info += "1. Go to your [Roboflow Settings](https://app.roboflow.com/settings/api).\n"
+        model_info += "2. Copy your private API key.\n"
+        model_info += "3. In Colab, click the **key icon** on the **left sidebar** to open Secrets.\n"
+        model_info += "4. Add a new secret named `ROBOFLOW_API_KEY` with your API key as the value.\n\n"
     model_info += "**Class:** "
     model_info += ", ".join(["`{}`".format(c) for c in model["classes"]]) + "\n\n"
     model_info += "![{}]({})\n\n".format(model["name"], model["image"])
@@ -345,7 +349,7 @@ def generate_notebook_en(model):
     
     # Cell 7: Download dataset markdown
     # Cell 8: Download dataset code ({{download_dataset}})
-    notebook['cells'][8]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
+    notebook['cells'][8]['source'] = '%mkdir -p {} \n'.format(work_dir)
     if dataset_url != "":
         if "roboflow" in dataset_url.lower():
             notebook['cells'][8]['source'] += '!pip install roboflow\n'
@@ -355,7 +359,9 @@ def generate_notebook_en(model):
             roboflow_url = model["dataset"]["url"].rstrip("#")
             notebook['cells'][8]['source'] += 'from roboflow import download_dataset\n'
             notebook['cells'][8]['source'] += 'dataset = download_dataset("{}", "coco")\n'.format(roboflow_url)
-            notebook['cells'][8]['source'] += '!mv dataset {}/dataset\n'.format(work_dir)
+            notebook['cells'][8]['source'] += 'dataset_path = dataset.location\n'
+            notebook['cells'][8]['source'] += 'import shutil\n'
+            notebook['cells'][8]['source'] += 'shutil.move(dataset_path, "{}/dataset")\n'.format(work_dir)
         else:
             notebook['cells'][8]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
             notebook['cells'][8]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
@@ -549,7 +555,11 @@ def generate_notebook_zh_CN(model):
     model_info += "**算法:** [{}]({})\n\n".format(model["algorithm"], model["config"]["url"])
     model_info += "**数据集:** [{}]({})\n\n".format(model["dataset"]["name"], model["dataset"]["url"])
     if "roboflow" in model["dataset"]["url"].lower():
-        model_info += "**注意:** 要下载数据集，您需要设置 Roboflow API 密钥。前往您的 [Roboflow 设置](https://app.roboflow.com/settings/api)，复制您的私有 API 密钥，并在 Colab 中将其存储为 `ROBOFLOW_API_KEY` 秘密。\n\n"
+        model_info += "**⚠️ 重要提示：要下载数据集，您需要设置 Roboflow API 密钥。**\n\n"
+        model_info += "1. 前往您的 [Roboflow 设置](https://app.roboflow.com/settings/api)。\n"
+        model_info += "2. 复制您的私有 API 密钥。\n"
+        model_info += "3. 在 Colab 中，点击**左侧边栏**上的**钥匙图标**打开 Secrets。\n"
+        model_info += "4. 添加一个名为 `ROBOFLOW_API_KEY` 的新秘密，并将您的 API 密钥作为值。\n\n"
     model_info += "**类别:** "
     model_info += ", ".join(["`{}`".format(c) for c in model["classes"]]) + "\n\n"
     model_info += "![{}]({})\n\n".format(model["name"], model["image"])
@@ -569,7 +579,7 @@ def generate_notebook_zh_CN(model):
     
     # Cell 7: Download dataset markdown
     # Cell 8: Download dataset code ({{download_dataset}})
-    notebook['cells'][8]['source'] = '%mkdir -p {}/dataset \n'.format(work_dir)
+    notebook['cells'][8]['source'] = '%mkdir -p {} \n'.format(work_dir)
     if dataset_url != "":
         if "roboflow" in dataset_url.lower():
             notebook['cells'][8]['source'] += '!pip install roboflow\n'
@@ -579,7 +589,9 @@ def generate_notebook_zh_CN(model):
             roboflow_url = model["dataset"]["url"].rstrip("#")
             notebook['cells'][8]['source'] += 'from roboflow import download_dataset\n'
             notebook['cells'][8]['source'] += 'dataset = download_dataset("{}", "coco")\n'.format(roboflow_url)
-            notebook['cells'][8]['source'] += '!mv dataset {}/dataset\n'.format(work_dir)
+            notebook['cells'][8]['source'] += 'dataset_path = dataset.location\n'
+            notebook['cells'][8]['source'] += 'import shutil\n'
+            notebook['cells'][8]['source'] += 'shutil.move(dataset_path, "{}/dataset")\n'.format(work_dir)
         else:
             notebook['cells'][8]['source'] += '!wget -c {} -O {}/dataset.zip \n'.format(dataset_url, work_dir)
             notebook['cells'][8]['source'] += '!unzip -q {}/dataset.zip -d {}/dataset'.format(work_dir,work_dir)
