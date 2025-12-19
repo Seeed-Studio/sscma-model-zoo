@@ -2,4 +2,5 @@ loguru
 termcolor
 nbformat
 openai
-tabulate 
+tabulate
+roboflow
