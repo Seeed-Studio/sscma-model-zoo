@@ -10,7 +10,7 @@ body:
         - Model file error, cannot be downloaded
         - Model inference errors, abnormal inference results
         - Wrong test parameters, license issues, etc.
-        For issues such as errors in the runtime code, we recommend that you move to [SSCMA Issues](https://github.com/Seeed-Studio/ModelAssistant-model-zoo/issues) for faster assistance.
+        For issues such as errors in the runtime code, we recommend that you move to [SSCMA Issues](https://github.com/Seeed-Studio/sscma-model-zoo/issues) for faster assistance.
 
   - type: textarea
     id: issue-description
