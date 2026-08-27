@@ -1,6 +1,6 @@
 # COCO Detection - Swift-YOLO
 
-[English](../en/COCO_Detection_Swift-YOLO_320.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/zh_CN/COCO_Detection_Swift-YOLO_320.ipynb)
+[English](../en/COCO_Detection_Swift-YOLO_320.md) | 简体中文 [![在Colab中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/add-grove-vision-v2-notebook/notebooks/zh_CN/COCO_Detection_Swift-YOLO_320.ipynb)
 
 **版本：** 1.0.0
 

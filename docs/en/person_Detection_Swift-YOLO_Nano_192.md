@@ -1,6 +1,6 @@
 # person Detection - Swift-YOLO Nano
 
-English | [简体中文](../zh_CN/person_Detection_Swift-YOLO_Nano_192.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/main/notebooks/en/person_Detection_Swift-YOLO_Nano_192.ipynb)
+English | [简体中文](../zh_CN/person_Detection_Swift-YOLO_Nano_192.md) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seeed-studio/sscma-model-zoo/blob/add-grove-vision-v2-notebook/notebooks/en/person_Detection_Swift-YOLO_Nano_192.ipynb)
 
 **Version:** 1.0.0
 
